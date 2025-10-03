@@ -1,13 +1,19 @@
 # ComfySleeping
+
+<p align="center">
+	<img width="256" height="256" src="/preview.png">
+</p>
+
 A publicly viewable repo for my Project Zomboid mod, Comfy Sleeping.
 
 To download and install the latest version of the mod, [please subscribe to the official Steam Workshop page](https://steamcommunity.com/sharedfiles/filedetails/?id=2998737588).
 
 A discussion page on the Workshop page detailing all the sandbox options players can customize can also [be found here](https://steamcommunity.com/workshop/filedetails/discussion/2998737588/3803903008590586667/).
 
-Please direct any comments, concerns, and bug reports to the Steam Workshop page, either in the comments, or in a dedicated discussion page.
+> [!IMPORTANT]
+> Please direct any comments, concerns, and bug reports to the Steam Workshop page, either in the comments, or in a dedicated discussion page.
 
-![/poster.png]
+---
 
 ## Overview
 
@@ -21,28 +27,30 @@ In essense, the mod takes into account the following, and calculates a comfort m
  
 Depending on the players comfort modifier, they will fall into one of 6 comfort levels (default comfort begins at 100 with a modifier of 0):
  1. **Snug as a bug** (Comfort > 100)
-  - Player wakes up faster than usual, and doesn't oversleep once their fatigue hits 0.
+	Player wakes up faster than usual, and doesn't oversleep once their fatigue hits 0.
  
  2. **Ok** (80 < Comfort < 100)
-  - Player feels no change in sleep quality. The vanilla sleeping experience.
+	Player feels no change in sleep quality. The vanilla sleeping experience.
  
  3. **Tolerable** (60 < Comfort < 80)
-  - Endurance is slightly impacted.
+	Endurance is slightly impacted.
  
  4. **Bad** (40 < Comfort < 60)
-  - Endurance is moderately impacted.
-  - Fatigue is slightly impacted.
+	Endurance is moderately impacted.
+	Fatigue is slightly impacted.
  
  5. **Poor** (20 < Comfort < 40)
-  - Endurance is highly impacted.
-  - Fatigue is moderately impacted.
-  - Player becomes restless and wakes up after several hours.
+	Endurance is highly impacted.
+	Fatigue is moderately impacted.
+	Player becomes restless and wakes up after several hours.
  
  6. *Very Poor* (Comfort <= 20)
-  - Endurance is significantly impacted.
-  - Fatigue is highly impacted.
-  - Player becomes restless and wakes up after a few hours.
-  
+	Endurance is significantly impacted.
+	Fatigue is highly impacted.
+	Player becomes restless and wakes up after a few hours.
+
+---
+
 ## Translations
 
 Thanks to the Project Zomboid community, some mod users have offered their invaluable time and provided translations of Comfy Sleeping into 8 non-English languages.
