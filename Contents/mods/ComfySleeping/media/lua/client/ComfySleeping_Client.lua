@@ -103,8 +103,8 @@ function getPlayerBloodAndDirt()
 	local bodyDirt = 0
 	
 	-- Iterating through each BodyPartType object (each body segment/location)
-	for i=1,BloodBodyPartType.MAX:index() do
-		local part = BloodBodyPartType.FromIndex(i-1)
+	for i = 1, BloodBodyPartType.MAX:index() do
+		local part = BloodBodyPartType.FromIndex(i - 1)
 		bodyBlood = bodyBlood + visual:getBlood(part)
 		bodyDirt = bodyDirt + visual:getDirt(part)
 		
@@ -134,22 +134,19 @@ function getComfortModifier(p, wornItems)
 	modifier = modifier + getMoodleComfortModifier(p)
 	
 	--Iterate through worn clothing, adding each pieces comfort modifier
-	for i=0, wornItems:size() - 1 do
+	for i = 0, wornItems:size() - 1 do
 		local item = wornItems:get(i):getItem()
 		local itemName = getItemNameFromFullType(item:getFullType())
 		
-		-- print(itemName .. " (".. tostring(item:getFullType()) ..", ".. tostring(keyInTable(comfyClothes, itemName)) .. ") : " .. tostring(comfyClothes[itemName]))
-		
 		if (keyInTable(comfyClothes, itemName)) then -- Sanity check if clothing item is somehow not caught during init
 			modifier = modifier + comfyClothes[itemName]
-			-- getPlayer():Say(itemName .. " (".. tostring(item:getType()) ..") : " .. tostring(comfyClothes[itemName]))
 		
 		end
 		
 		if (item:IsClothing()) and (options.dirtAndBloodAffectComfort) then
 			avgBloodiness = avgBloodiness + item:getBloodLevel()
 			avgDirtiness = avgDirtiness + item:getDirtyness()
-			--print("Clothing blood:dirt = " .. tostring(item:getBloodLevel()) .. " : " .. tostring(item:getDirtyness())) -- DEBUG
+			
 		end
 	end
 	
@@ -163,8 +160,6 @@ function getComfortModifier(p, wornItems)
 		if (avgBloodiness > options.bloodThreshold) or (playerBloodAndDirt.bodyBlood > options.bloodThreshold) then modifier = modifier + options.bloodComfyMod end
 		if (avgDirtiness > options.dirtThreshold) or (playerBloodAndDirt.bodyDirt > options.dirtThreshold) then modifier = modifier + options.dirtComfyMod end
 		
-		--print("BodyBlood:BodyDirt = " .. tostring(playerBloodAndDirt.bodyBlood) .. " : " .. tostring(playerBloodAndDirt.bodyDirt))
-		--print("Avg blood:dirt = " .. tostring(avgBloodiness) .. " : " .. tostring(avgDirtiness)) -- DEBUG
 	end
 	
 	return modifier
@@ -203,6 +198,7 @@ local function forcePlayerAwake()
 		if ZombRand(0, 100) < options.painChance then 
 			local neckPain = ZombRand(options.painLowerBound, options.painUpperBound)
 			p:getBodyDamage():getBodyPart(BodyPartType.Neck):setAdditionalPain(neckPain)
+			
 		end	
 	end
 end
@@ -300,15 +296,11 @@ local function mainFunc()
 	
 	if (p == nil) or (not p:isAlive()) then return end -- Is the player real, if so, are they alive?
 	
-	-- Debugging bs for in-game Lua console to look for container items. I hate this.
-	-- for i = getScriptManager():getAllItems():size() - 1, 0, -1 do if (getScriptManager():getAllItems():get(i):getTypeString() == "Container") then print(tostring(i) .. " : " .. tostring(getScriptManager():getAllItems():get(i))) end end
-	
-	-- Player sleeping and stats NOT correcting
+	-- Toggle statement to add or remove correctStats function when a player begins sleeping or wakes up
 	if (p:isAsleep()) and (correctStatsAdded == false) then
 		correctStatsAdded = true
 		Events.OnTick.Add(correctStats)
 	
-	-- Player not asleep and stats ARE correcting
 	elseif (p:isAsleep() ~= true) and (correctStatsAdded == true) then
 		correctStatsAdded = false
 		Events.OnTick.Remove(correctStats)
@@ -331,23 +323,23 @@ function findNearbyPillow()
 	if (v == nil) then -- If player is out of a vehicle, check the ground
 		local px, py, pz = p:getX(), p:getY(), p:getZ()
 		
+		-- Check within 1 tile of player for items on the ground.
+		-- If the found items Base.Type is in ComfySleepings 'comfyPillowType' table, a valid pillow has been found
 		for xMod=-1, 1, 1 do
 			for yMod=-1, 1, 1 do
-				--print("Modified coords: (" .. tostring(xMod) .. "," .. tostring(yMod) .. ")")
-				--nearbySquares[sqrIndex] = getSquare(px - xMod, py - yMod, pz)
 				worldObjects = getSquare(px - xMod, py - yMod, pz):getWorldObjects()
 				
 				for i = worldObjects:size() - 1, 0, -1 do
 					local itemType = worldObjects:get(i):getItem():getFullType()
 					local itemName = getItemNameFromFullType(itemType)
 					
-					print("BaseType found: " .. tostring(itemType)) -- REMOVE BEFORE UPDATE
 					if (ComfySleeping.getComfyPillowTypes()[itemType]) then return true end
 				end
 			end
 		end
 		
 	elseif (v ~= nil) then -- If player is in vehicle, check their inventory & hand
+		-- TODO: Adjust this to check for other pillow types Comfy Sleeping is aware of
 		local pillowsInInventory = p:getInventory():getItemsFromFullType("Base.Pillow")
 		
 		 -- Only items of type Base.Pillow shouldbe found, 
@@ -429,7 +421,6 @@ function contextMenuFilled(p, context, worldObjects)
 		-- Format the strings and include line breaks
 		local comfortString = " <BR> " .. getText("Sandbox_ComfySleeping_Comfort") .. " " .. comfortLevel
 		
-		--" <BR> " .. getText("Sandbox_ComfySleeping_PillowNearby") .. " " .. pillowNearby
 		local pillowString = ""
 		
 		if (options.showPillowStatus) then 
@@ -439,8 +430,6 @@ function contextMenuFilled(p, context, worldObjects)
 		-- Set the tooltip to the old tooltip concatenated with the two formatted strings above
 		tooltip["description"] = tooltip["description"] .. comfortString .. pillowString
 		
-	else 
-		--print("No dice :( (Option not found)") 
 	end
 end
 

@@ -127,7 +127,6 @@ local function initClothingList()
 	-- Thanks to Collide in the PZ mod-dev channel for the help getting all clothing items
 	local allItemsList = getScriptManager():getAllItems()
 
-	print("Got clothing list of size " .. tostring(allItemsList:size()) .. ".")
 	for i = allItemsList:size() - 1, 0, -1 do
 		local item = allItemsList:get(i)
 		local itemType = item:getTypeString() -- getType() value changed to 'usertype'
@@ -155,11 +154,6 @@ local function initClothingList()
 			ComfySleeping.clothingList[itemName] = ComfySleeping.options.bagComfyMod
 		
 		end
-	end
-	
-	for key,val in ipairs(ComfySleeping.clothingList) do
-		print(key .. " : " .. val)
-		
 	end
 end
 
