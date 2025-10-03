@@ -15,7 +15,7 @@ A discussion page on the Workshop page detailing all the sandbox options players
 
 ## Overview
 
-Comfy Sleeping is a mod that adds a comfort mechanic to sleeping in Project Zomboid. It does this by adding a blend of risk vs. reward to sleeping fully geared up and the cost of sleep quality, or stripping off the big bulky survival gear to get a proper nights rest.
+Comfy Sleeping is a mod that adds a comfort mechanic to sleeping in Project Zomboid. It does this by adding a blend of risk vs. reward to sleeping fully geared up at the cost of sleep quality, or stripping off the big bulky survival gear to get a proper nights rest.
 
 In essense, the mod takes into account the following, and calculates a comfort modifier to determine how comfortable the player is:
  - Mental condition (stress)
