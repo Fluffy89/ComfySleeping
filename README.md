@@ -42,7 +42,7 @@ Depending on the players comfort modifier, they will fall into one of 6 comfort 
 	- Fatigue is moderately impacted.
 	- Player becomes restless and wakes up after several hours.
  
- 6. *Very Poor* (Comfort <= 20)
+ 6. **Very Poor** (Comfort <= 20)
 	- Endurance is significantly impacted.
 	- Fatigue is highly impacted.
 	- Player becomes restless and wakes up after a few hours.

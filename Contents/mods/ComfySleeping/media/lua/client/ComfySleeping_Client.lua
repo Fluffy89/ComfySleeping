@@ -71,8 +71,6 @@ function getWeaponComfortModifier(p)
 	local inventoryItems = p:getInventory():getItems()
 	local weaponComfortModifier = 0
 	
-	local seenItems = {}
-	
 	for i = 0, inventoryItems:size() - 1, 1 do
 		local item = inventoryItems:get(i)
 		if (item:IsWeapon()) and (item:getAttachedSlot() ~= -1) then
