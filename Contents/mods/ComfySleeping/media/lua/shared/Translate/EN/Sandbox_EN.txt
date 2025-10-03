@@ -1,0 +1,303 @@
+Sandbox_EN =
+{
+	Sandbox_ComfySleeping = "ComfySleeping - General",
+	Sandbox_ComfySleepingClothing = "ComfySleeping - Clothing",
+	Sandbox_ComfySleepingMoodles = "ComfySleeping - Moodles",
+	Sandbox_ComfySleepingJewelry = "ComfySleeping - Jewelry",
+	Sandbox_ComfySleepingScrapArmor = "ComfySleeping - ScrapArmor",
+	
+	
+	Sandbox_ComfySleeping_Comfort = "Comfort:",
+	Sandbox_ComfySleeping_PillowNearby = "Pillow Nearby:",
+	Sandbox_ComfySleeping_Pillow = "Pillow",
+	Sandbox_ComfySleeping_Yes = "Yes",
+	Sandbox_ComfySleeping_No = "No",
+	Sandbox_ComfySleeping_VeryPoor = "Very Poor",
+	Sandbox_ComfySleeping_Poor = "Poor",
+	Sandbox_ComfySleeping_Bad = "Bad",
+	Sandbox_ComfySleeping_Tolerable = "Tolerable",
+	Sandbox_ComfySleeping_Ok = "Ok",
+	Sandbox_ComfySleeping_SnugAsABug = "Snug as a bug",
+	
+	
+	Sandbox_showPillowStatus = "Show Pillow Status",
+	Sandbox_showPillowStatus_tooltip = "When checked, the Sleep context option shows additional text on whether a pillow is nearby or not."
+	
+	
+	Sandbox_weaponsAffectComfort = "Equipped Weapons Affect Comfort",
+	Sandbox_weaponsAffectComfort_tooltip = "When enabled, having weapons on your back or belt will apply a penalty to comfort."
+	
+	Sandbox_backWeaponComfyMod = "Back Weapon Comfort Modifier",
+	Sandbox_backWeaponComfyMod_tooltip = "The comfort modifier for weapons equipped on the back."
+	
+	Sandbox_beltWeaponComfyMod = "Belt Weapon Comfort Modifier",
+	Sandbox_beltWeaponComfyMod_tooltip = "The comfort modifier for weapons equipped on the belt/hips."
+	
+	Sandbox_dirtAndBloodAffectComfort = "Dirt/Blood Affect Comfort",
+	Sandbox_dirtAndBloodAffectComfort_tooltip = "When enabled, the average amount of blood and dirt on the players clothing can apply a comfort penalty, when above a threshold."
+	
+	Sandbox_bloodComfyMod = "Blood Comfort Modifier",
+	Sandbox_bloodComfyMod_tooltip = "The comfort modifier for when your clothing is above the blood threshold."
+	
+	Sandbox_bloodThreshold = "Blood Threshold",
+	Sandbox_bloodThreshold_tooltip = "When the average bloodiness of all clothing is above this threshold, the blood comfort modifier will be applied."
+	
+	Sandbox_dirtComfyMod = "Dirt Comfort Modifier",
+	Sandbox_dirtComfyMod_tooltip = "The comfort modifier for when your clothing is above the dirt threshold."
+	
+	Sandbox_dirtThreshold = "Dirt Threshold",
+	Sandbox_dirtThreshold_tooltip = "When the average dirtiness of all clothing is above this threshold, the dirt comfort modifier will be applied."
+ 
+ 
+	Sandbox_defaultComfort = "Default Comfort",
+	Sandbox_defaultComfort_tooltip = "The baseline level of comfort a player will have when no comfort modifiers are in effect."
+	
+	Sandbox_pillowComfortBonus = "Pillow Comfort Bonus",
+	Sandbox_pillowComfortBonus_tooltip = "The amount of comfort a pillow will provide when sleeping."
+	
+	Sandbox_forceAwakeIfVeryUncomfy = "Force Awake If Very Uncomfy",
+	Sandbox_forceAwakeIfVeryUncomfy_tooltip = "Enables or disables characters being restless and waking up in the middle of the night, depending on their comfort. This will only happen at 'Poor' and 'Very Poor' comfort levels."
+	
+	Sandbox_forceAwakeIfSnug = "Force Awake If Snug As A Bug",
+	Sandbox_forceAwakeIfSnug_tooltip = "Enables or disables characters to automatically awake when their fatigue hits 0, given their comfort is Snug as a Bug."
+	
+	Sandbox_cottonComfyMod = "Cotton Clothing Modifier",
+	Sandbox_cottonComfyMod_tooltip = "The comfort modifier for any clothing repaired with ripped sheets."
+	
+	Sandbox_denimComfyMod = "Denim Clothing Modifier",
+	Sandbox_denimComfyMod_tooltip = "The comfort modifier for any clothing repaired with denim strips."
+	
+	Sandbox_leatherComfyMod = "Leather Clothing Modifier",
+	Sandbox_leatherComfyMod_tooltip = "The comfort modifier for any clothing repaired with leather strips."
+	
+	Sandbox_painChance = "Pain Chance",
+	Sandbox_painChance_tooltip = "The chance a character will wake up with neck pain when they're forced awake. If 'forceAwakeIfVeryUncomfy' is false, this is ignored."
+	
+	Sandbox_painLowerBound = "Minimum Pain Duration",
+	Sandbox_painLowerBound_tooltip = "The minimum amount of time the pain caused by being forced awake will cause."
+	
+	Sandbox_painUpperBound = "Maximum Pain Duration",
+	Sandbox_painUpperBound_tooltip = "The maximum amount of time the pain caused by being forced awake will cause."
+	
+	Sandbox_uncomfy1Endurance = "Tolerable Comfort Endurance Penalty",
+	Sandbox_uncomfy1Endurance_tooltip = "The maximum amount of endurance/stamina your character can regenerate while sleeping with a 'Tolerable' comfort level. 100 is fully recharged."
+	
+	Sandbox_uncomfy2Endurance = "Bad Comfort Endurance Penalty",
+	Sandbox_uncomfy2Endurance_tooltip = "The maximum amount of endurance/stamina your character can regenerate while sleeping with a 'Bad' comfort level. 100 is fully recharged."
+	
+	Sandbox_uncomfy2Fatigue = "Bad Comfort Fatigue Penalty",
+	Sandbox_uncomfy2Fatigue_tooltip = "The maximum amount of fatigue your character can regenerate while sleeping with a 'Bad' comfort level. 0 is fully rested."
+	
+	Sandbox_uncomfy3Endurance = "Poor Comfort Endurance Penalty",
+	Sandbox_uncomfy3Endurance_tooltip = "The maximum amount of endurance/stamina your character can regenerate while sleeping with a 'Poor' comfort level. 100 is fully recharged."
+	
+	Sandbox_uncomfy3Fatigue = "Poor Comfort Fatigue Penalty",
+	Sandbox_uncomfy3Fatigue_tooltip = "The maximum amount of fatigue your character can regenerate while sleeping with a 'Poor' comfort level. 0 is fully rested."
+	
+	Sandbox_uncomfy4Endurance = "Very Poor Comfort Endurnace Penalty",
+	Sandbox_uncomfy4Endurance_tooltip = "The maximum amount of endurance/stamina your character can regenerate while sleeping with a 'Very Poor' comfort level. 100 is fully recharged."
+	
+	Sandbox_uncomfy4Fatigue = "Very Poor Comfort Fatigue Penalty",
+	Sandbox_uncomfy4Fatigue_tooltip = "The maximum amount of fatigue your character can regenerate while sleeping with a 'Very Poor' comfort level. 0 is fully rested."
+	
+	
+	
+	
+	Sandbox_clothingReadMe = "Clothing ReadMe",
+	Sandbox_clothingReadMe_tooltip = "All per-location options here are effective for clothing that DOES NOT have a fabric type. The clothings fabric type will override any comfort modifier specified here."
+	
+	Sandbox_hatComfyMod = "Hat Comfort Modifier",
+	Sandbox_hatComfyMod_tooltip = "The comfort modifier for anything worn on a characters head."
+	
+	Sandbox_maskComfyMod = "Mask Comfort Modifier",
+	Sandbox_maskComfyMod_tooltip = "The comfort modifier for any masks."
+	
+	Sandbox_fullSuitComfyMod = "Full Suit Comfort Modifier",
+	Sandbox_fullSuitComfyMod_tooltip = "The comfort modifier for Hazmat and Spiffo suits."
+	
+	Sandbox_fullJohnsComfyMod = "Long Johns Comfort Modifier",
+	Sandbox_fullJohnsComfyMod_tooltip = "The comfort modifier for the full Long Johns (not the bottoms)."
+	
+	Sandbox_eyesComfyMod = "Eyes Comfort Modifier",
+	Sandbox_eyesComfyMod_tooltip = "The comfort modifier for any glasses & eyepatches."
+	
+	Sandbox_scarfComfyMod = "Scarf Comfort Modifier",
+	Sandbox_scarfComfyMod_tooltip = "The comfort modifier for any scarves."
+	
+	Sandbox_shirtComfyMod = "Shirt Comfort Modifier",
+	Sandbox_shirtComfyMod_tooltip = "The comfort modifier for any tank tops/tshirts/shortsleeves/shirts."
+	
+	Sandbox_jacketComfyMod = "Jacket Comfort Modifier",
+	Sandbox_jacketComfyMod_tooltip = "The comfort modifier for anything worn as a jacket."
+	
+	Sandbox_ponchoComfyMod = "Poncho Comfort Modifier",
+	Sandbox_ponchoComfyMod_tooltip = "The comfort modifier for anything worn as a poncho."
+	
+	Sandbox_jacketBulkyComfyMod = "Bulky Jacket Comfort Modifier",
+	Sandbox_jacketBulkyComfyMod_tooltip = "The comfort modifier for any 'bulky' jackets. This includes Shell Suit jackets and Padded Jackets at the time of writing."
+	
+	Sandbox_boilerSuitComfyMod = "Boiler Suit Comfort Modifier",
+	Sandbox_boilerSuitComfyMod_tooltip = "The comfort modifier for any jumpsuit/coveralls."
+	
+	Sandbox_dressComfyMod = "Dress Comfort Modifier",
+	Sandbox_dressComfyMod_tooltip = "The comfort modifier for anything considered a dress."
+	
+	Sandbox_fullTopComfyMod = "Full Top Comfort Modifier",
+	Sandbox_fullTopComfyMod_tooltip = "The comfort modifier for anything in the Full Top slot. At the time of writing, this is only the Ghillie Suit Torso."
+	
+	Sandbox_torsoExtraComfyMod = "Torso Extra Comfort Modifier",
+	Sandbox_torsoExtraComfyMod_tooltip = "The comfort modifier for anything worn on the characters torso ontop of other clothing (aprons)."
+	
+	Sandbox_vestComfyMod = "Vest Comfort Modifier",
+	Sandbox_vestComfyMod_tooltip = "The comfort modifier for vests."
+	
+	Sandbox_handComfyMod = "Hand Comfort Modifier",
+	Sandbox_handComfyMod_tooltip = "The comfort modifier for anything worn on a characters hands."
+	
+	Sandbox_beltComfyMod = "Belt Comfort Modifier",
+	Sandbox_beltComfyMod_tooltip = "The comfort modifier for belts."
+	
+	Sandbox_beltExtraComfyMod = "Holster Comfort Modifier",
+	Sandbox_beltExtraComfyMod_tooltip = "The comfort modifier for single and double holsters."
+	
+	Sandbox_ammoStrapComfyMod = "Ammo Strap Comfort Modifier",
+	Sandbox_ammoStrapComfyMod_tooltip = "The comfort modifier for Bullet and Shell Bandoliers."
+	
+	
+	Sandbox_pantsComfyMod = "Pants Comfort Modifier",
+	Sandbox_pantsComfyMod_tooltip = "The comfort modifier for anything worn as pants."
+	
+	Sandbox_halfJohnsComfyMod = "Long Johns Bottom Comfort Modifier",
+	Sandbox_halfJohnsComfyMod_tooltip = "The comfort modifier for Long John Bottoms (not the full Long Johns)."
+	
+	Sandbox_shoesComfyMod = "Footwear Comfort Modifier",
+	Sandbox_shoesComfyMod_tooltip = "The comfort modifier for anything worn on the characters feet."
+	
+	Sandbox_underComfyMod = "Underwear Comfort Modifier",
+	Sandbox_underComfyMod_tooltip = "The comfort modifier for anything considered underwear or underwear accessories."
+	
+	Sandbox_tailComfyMod = "Tail Comfort Modifier",
+	Sandbox_tailComfyMod_tooltip = "The comfort modifier for anything considered to be a tail."
+	
+	Sandbox_bagComfyMod = "Bag Comfort Modifier",
+	Sandbox_bagComfyMod_tooltip = "The comfort modifier for wearing a bag."
+	
+	
+	
+	
+	
+	Sandbox_noseComfyMod = "Nose Comfort Modifier",
+	Sandbox_noseComfyMod_tooltip = "The comfort modifier for nose rings & nose studs."
+	
+	Sandbox_earsComfyMod = "Ears Comfort Modifier",
+	Sandbox_earsComfyMod_tooltip = "The comfort modifier for earrings & ear studs"
+	
+	Sandbox_neckComfyMod = "Neck Item Comfort Modifier",
+	Sandbox_neckComfyMod_tooltip = "The comfort modifier for ties/bowties/chokers."
+	
+	Sandbox_necklaceComfyMod = "Necklace Comfort Modifier",
+	Sandbox_necklaceComfyMod_tooltip = "The comfort modifier for necklaces and dog tags. Does NOT include necklaces that include 'Long' in their name."
+	
+	Sandbox_necklaceLongComfyMod = "Long Necklace Comfort Modifier",
+	Sandbox_necklaceLongComfyMod_tooltip = "The comfort modifier for necklaces with 'Long' in their name."
+	
+	Sandbox_wristComfyMod = "Wrist Comfort Modifier",
+	Sandbox_wristComfyMod_tooltip = "The comfort modifier for anything worn on a characters wrist (watches/jewelry)."
+	
+	Sandbox_handRingComfyMod = "Hand Ring Comfort Modifier",
+	Sandbox_handRingComfyMod_tooltip = "The comfort modifier for rings worn on their hand."
+	
+	Sandbox_bellyRingComfyMod = "Belly Jewelry Comfort Modifier",
+	Sandbox_bellyRingComfyMod_tooltip = "The comfort modifier for anything worn on the characters belly button (rings/stud/dangle)."
+	
+	
+	
+	
+
+	Sandbox_moodlesAffectComfort = "Moodles Affect Comfort",
+	Sandbox_moodlesAffectComfort_tooltip = "Toggle this option on for some moodles to affect the comfort level of the player."
+	
+	Sandbox_hungerComfyMod = "Hunger Comfort Modifier",
+	Sandbox_hungerComfyMod_tooltip = "The comfort modifier of the hunger moodle."
+	
+	Sandbox_thirstComfyMod = "Thirst Comfort Modifier",
+	Sandbox_thirstComfyMod_tooltip = "The comfort modifier of the thirst moodle."
+	
+	Sandbox_sickComfyMod = "Sickness Comfort Modifier",
+	Sandbox_sickComfyMod_tooltip = "The comfort modifier of the sickness moodle."
+	
+	Sandbox_hasColdComfyMod = "Has A Cold Comfort Modifier",
+	Sandbox_hasColdComfyMod_tooltip = "The comfort modifier of the 'has a cold' moodle (the one that gives you the sniffles)."
+	
+	Sandbox_wetComfyMod = "Wet Comfort Modifier",
+	Sandbox_wetComfyMod_tooltip = "The comfort modifier of the wetness moodle."
+	
+	Sandbox_stressComfyMod = "Stress Comfort Modifier",
+	Sandbox_stressComfyMod_tooltip = "The comfort modifier of the stress moodle."
+	
+	Sandbox_heavyLoadComfyMod = "Heavy-Load Comfort Modifier",
+	Sandbox_heavyLoadComfyMod_tooltip = "The comfort modifier of the heavy load moodle."
+	
+	Sandbox_hyperthermiaComfyMod = "Hyperthermia Comfort Modifier",
+	Sandbox_hyperthermiaComfyMod_tooltip = "The comfort modifier of the hyperthermia moodle."
+	
+	Sandbox_hypothermiaComfyMod = "Hypothermia Comfort Modifier",
+	Sandbox_hypothermiaComfyMod_tooltip = "The comfort modifier of the hypothermia moodle."
+	
+	Sandbox_foodComfyMod = "Well-Fed Comfort Modifier",
+	Sandbox_foodComfyMod_tooltip = "The comfort modifier of the well fed moodle."
+	
+	
+	
+	
+	Sandbox_scrapArmorReadMe = "READ ME",
+	Sandbox_scrapArmorReadMe_tooltip = "This entire section is irrelevant unless 'Scrap Armor(new version)' by djvirus is installed and enabled. This checkbox does nothing, it's just to give you this note."
+	
+	Sandbox_swordSheathComfyMod = "Sword Sheath Comfort Modifier",
+	Sandbox_swordSheathComfyMod_tooltip = "The comfort modifier for the Scrap Armor sword sheath."
+	
+	Sandbox_shieldSlotComfyMod = "Sheild Slot Comfort Modifier",
+	Sandbox_shieldSlotComfyMod_tooltip = "The comfort modifier for the Scrap Armor shield slot."
+	
+	Sandbox_torsoRigComfyMod = "Torso Rig Comfort Modifier",
+	Sandbox_torsoRigComfyMod_tooltip = "The comfort modifier for clothing equipped to the Torso Rig body location."
+	
+	Sandbox_torsoRig2ComfyMod = "Torso Rig 2 Comfort Modifier",
+	Sandbox_torsoRig2ComfyMod_tooltip = "The comfort modifier for clothing equipped to the Torso Rig 2 body location."
+	
+	Sandbox_waistBagsComfyMod = "Waist Bags Comfort Modifier",
+	Sandbox_waistBagsComfyMod_tooltip = "The comfort modifier for clothing equipped to the Waist Bags body location."
+	
+	Sandbox_upperArmLeftComfyMod = "Left Upper Arm Comfort Modifier",
+	Sandbox_upperArmLeftComfyMod_tooltip = "The comfort modifier for clothing equipped to the Left Upper Arm body location."
+	
+	Sandbox_upperArmRightComfyMod = "Right Upper Arm Comfort Modifier",
+	Sandbox_upperArmRightComfyMod_tooltip = "The comfort modifier for clothing equipped to the Right Upper Arm body location."
+	
+	Sandbox_thighLeftComfyMod = "Left Thigh Comfort Modifier",
+	Sandbox_thighLeftComfyMod_tooltip = "The comfort modifier for clothing equipped to the Left Thigh body location."
+	
+	Sandbox_thighRightComfyMod = "Right Thigh Comfort Modifier",
+	Sandbox_thighRightComfyMod_tooltip = "The comfort modifier for clothing equipped to the Right Thigh body location."
+	
+	Sandbox_lowerBodyComfyMod = "Lower Body Comfort Modifier",
+	Sandbox_lowerBodyComfyMod_tooltip = "The comfort modifier for clothing equipped to the Lower Body body location."
+	
+	Sandbox_pauldronsComfyMod = "Pauldrons Comfort Modifier",
+	Sandbox_pauldronsComfyMod_tooltip = "The comfort modifier for clothing equipped to the Pauldrons body location."
+	
+	Sandbox_handPlateLeftComfyMod = "Left Hand Plate Comfort Modifier",
+	Sandbox_handPlateLeftComfyMod_tooltip = "The comfort modifier for clothing equipped to the Left Hand Plate body location."
+	
+	Sandbox_handPlateRightComfyMod = "Right Hand Comfort Modifier",
+	Sandbox_handPlateRightComfyMod_tooltip = "The comfort modifier for clothing equipped to the Right Hand Plate body location."
+	
+	Sandbox_shinPlateLeftComfyMod = "Left Shin Plate Comfort Modifier",
+	Sandbox_shinPlateLeftComfyMod_tooltip = "The comfort modifier for clothing equipped to the Left Shin Plate body location."
+	
+	Sandbox_shinPlateRightComfyMod = "Right Shin Plate Comfort Modifier",
+	Sandbox_shinPlateRightComfyMod_tooltip = "The comfort modifier for clothing equipped to the Right Shin Plate body location."
+	
+	Sandbox_specialMaskComfyMod = "Special Mask Comfort Modifier",
+	Sandbox_specialMaskComfyMod_tooltip = "The comfort modifier for clothing equipped to the Special Mask body location"
+}

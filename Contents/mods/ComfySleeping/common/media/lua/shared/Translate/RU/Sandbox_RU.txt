@@ -1,0 +1,304 @@
+Sandbox_RU = 
+{
+	Sandbox_ComfySleeping = "ComfySleeping - Основные",
+	Sandbox_ComfySleepingClothing = "ComfySleeping - Одежда",
+	Sandbox_ComfySleepingMoodles = "ComfySleeping - Иконки состояний",
+	Sandbox_ComfySleepingJewelry = "ComfySleeping - Украшения",
+	Sandbox_ComfySleepingScrapArmor = "ComfySleeping - Самодельная броня",
+	
+	
+	Sandbox_ComfySleeping_Comfort = "Комфорт:",
+	Sandbox_ComfySleeping_PillowNearby = "Подушка рядом:",
+	Sandbox_ComfySleeping_Pillow = "Подушка",
+	Sandbox_ComfySleeping_Yes = "Да",
+	Sandbox_ComfySleeping_No = "Нет",
+	Sandbox_ComfySleeping_VeryPoor = "Очень плохо",
+	Sandbox_ComfySleeping_Poor = "Плохо",
+	Sandbox_ComfySleeping_Bad = "Неудобно",
+	Sandbox_ComfySleeping_Tolerable = "Терпимо",
+	Sandbox_ComfySleeping_Ok = "Нормально",
+	Sandbox_ComfySleeping_SnugAsABug = "Уютно как в гнезде",
+	
+	
+	Sandbox_showPillowStatus = "Показывать статус подушки",
+	Sandbox_showPillowStatus_tooltip = "Если включено, в контекстном меню сна будет отображаться дополнительный текст о наличии подушки рядом."
+	
+	
+	Sandbox_weaponsAffectComfort = "Экипированное оружие влияет на комфорт",
+	Sandbox_weaponsAffectComfort_tooltip = "Если включено, наличие оружия за спиной или на поясе будет снижать уровень комфорта."
+	
+	Sandbox_backWeaponComfyMod = "Модификатор комфорта для оружия за спиной",
+	Sandbox_backWeaponComfyMod_tooltip = "Влияние оружия за спиной на уровень комфорта."
+	
+	Sandbox_beltWeaponComfyMod = "Модификатор комфорта для оружия на поясе",
+	Sandbox_beltWeaponComfyMod_tooltip = "Влияние оружия на поясе/бедрах на уровень комфорта."
+	
+	Sandbox_dirtAndBloodAffectComfort = "Грязь/кровь влияют на комфорт",
+	Sandbox_dirtAndBloodAffectComfort_tooltip = "Если включено, средний уровень крови и грязи на одежде будет снижать комфорт при превышении порогового значения."
+	
+	Sandbox_bloodComfyMod = "Модификатор комфорта для крови",
+	Sandbox_bloodComfyMod_tooltip = "Влияние крови на одежде на уровень комфорта."
+	
+	Sandbox_bloodThreshold = "Порог крови",
+	Sandbox_bloodThreshold_tooltip = "При превышении этого среднего уровня крови на одежде будет применяться соответствующий модификатор комфорта."
+	
+	Sandbox_dirtComfyMod = "Модификатор комфорта для грязи",
+	Sandbox_dirtComfyMod_tooltip = "Влияние грязи на одежде на уровень комфорта."
+	
+	Sandbox_dirtThreshold = "Порог грязи",
+	Sandbox_dirtThreshold_tooltip = "При превышении этого среднего уровня грязи на одежде будет применяться соответствующий модификатор комфорта."
+ 
+ 
+	Sandbox_defaultComfort = "Базовый уровень комфорта",
+	Sandbox_defaultComfort_tooltip = "Исходный уровень комфорта персонажа при отсутствии модификаторов."
+	
+	Sandbox_pillowComfortBonus = "Бонус комфорта от подушки",
+	Sandbox_pillowComfortBonus_tooltip = "Дополнительный комфорт при использовании подушки во время сна."
+	
+	Sandbox_forceAwakeIfVeryUncomfy = "Будить при сильном дискомфорте",
+	Sandbox_forceAwakeIfVeryUncomfy_tooltip = "Персонаж будет просыпаться среди ночи при уровне комфорта 'Плохо' и 'Очень плохо'."
+	
+	Sandbox_forceAwakeIfSnug = "Будить при максимальном комфорте",
+	Sandbox_forceAwakeIfSnug_tooltip = "Персонаж будет автоматически просыпаться при полном восстановлении усталости, если его комфорт 'Уютно как в гнезде'."
+	
+	Sandbox_cottonComfyMod = "Модификатор для хлопковой одежды",
+	Sandbox_cottonComfyMod_tooltip = "Влияние одежды, отремонтированной рваными простынями, на комфорт."
+	
+	Sandbox_denimComfyMod = "Модификатор для джинсовой одежды",
+	Sandbox_denimComfyMod_tooltip = "Влияние одежды, отремонтированной джинсовыми полосками, на комфорт."
+	
+	Sandbox_leatherComfyMod = "Модификатор для кожаной одежды",
+	Sandbox_leatherComfyMod_tooltip = "Влияние одежды, отремонтированной кожаными полосками, на комфорт."
+	
+	Sandbox_painChance = "Шанс боли",
+	Sandbox_painChance_tooltip = "Вероятность проснуться с болью в шее при пробуждении от дискомфорта. Не действует, если 'Будить при сильном дискомфорте' выключено."
+	
+	Sandbox_painLowerBound = "Минимальная длительность боли",
+	Sandbox_painLowerBound_tooltip = "Минимальное время действия эффекта боли при пробуждении."
+	
+	Sandbox_painUpperBound = "Максимальная длительность боли",
+	Sandbox_painUpperBound_tooltip = "Максимальное время действия эффекта боли при пробуждении."
+	
+	Sandbox_uncomfy1Endurance = "Штраф к выносливости (Терпимо)",
+	Sandbox_uncomfy1Endurance_tooltip = "Максимальное восстановление выносливости при уровне комфорта 'Терпимо' (100 = полное восстановление)."
+	
+	Sandbox_uncomfy2Endurance = "Штраф к выносливости (Неудобно)",
+	Sandbox_uncomfy2Endurance_tooltip = "Максимальное восстановление выносливости при уровне комфорта 'Неудобно'."
+	
+	Sandbox_uncomfy2Fatigue = "Штраф к усталости (Неудобно)",
+	Sandbox_uncomfy2Fatigue_tooltip = "Максимальное восстановление усталости при уровне комфорта 'Неудобно' (0 = полностью отдохнул)."
+	
+	Sandbox_uncomfy3Endurance = "Штраф к выносливости (Плохо)",
+	Sandbox_uncomfy3Endurance_tooltip = "Максимальное восстановление выносливости при уровне комфорта 'Плохо'."
+	
+	Sandbox_uncomfy3Fatigue = "Штраф к усталости (Плохо)",
+	Sandbox_uncomfy3Fatigue_tooltip = "Максимальное восстановление усталости при уровне комфорта 'Плохо'."
+	
+	Sandbox_uncomfy4Endurance = "Штраф к выносливости (Очень плохо)",
+	Sandbox_uncomfy4Endurance_tooltip = "Максимальное восстановление выносливости при уровне комфорта 'Очень плохо'."
+	
+	Sandbox_uncomfy4Fatigue = "Штраф к усталости (Очень плохо)",
+	Sandbox_uncomfy4Fatigue_tooltip = "Максимальное восстановление усталости при уровне комфорта 'Очень плохо'."
+	
+	
+	
+	
+	Sandbox_clothingReadMe = "Информация об одежде",
+	Sandbox_clothingReadMe_tooltip = "Все настройки для частей тела применяются ТОЛЬКО к одежде без указанного типа ткани. Тип ткани одежды имеет приоритет над этими модификаторами."
+	
+	Sandbox_hatComfyMod = "Модификатор для головных уборов",
+	Sandbox_hatComfyMod_tooltip = "Влияние головных уборов на комфорт."
+	
+	Sandbox_maskComfyMod = "Модификатор для масок",
+	Sandbox_maskComfyMod_tooltip = "Влияние масок на комфорт."
+	
+	Sandbox_fullSuitComfyMod = "Модификатор для полных костюмов",
+	Sandbox_fullSuitComfyMod_tooltip = "Влияние защитных костюмов и костюмов Спиффо на комфорт."
+	
+	Sandbox_fullJohnsComfyMod = "Модификатор для кальсон",
+	Sandbox_fullJohnsComfyMod_tooltip = "Влияние полных кальсон (не нижней части) на комфорт."
+	
+	Sandbox_eyesComfyMod = "Модификатор для глаз",
+	Sandbox_eyesComfyMod_tooltip = "Влияние очков и повязок на комфорт."
+	
+	Sandbox_scarfComfyMod = "Модификатор для шарфов",
+	Sandbox_scarfComfyMod_tooltip = "Влияние шарфов на комфорт."
+	
+	Sandbox_shirtComfyMod = "Модификатор для рубашек",
+	Sandbox_shirtComfyMod_tooltip = "Влияние футболок/рубашек с коротким рукавом на комфорт."
+	
+	Sandbox_jacketComfyMod = "Модификатор для курток",
+	Sandbox_jacketComfyMod_tooltip = "Влияние курток на комфорт."
+	
+	Sandbox_ponchoComfyMod = "Модификатор для пончо",
+	Sandbox_ponchoComfyMod_tooltip = "Влияние пончо на комфорт."
+	
+	Sandbox_jacketBulkyComfyMod = "Модификатор для объемных курток",
+	Sandbox_jacketBulkyComfyMod_tooltip = "Влияние 'объемных' курток (включая стеганые куртки и куртки Shell Suit) на комфорт."
+	
+	Sandbox_boilerSuitComfyMod = "Модификатор для комбинезонов",
+	Sandbox_boilerSuitComfyMod_tooltip = "Влияние комбинезонов и спецодежды на комфорт."
+	
+	Sandbox_dressComfyMod = "Модификатор для платьев",
+	Sandbox_dressComfyMod_tooltip = "Влияние платьев на комфорт."
+	
+	Sandbox_fullTopComfyMod = "Модификатор для верхней части",
+	Sandbox_fullTopComfyMod_tooltip = "Влияние одежды в слоте Full Top (в настоящее время только маскировочный костюм) на комфорт."
+	
+	Sandbox_torsoExtraComfyMod = "Модификатор для дополнительной одежды торса",
+	Sandbox_torsoExtraComfyMod_tooltip = "Влияние дополнительной одежды на торсе (фартуки) на комфорт."
+	
+	Sandbox_vestComfyMod = "Модификатор для жилетов",
+	Sandbox_vestComfyMod_tooltip = "Влияние жилетов на комфорт."
+	
+	Sandbox_handComfyMod = "Модификатор для рук",
+	Sandbox_handComfyMod_tooltip = "Влияние перчаток и другой одежды для рук на комфорт."
+	
+	Sandbox_beltComfyMod = "Модификатор для ремней",
+	Sandbox_beltComfyMod_tooltip = "Влияние ремней на комфорт."
+	
+	Sandbox_beltExtraComfyMod = "Модификатор для кобур",
+	Sandbox_beltExtraComfyMod_tooltip = "Влияние одиночных и двойных кобур на комфорт."
+	
+	Sandbox_ammoStrapComfyMod = "Модификатор для подсумков",
+	Sandbox_ammoStrapComfyMod_tooltip = "Влияние подсумков для патронов и дроби на комфорт."
+	
+	
+	Sandbox_pantsComfyMod = "Модификатор для брюк",
+	Sandbox_pantsComfyMod_tooltip = "Влияние брюк на комфорт."
+	
+	Sandbox_halfJohnsComfyMod = "Модификатор для нижних кальсон",
+	Sandbox_halfJohnsComfyMod_tooltip = "Влияние нижней части кальсон (не полного комплекта) на комфорт."
+	
+	Sandbox_shoesComfyMod = "Модификатор для обуви",
+	Sandbox_shoesComfyMod_tooltip = "Влияние обуви на комфорт."
+	
+	Sandbox_underComfyMod = "Модификатор для нижнего белья",
+	Sandbox_underComfyMod_tooltip = "Влияние нижнего белья и аксессуаров на комфорт."
+	
+	Sandbox_tailComfyMod = "Модификатор для хвостов",
+	Sandbox_tailComfyMod_tooltip = "Влияние хвостов на комфорт."
+	
+	Sandbox_bagComfyMod = "Модификатор для рюкзаков",
+	Sandbox_bagComfyMod_tooltip = "Влияние рюкзаков на комфорт."
+	
+	
+	
+	
+	
+	Sandbox_noseComfyMod = "Модификатор для носа",
+	Sandbox_noseComfyMod_tooltip = "Влияние носовых колец и пирсинга на комфорт."
+	
+	Sandbox_earsComfyMod = "Модификатор для ушей",
+	Sandbox_earsComfyMod_tooltip = "Влияние сережек и пирсинга ушей на комфорт."
+	
+	Sandbox_neckComfyMod = "Модификатор для шеи",
+	Sandbox_neckComfyMod_tooltip = "Влияние галстуков/бабочек/ошейников на комфорт."
+	
+	Sandbox_necklaceComfyMod = "Модификатор для ожерелий",
+	Sandbox_necklaceComfyMod_tooltip = "Влияние ожерелий и жетонов (кроме ожерелий с 'Длинное' в названии) на комфорт."
+	
+	Sandbox_necklaceLongComfyMod = "Модификатор для длинных ожерелий",
+	Sandbox_necklaceLongComfyMod_tooltip = "Влияние ожерелий с 'Длинное' в названии на комфорт."
+	
+	Sandbox_wristComfyMod = "Модификатор для запястий",
+	Sandbox_wristComfyMod_tooltip = "Влияние часов и украшений на запястьях на комфорт."
+	
+	Sandbox_handRingComfyMod = "Модификатор для колец",
+	Sandbox_handRingComfyMod_tooltip = "Влияние колец на руках на комфорт."
+	
+	Sandbox_bellyRingComfyMod = "Модификатор для пупка",
+	Sandbox_bellyRingComfyMod_tooltip = "Влияние пирсинга пупка (колец/шпильки/подвесок) на комфорт."
+	
+	
+	
+	
+
+	Sandbox_moodlesAffectComfort = "Иконки состояний влияют на комфорт",
+	Sandbox_moodlesAffectComfort_tooltip = "Некоторые иконки состояний будут влиять на уровень комфорта персонажа."
+	
+	Sandbox_hungerComfyMod = "Модификатор голода",
+	Sandbox_hungerComfyMod_tooltip = "Влияние иконки состояния голода на комфорт."
+	
+	Sandbox_thirstComfyMod = "Модификатор жажды",
+	Sandbox_thirstComfyMod_tooltip = "Влияние иконки состояния жажды на комфорт."
+	
+	Sandbox_sickComfyMod = "Модификатор болезни",
+	Sandbox_sickComfyMod_tooltip = "Влияние иконки состояния болезни на комфорт."
+	
+	Sandbox_hasColdComfyMod = "Модификатор простуды",
+	Sandbox_hasColdComfyMod_tooltip = "Влияние иконки состояния простуды (сопли) на комфорт."
+	
+	Sandbox_wetComfyMod = "Модификатор мокроты",
+	Sandbox_wetComfyMod_tooltip = "Влияние иконки состояния мокроты на комфорт."
+	
+	Sandbox_stressComfyMod = "Модификатор стресса",
+	Sandbox_stressComfyMod_tooltip = "Влияние иконки состояния стресса на комфорт."
+	
+	Sandbox_heavyLoadComfyMod = "Модификатор перегруза",
+	Sandbox_heavyLoadComfyMod_tooltip = "Влияние иконки состояния перегруза на комфорт."
+	
+	Sandbox_hyperthermiaComfyMod = "Модификатор гипертермии",
+	Sandbox_hyperthermiaComfyMod_tooltip = "Влияние иконки состояния перегрева на комфорт."
+	
+	Sandbox_hypothermiaComfyMod = "Модификатор гипотермии",
+	Sandbox_hypothermiaComfyMod_tooltip = "Влияние иконки состояния переохлаждения на комфорт."
+	
+	Sandbox_foodComfyMod = "Модификатор сытости",
+	Sandbox_foodComfyMod_tooltip = "Влияние иконки состояния сытости на комфорт."
+	
+	
+	
+	
+	Sandbox_scrapArmorReadMe = "ВНИМАНИЕ",
+	Sandbox_scrapArmorReadMe_tooltip = "Этот раздел актуален ТОЛЬКО при установленном и включенном моде 'Scrap Armor(new version)' от djvirus. Данный чекбокс ничего не делает, это просто заметка."
+	
+	Sandbox_swordSheathComfyMod = "Модификатор для ножен",
+	Sandbox_swordSheathComfyMod_tooltip = "Влияние ножен из Scrap Armor на комфорт."
+	
+	Sandbox_shieldSlotComfyMod = "Модификатор для щита",
+	Sandbox_shieldSlotComfyMod_tooltip = "Влияние щита из Scrap Armor на комфорт."
+	
+	Sandbox_torsoRigComfyMod = "Модификатор для нагрудника",
+	Sandbox_torsoRigComfyMod_tooltip = "Влияние одежды в слоте Torso Rig на комфорт."
+	
+	Sandbox_torsoRig2ComfyMod = "Модификатор для нагрудника 2",
+	Sandbox_torsoRig2ComfyMod_tooltip = "Влияние одежды в слоте Torso Rig 2 на комфорт."
+	
+	Sandbox_waistBagsComfyMod = "Модификатор для поясных сумок",
+	Sandbox_waistBagsComfyMod_tooltip = "Влияние поясных сумок на комфорт."
+	
+	Sandbox_upperArmLeftComfyMod = "Модификатор для левого плеча",
+	Sandbox_upperArmLeftComfyMod_tooltip = "Влияние защиты на левом плече на комфорт."
+	
+	Sandbox_upperArmRightComfyMod = "Модификатор для правого плеча",
+	Sandbox_upperArmRightComfyMod_tooltip = "Влияние защиты на правом плече на комфорт."
+	
+	Sandbox_thighLeftComfyMod = "Модификатор для левого бедра",
+	Sandbox_thighLeftComfyMod_tooltip = "Влияние защиты на левом бедре на комфорт."
+	
+	Sandbox_thighRightComfyMod = "Модификатор для правого бедра",
+	Sandbox_thighRightComfyMod_tooltip = "Влияние защиты на правом бедре на комфорт."
+	
+	Sandbox_lowerBodyComfyMod = "Модификатор для нижней части тела",
+	Sandbox_lowerBodyComfyMod_tooltip = "Влияние защиты на нижней части тела на комфорт."
+	
+	Sandbox_pauldronsComfyMod = "Модификатор для наплечников",
+	Sandbox_pauldronsComfyMod_tooltip = "Влияние наплечников на комфорт."
+	
+	Sandbox_handPlateLeftComfyMod = "Модификатор для левой руки",
+	Sandbox_handPlateLeftComfyMod_tooltip = "Влияние защиты на левой руке на комфорт."
+	
+	Sandbox_handPlateRightComfyMod = "Модификатор для правой руки",
+	Sandbox_handPlateRightComfyMod_tooltip = "Влияние защиты на правой руке на комфорт."
+	
+	Sandbox_shinPlateLeftComfyMod = "Модификатор для левой голени",
+	Sandbox_shinPlateLeftComfyMod_tooltip = "Влияние защиты на левой голени на комфорт."
+	
+	Sandbox_shinPlateRightComfyMod = "Модификатор для правой голени",
+	Sandbox_shinPlateRightComfyMod_tooltip = "Влияние защиты на правой голени на комфорт."
+	
+	Sandbox_specialMaskComfyMod = "Модификатор для специальной маски",
+	Sandbox_specialMaskComfyMod_tooltip = "Влияние специальной маски на комфорт."
+}
+}

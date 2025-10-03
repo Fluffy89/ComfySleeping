@@ -1,0 +1,894 @@
+VERSION = 1,
+
+/*********************************/
+/***** ComfySleeping General *****/
+/*********************************/
+option ComfySleeping.defaultComfort
+{
+	type = integer,
+	min = 0,
+	max = 100,
+	default = 100,
+	page = ComfySleeping,
+	translation = defaultComfort,
+}
+
+option ComfySleeping.pillowComfortBonus
+{
+	type = integer,
+	min = 0,
+	max = 100,
+	default = 10,
+	page = ComfySleeping,
+	translation = pillowComfortBonus,
+}
+
+option ComfySleeping.showPillowStatus
+{
+	type = boolean,
+	default = true,
+	page = ComfySleeping,
+	translation = showPillowStatus,
+}
+
+option ComfySleeping.cottonComfyMod
+{
+	type = integer,
+	min = -100,
+	max = 100,
+	default = 5,
+	page = ComfySleeping,
+	translation = cottonComfyMod,
+}
+
+option ComfySleeping.denimComfyMod
+{
+	type = integer,
+	min = -100,
+	max = 100,
+	default = -5,
+	page = ComfySleeping,
+	translation = denimComfyMod,
+}
+
+option ComfySleeping.leatherComfyMod
+{
+	type = integer,
+	min = -100,
+	max = 100,
+	default = -10,
+	page = ComfySleeping,
+	translation = leatherComfyMod,
+}
+
+option ComfySleeping.forceAwakeIfVeryUncomfy
+{
+	type = boolean,
+	default = true,
+	page = ComfySleeping,
+	translation = forceAwakeIfVeryUncomfy,
+}
+
+option ComfySleeping.forceAwakeIfSnug
+{
+	type = boolean,
+	default = true,
+	page = ComfySleeping,
+	translation = forceAwakeIfSnug,
+}
+
+option ComfySleeping.weaponsAffectComfort
+{
+	type = boolean,
+	default = true,
+	page = ComfySleeping,
+	translation = weaponsAffectComfort,
+}
+
+option ComfySleeping.backWeaponComfyMod
+{
+	type = integer,
+	min = -100,
+	max = 100,
+	default = -10,
+	page = ComfySleeping,
+	translation = backWeaponComfyMod,
+}
+
+option ComfySleeping.beltWeaponComfyMod
+{
+	type = integer,
+	min = -100,
+	max = 100,
+	default = -5,
+	page = ComfySleeping,
+	translation = beltWeaponComfyMod,
+}
+
+option ComfySleeping.dirtAndBloodAffectComfort
+{
+	type = boolean,
+	default = true,
+	page = ComfySleeping,
+	translation = dirtAndBloodAffectComfort,
+}
+
+option ComfySleeping.bloodComfyMod
+{
+	type = integer,
+	min = -100,
+	max = 100,
+	default = -5,
+	page = ComfySleeping,
+	translation = bloodComfyMod,
+}
+
+option ComfySleeping.bloodThreshold
+{
+	type = integer,
+	min = 0,
+	max = 100,
+	default = 40,
+	page = ComfySleeping,
+	translation = bloodThreshold,
+}
+
+option ComfySleeping.dirtComfyMod
+{
+	type = integer,
+	min = -100,
+	max = 100,
+	default = -5,
+	page = ComfySleeping,
+	translation = dirtComfyMod,
+}
+
+option ComfySleeping.dirtThreshold
+{
+	type = integer,
+	min = 0,
+	max = 100,
+	default = 40,
+	page = ComfySleeping,
+	translation = dirtThreshold,
+}
+
+option ComfySleeping.painChance
+{
+	type = integer,
+	min = 0,
+	max = 100,
+	default = 30,
+	page = ComfySleeping,
+	translation = painChance,
+}
+
+option ComfySleeping.painLowerBound
+{
+	type = integer,
+	min = 0,
+	max = 100,
+	default = 20,
+	page = ComfySleeping,
+	translation = painLowerBound,
+}
+
+option ComfySleeping.painUpperBound
+{
+	type = integer,
+	min = 0,
+	max = 100,
+	default = 50,
+	page = ComfySleeping,
+	translation = painUpperBound,
+}
+
+option ComfySleeping.uncomfy1Endurance
+{
+	type = integer,
+	min = 0,
+	max = 100,
+	default = 90,
+	page = ComfySleeping,
+	translation = uncomfy1Endurance,
+}
+
+option ComfySleeping.uncomfy2Endurance
+{
+	type = integer,
+	min = 0,
+	max = 100,
+	default = 80,
+	page = ComfySleeping,
+	translation = uncomfy2Endurance,
+}
+
+option ComfySleeping.uncomfy2Fatigue
+{
+	type = integer,
+	min = 0,
+	max = 100,
+	default = 30,
+	page = ComfySleeping,
+	translation = uncomfy2Fatigue,
+}
+
+option ComfySleeping.uncomfy3Endurance
+{
+	type = integer,
+	min = 0,
+	max = 100,
+	default = 70,
+	page = ComfySleeping,
+	translation = uncomfy3Endurance,
+}
+
+option ComfySleeping.uncomfy3Fatigue
+{
+	type = integer,
+	min = 0,
+	max = 100,
+	default = 50,
+	page = ComfySleeping,
+	translation = uncomfy3Fatigue,
+}
+
+option ComfySleeping.uncomfy4Endurance
+{
+	type = integer,
+	min = 0,
+	max = 100,
+	default = 40,
+	page = ComfySleeping,
+	translation = uncomfy4Endurance,
+}
+
+option ComfySleeping.uncomfy4Fatigue
+{
+	type = integer,
+	min = 0,
+	max = 100,
+	default = 70,
+	page = ComfySleeping,
+	translation = uncomfy4Fatigue,
+}
+
+
+
+
+
+
+/*********************************/
+/***** ComfySleeping Clothing ****/
+/*********************************/
+option ComfySleeping.clothingReadMe
+{
+	type = boolean,
+	default = true,
+	page = ComfySleepingClothing,
+	translation = clothingReadMe,
+}
+
+option ComfySleeping.hatComfyMod
+{
+	type = integer,
+	min = -100,
+	max = 100,
+	default = -15,
+	page = ComfySleepingClothing,
+	translation = hatComfyMod,
+}
+
+option ComfySleeping.maskComfyMod
+{
+	type = integer,
+	min = -100,
+	max = 100,
+	default = -10,
+	page = ComfySleepingClothing,
+	translation = maskComfyMod,
+}
+
+option ComfySleeping.fullSuitComfyMod
+{
+	type = integer,
+	min = -100,
+	max = 100,
+	default = -15,
+	page = ComfySleepingClothing,
+	translation = fullSuitComfyMod,
+}
+
+option ComfySleeping.fullJohnsComfyMod
+{
+	type = integer,
+	min = -100,
+	max = 100,
+	default = 5,
+	page = ComfySleepingClothing,
+	translation = fullJohnsComfyMod,
+}
+
+option ComfySleeping.eyesComfyMod
+{
+	type = integer,
+	min = -100,
+	max = 100,
+	default = -3,
+	page = ComfySleepingClothing,
+	translation = eyesComfyMod,
+}
+
+option ComfySleeping.scarfComfyMod
+{
+	type = integer,
+	min = -100,
+	max = 100,
+	default = 5,
+	page = ComfySleepingClothing,
+	translation = scarfComfyMod,
+}
+
+option ComfySleeping.shirtComfyMod
+{
+	type = integer,
+	min = -100,
+	max = 100,
+	default = 5,
+	page = ComfySleepingClothing,
+	translation = shirtComfyMod,
+}
+
+option ComfySleeping.jacketComfyMod
+{
+	type = integer,
+	min = -100,
+	max = 100,
+	default = -10,
+	page = ComfySleepingClothing,
+	translation = jacketComfyMod,
+}
+
+option ComfySleeping.ponchoComfyMod
+{
+	type = integer,
+	min = -100,
+	max = 100,
+	default = -10,
+	page = ComfySleepingClothing,
+	translation = ponchoComfyMod,
+}
+
+option ComfySleeping.jacketBulkyComfyMod
+{
+	type = integer,
+	min = -100,
+	max = 100,
+	default = -10,
+	page = ComfySleepingClothing,
+	translation = jacketBulkyComfyMod,
+}
+
+option ComfySleeping.boilerSuitComfyMod
+{
+	type = integer,
+	min = -100,
+	max = 100,
+	default = -10,
+	page = ComfySleepingClothing,
+	translation = boilerSuitComfyMod,
+}
+
+option ComfySleeping.dressComfyMod
+{
+	type = integer,
+	min = -100,
+	max = 100,
+	default = -10,
+	page = ComfySleepingClothing,
+	translation = dressComfyMod,
+}
+
+option ComfySleeping.fullTopComfyMod
+{
+	type = integer,
+	min = -100,
+	max = 100,
+	default = -20,
+	page = ComfySleepingClothing,
+	translation = fullTopComfyMod,
+}
+
+option ComfySleeping.torsoExtraComfyMod
+{
+	type = integer,
+	min = -100,
+	max = 100,
+	default = -10,
+	page = ComfySleepingClothing,
+	translation = torsoExtraComfyMod,
+}
+
+option ComfySleeping.vestComfyMod
+{
+	type = integer,
+	min = -100,
+	max = 100,
+	default = -10,
+	page = ComfySleepingClothing,
+	translation = vestComfyMod,
+}
+
+option ComfySleeping.handComfyMod
+{
+	type = integer,
+	min = -100,
+	max = 100,
+	default = -10,
+	page = ComfySleepingClothing,
+	translation = handComfyMod,
+}
+
+option ComfySleeping.beltExtraComfyMod
+{
+	type = integer,
+	min = -100,
+	max = 100,
+	default = -5,
+	page = ComfySleepingClothing,
+	translation = beltExtraComfyMod,
+}
+
+option ComfySleeping.ammoStrapComfyMod
+{
+	type = integer,
+	min = -100,
+	max = 100,
+	default = -5,
+	page = ComfySleepingClothing,
+	translation = ammoStrapComfyMod,
+}
+
+option ComfySleeping.beltComfyMod
+{
+	type = integer,
+	min = -100,
+	max = 100,
+	default = -5,
+	page = ComfySleepingClothing,
+	translation = beltComfyMod,
+}
+
+option ComfySleeping.pantsComfyMod
+{
+	type = integer,
+	min = -100,
+	max = 100,
+	default = -10,
+	page = ComfySleepingClothing,
+	translation = pantsComfyMod,
+}
+
+option ComfySleeping.halfJohnsComfyMod
+{
+	type = integer,
+	min = -100,
+	max = 100,
+	default = 5,
+	page = ComfySleepingClothing,
+	translation = halfJohnsComfyMod,
+}
+
+option ComfySleeping.shoesComfyMod
+{
+	type = integer,
+	min = -100,
+	max = 100,
+	default = -10,
+	page = ComfySleepingClothing,
+	translation = shoesComfyMod,
+}
+
+option ComfySleeping.underComfyMod
+{
+	type = integer,
+	min = -100,
+	max = 100,
+	default = 3,
+	page = ComfySleepingClothing,
+	translation = underComfyMod,
+}
+
+option ComfySleeping.tailComfyMod
+{
+	type = integer,
+	min = -100,
+	max = 100,
+	default = 0,
+	page = ComfySleepingClothing,
+	translation = tailComfyMod,
+}
+
+option ComfySleeping.bagComfyMod
+{
+	type = integer,
+	min = -100,
+	max = 100,
+	default = -20,
+	page = ComfySleepingClothing,
+	translation = bagComfyMod,
+}
+
+
+
+
+
+/*********************************/
+/***** ComfySleeping Jewelry *****/
+/*********************************/
+option ComfySleeping.bellyRingComfyMod
+{
+	type = integer,
+	min = -100,
+	max = 100,
+	default = 0,
+	page = ComfySleepingJewelry,
+	translation = bellyRingComfyMod,
+}
+
+option ComfySleeping.wristComfyMod
+{
+	type = integer,
+	min = -100,
+	max = 100,
+	default = -2,
+	page = ComfySleepingJewelry,
+	translation = wristComfyMod,
+}
+
+option ComfySleeping.handRingComfyMod
+{
+	type = integer,
+	min = -100,
+	max = 100,
+	default = 0,
+	page = ComfySleepingJewelry,
+	translation = handRingComfyMod,
+}
+
+option ComfySleeping.neckComfyMod
+{
+	type = integer,
+	min = -100,
+	max = 100,
+	default = 0,
+	page = ComfySleepingJewelry,
+	translation = neckComfyMod,
+}
+
+option ComfySleeping.necklaceComfyMod
+{
+	type = integer,
+	min = -100,
+	max = 100,
+	default = 0,
+	page = ComfySleepingJewelry,
+	translation = necklaceComfyMod,
+}
+
+option ComfySleeping.necklaceLongComfyMod
+{
+	type = integer,
+	min = -100,
+	max = 100,
+	default = 0,
+	page = ComfySleepingJewelry,
+	translation = necklaceLongComfyMod,
+}
+
+option ComfySleeping.noseComfyMod
+{
+	type = integer,
+	min = -100,
+	max = 100,
+	default = 0,
+	page = ComfySleepingJewelry,
+	translation = noseComfyMod,
+}
+
+option ComfySleeping.earsComfyMod
+{
+	type = integer,
+	min = -100,
+	max = 100,
+	default = 0,
+	page = ComfySleepingJewelry,
+	translation = earsComfyMod,
+}
+
+
+
+
+
+/*********************************/
+/***** ComfySleeping Moodles *****/
+/*********************************/
+
+option ComfySleeping.moodlesAffectComfort
+{
+	type = boolean,
+	default = true,
+	page = ComfySleepingMoodles,
+	translation = moodlesAffectComfort,
+}
+	
+option ComfySleeping.hungerComfyMod
+{
+	type = integer,
+	min = -100,
+	max = 100,
+	default = -2,
+	page = ComfySleepingMoodles,
+	translation = hungerComfyMod,
+}
+
+option ComfySleeping.thirstComfyMod
+{
+	type = integer,
+	min = -100,
+	max = 100,
+	default = -2,
+	page = ComfySleepingMoodles,
+	translation = thirstComfyMod,
+}
+
+option ComfySleeping.sickComfyMod
+{
+	type = integer,
+	min = -100,
+	max = 100,
+	default = -2,
+	page = ComfySleepingMoodles,
+	translation = sickComfyMod,
+}
+
+option ComfySleeping.hasColdComfyMod
+{
+	type = integer,
+	min = -100,
+	max = 100,
+	default = -2,
+	page = ComfySleepingMoodles,
+	translation = hasColdComfyMod,
+}
+
+option ComfySleeping.wetComfyMod
+{
+	type = integer,
+	min = -100,
+	max = 100,
+	default = -2,
+	page = ComfySleepingMoodles,
+	translation = wetComfyMod,
+}
+
+option ComfySleeping.stressComfyMod
+{
+	type = integer,
+	min = -100,
+	max = 100,
+	default = -2,
+	page = ComfySleepingMoodles,
+	translation = stressComfyMod,
+}
+
+option ComfySleeping.heavyLoadComfyMod
+{
+	type = integer,
+	min = -100,
+	max = 100,
+	default = -2,
+	page = ComfySleepingMoodles,
+	translation = heavyLoadComfyMod,
+}
+
+option ComfySleeping.hyperthermiaComfyMod
+{
+	type = integer,
+	min = -100,
+	max = 100,
+	default = -2,
+	page = ComfySleepingMoodles,
+	translation = hyperthermiaComfyMod,
+}
+
+option ComfySleeping.hypothermiaComfyMod
+{
+	type = integer,
+	min = -100,
+	max = 100,
+	default = -2,
+	page = ComfySleepingMoodles,
+	translation = hypothermiaComfyMod,
+}
+
+option ComfySleeping.foodComfyMod
+{
+	type = integer,
+	min = -100,
+	max = 100,
+	default = 2,
+	page = ComfySleepingMoodles,
+	translation = foodComfyMod,
+}
+
+/*********************************/
+/*** ComfySleeping Scrap Armor ***/
+/*********************************/
+option ComfySleeping.scrapArmorReadMe
+{
+	type = boolean,
+	default = true,
+	page = ComfySleepingScrapArmor,
+	translation = scrapArmorReadMe,
+}
+
+option ComfySleeping.swordSheathComfyMod
+{
+	type = integer,
+	min = -100,
+	max = 100,
+	default = -5,
+	page = ComfySleepingScrapArmor,
+	translation = swordSheathComfyMod,
+}
+
+option ComfySleeping.shieldSlotComfyMod
+{
+	type = integer,
+	min = -100,
+	max = 100,
+	default = -25,
+	page = ComfySleepingScrapArmor,
+	translation = shieldSlotComfyMod,
+}
+
+option ComfySleeping.torsoRigComfyMod
+{
+	type = integer,
+	min = -100,
+	max = 100,
+	default = -15,
+	page = ComfySleepingScrapArmor,
+	translation = torsoRigComfyMod,
+}
+
+option ComfySleeping.torsoRig2ComfyMod
+{
+	type = integer,
+	min = -100,
+	max = 100,
+	default = -15,
+	page = ComfySleepingScrapArmor,
+	translation = torsoRig2ComfyMod,
+}
+
+option ComfySleeping.waistBagsComfyMod
+{
+	type = integer,
+	min = -100,
+	max = 100,
+	default = -15,
+	page = ComfySleepingScrapArmor,
+	translation = waistBagsComfyMod,
+}
+
+option ComfySleeping.upperArmLeftComfyMod
+{
+	type = integer,
+	min = -100,
+	max = 100,
+	default = -15,
+	page = ComfySleepingScrapArmor,
+	translation = upperArmLeftComfyMod,
+}
+
+option ComfySleeping.upperArmRightComfyMod
+{
+	type = integer,
+	min = -100,
+	max = 100,
+	default = -15,
+	page = ComfySleepingScrapArmor,
+	translation = upperArmRightComfyMod,
+}
+
+option ComfySleeping.thighLeftComfyMod
+{
+	type = integer,
+	min = -100,
+	max = 100,
+	default = -15,
+	page = ComfySleepingScrapArmor,
+	translation = thighLeftComfyMod,
+}
+
+option ComfySleeping.thighRightComfyMod
+{
+	type = integer,
+	min = -100,
+	max = 100,
+	default = -15,
+	page = ComfySleepingScrapArmor,
+	translation = thighRightComfyMod,
+}
+
+option ComfySleeping.lowerBodyComfyMod
+{
+	type = integer,
+	min = -100,
+	max = 100,
+	default = -15,
+	page = ComfySleepingScrapArmor,
+	translation = lowerBodyComfyMod,
+}
+
+option ComfySleeping.pauldronsComfyMod
+{
+	type = integer,
+	min = -100,
+	max = 100,
+	default = -15,
+	page = ComfySleepingScrapArmor,
+	translation = pauldronsComfyMod,
+}
+
+option ComfySleeping.handPlateLeftComfyMod
+{
+	type = integer,
+	min = -100,
+	max = 100,
+	default = -15,
+	page = ComfySleepingScrapArmor,
+	translation = handPlateLeftComfyMod,
+}
+
+option ComfySleeping.handPlateRightComfyMod
+{
+	type = integer,
+	min = -100,
+	max = 100,
+	default = -15,
+	page = ComfySleepingScrapArmor,
+	translation = handPlateRightComfyMod,
+}
+
+option ComfySleeping.shinPlateLeftComfyMod
+{
+	type = integer,
+	min = -100,
+	max = 100,
+	default = -15,
+	page = ComfySleepingScrapArmor,
+	translation = shinPlateLeftComfyMod,
+}
+
+option ComfySleeping.shinPlateRightComfyMod
+{
+	type = integer,
+	min = -100,
+	max = 100,
+	default = -15,
+	page = ComfySleepingScrapArmor,
+	translation = shinPlateRightComfyMod,
+}
+
+option ComfySleeping.specialMaskComfyMod
+{
+	type = integer,
+	min = -100,
+	max = 100,
+	default = -10,
+	page = ComfySleepingScrapArmor,
+	translation = specialMaskComfyMod,
+}

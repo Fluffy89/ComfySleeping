@@ -1,0 +1,302 @@
+Sandbox_PL =
+{
+	Sandbox_ComfySleeping = "ComfySleeping - Ogólne",
+	Sandbox_ComfySleepingClothing = "ComfySleeping - Ubrania",
+	Sandbox_ComfySleepingMoodles = "ComfySleeping - Nastroje",
+	Sandbox_ComfySleepingJewelry = "ComfySleeping - Bi¿uteria",
+	Sandbox_ComfySleepingScrapArmor = "ComfySleeping - ScrapArmor",
+
+
+	Sandbox_ComfySleeping_Comfort = "Komfort:",
+	Sandbox_ComfySleeping_PillowNearby = "Spanie z poduszk¹:",
+	Sandbox_ComfySleeping_Pillow = "Poduszka",
+	Sandbox_ComfySleeping_Yes = "Tak",
+	Sandbox_ComfySleeping_No = "Nie",
+	Sandbox_ComfySleeping_VeryPoor = "Bardzo niekomfortowo",
+	Sandbox_ComfySleeping_Poor = "Niekomfortowo",
+	Sandbox_ComfySleeping_Bad = "Z³y",
+	Sandbox_ComfySleeping_Tolerable = "W granicach normy",
+	Sandbox_ComfySleeping_Ok = "W miare dobry",
+	Sandbox_ComfySleeping_SnugAsABug = "Jak u Pana Boga za piecem",
+	
+	
+	Sandbox_showPillowStatus = "Pokaz Status Poduszki",
+	Sandbox_showPillowStatus_tooltip = "Gdy wlaczone, po kliknieciu prawym przyciskiem myszki na lózko bedzie wyswietlana dodatkowa linijka okreslajaca obecnosc poduszki."
+
+
+	Sandbox_weaponsAffectComfort = "Bronie Wp³ywaj¹ na Komfort",
+	Sandbox_weaponsAffectComfort_tooltip = "Je¿eli jest w³¹czone, to bronie na plecach lub pasku bêd¹ wp³ywa³y na komfort postaci."
+
+	Sandbox_backWeaponComfyMod = "Wp³yw Broni na Plecach na Komfort",
+	Sandbox_backWeaponComfyMod_tooltip = "Zmiana wartoœci komfortu przez bronie znajduj¹ce siê na plecach."
+
+	Sandbox_beltWeaponComfyMod = "Wp³yw Broni na Pasku na Komfort",
+	Sandbox_beltWeaponComfyMod_tooltip = "Zmiana wartoœci komfortu przez bronie obecne na pasku / biodrach."
+
+	Sandbox_dirtAndBloodAffectComfort = "Brud / Krew Wp³ywa na Komfort",
+	Sandbox_dirtAndBloodAffectComfort_tooltip = "Je¿eli jest w³¹czone, to krew i brud przekraczaj¹ce pewien limit bêd¹ obni¿a³y komfort postaci."
+
+	Sandbox_bloodComfyMod = "Wp³yw Krwi na Komfort",
+	Sandbox_bloodComfyMod_tooltip = "Zmiana wartoœci komfortu przez krew, je¿eli przekracza ona pewn¹ wartoœæ."
+
+	Sandbox_bloodThreshold = "Wartoœæ Graniczna Krwi",
+	Sandbox_bloodThreshold_tooltip = "Kiedy œrednie zakrwawienie ubrañ przewy¿szy t¹ wartoœæ, zacznie wp³ywaæ na komfort postaci."
+
+	Sandbox_dirtComfyMod = "Wp³yw Brudu na Komfort",
+	Sandbox_dirtComfyMod_tooltip = "Zmiana wartoœci komfortu przez brud, je¿eli przekracza on pewn¹ wartoœæ."
+
+	Sandbox_dirtThreshold = "Wartoœc Graniczna Brudu",
+	Sandbox_dirtThreshold_tooltip = "Kiedy œrednie ubrudzenie ubrañ przewy¿szy t¹ wartoœæ, zacznie wp³ywaæ na komfort postaci."
+
+
+	Sandbox_defaultComfort = "Domyœlny komfort",
+	Sandbox_defaultComfort_tooltip = "Podstawowy poziom komfortu który bêdzie posiada³ gracz, w przypadku gdy ¿adne czynniki na niego nie wp³ywaj¹."
+
+	Sandbox_pillowComfortBonus = "Bonus do Komfortu od Poduszki",
+	Sandbox_pillowComfortBonus_tooltip = "Iloœæ komfortu jak¹ da poduszka podczas snu."
+
+	Sandbox_forceAwakeIfVeryUncomfy = "Wymuœ Obudzenie Gdy Jest 'Bardzo Niekomfortowo'",
+	Sandbox_forceAwakeIfVeryUncomfy_tooltip = "W³¹cza lub wy³¹cza bezsennoœc postaci oraz przebudzenia w ci¹gu nocy, w zale¿noœci od jej poziomu komfortu. Bêdzie to wystêpowaæ jedynie przy poziomach 'Bardzo Niekomfortowo' i 'Niekomforotwo'." 
+
+	Sandbox_forceAwakeIfSnug = "Wymuœ Obudzenie Gdy Jest 'Jak u Pana Boga za piecem'",
+	Sandbox_forceAwakeIfSnug_tooltip = "W³¹cza lub wy³¹cza automatyczne budzenie siê postaci, gdy jej komfort to 'Jak u Pana Boga za piecem' oraz poziom zmêczenia jest równy 0."
+
+	Sandbox_cottonComfyMod = "Zmiana Komfortu Ubrañ Materia³owych",
+	Sandbox_cottonComfyMod_tooltip = "Wspó³czynnik zmiany komfortu dla ka¿dych ubrañ naprawianych za pomoc¹ materia³u."
+
+	Sandbox_denimComfyMod = "Zmiana komfortu Ubrañ Jeansowych",
+	Sandbox_denimComfyMod_tooltip = "Wspó³czynnik zmiany komfortu dla ka¿dych ubrañ naprawianych za pomoc¹ kawa³ku jeansu."
+
+	Sandbox_leatherComfyMod = "Zmiana Komfortu Ubrañ Skórzanych",
+	Sandbox_leatherComfyMod_tooltip = "Wspó³czynnik zmiany komfortu dla ka¿dych ubrañ naprawianych za pomoc¹ kawa³ku skóry."
+
+	Sandbox_painChance = "Szansa na Ból po Przebudzeniu",
+	Sandbox_painChance_tooltip = "Szansa na ból szyji po nag³ym obudzeniu postaci. Je¿eli 'Wymuœ Obudzenie Gdy Jest 'Bardzo Niekomfortowo'' jest wy³¹czone, wiersz ten jest ignorowany."
+
+	Sandbox_painLowerBound = "Minimalny Czas Trwania Bólu",
+	Sandbox_painLowerBound_tooltip = "Minimalny czas trwania bólu wywo³any przez nag³e obudzenie."
+
+	Sandbox_painUpperBound = "Maksymalny Czas Trwania Bólu",
+	Sandbox_painUpperBound_tooltip = "Maksymalny czas trwania bólu wywo³any przez nag³e obudzenie."
+
+	Sandbox_uncomfy1Endurance = "Regeneracja Kondycji przy komforcie 'W granicach normy'",
+	Sandbox_uncomfy1Endurance_tooltip = "Maksymalna iloœc kondycji jak¹ mo¿e zregenerowaæ postaæ przy komforcie 'W granicach normy'. 100 oznacza pe³n¹ regeneracjê."
+
+	Sandbox_uncomfy2Endurance = "Regenracja Kondycji przy komforcie 'Z³y'",
+	Sandbox_uncomfy2Endurance_tooltip = "Maksymalna iloœc kondycji jak¹ mo¿e zregenerowaæ postaæ przy komforcie 'Z³y'. 100 oznacza pe³n¹ regeneracjê."
+
+	Sandbox_uncomfy2Fatigue = "Regenracja Zmêczenia przy komforcie 'Z³y'",
+	Sandbox_uncomfy2Fatigue_tooltip = "Maksymalna iloœc zmêczenia jak¹ mo¿e zregenerowaæ postaæ przy komforcie 'Z³y'. 0 oznacza pe³ne wyspanie."
+
+	Sandbox_uncomfy3Endurance = "Regeneracja Kondycji przy komforcie 'Niekomfortowo'",
+	Sandbox_uncomfy3Endurance_tooltip = "Maksymalna iloœc kondycji jak¹ mo¿e zregenerowaæ postaæ przy komforcie 'Niekomfortowo'. 100 oznacza pe³n¹ regeneracjê."
+
+	Sandbox_uncomfy3Fatigue = "Regeneracja Zmêczenia przy komforcie 'Niekomfortowo'",
+	Sandbox_uncomfy3Fatigue_tooltip = "Maksymalna iloœc zmêczenia jak¹ mo¿e zregenerowaæ postaæ przy komforcie 'Niekomfortowo'. 0 oznacza pe³ne wyspanie."
+
+	Sandbox_uncomfy4Endurance = "Regeneracja Kondycji przy komforcie 'Bardzo Niekomfortowo'",
+	Sandbox_uncomfy4Endurance_tooltip = "Maksymalna iloœc kondycji jak¹ mo¿e zregenerowaæ postaæ przy komforcie 'Bardzo Niekomfortowo'. 100 oznacza pe³n¹ regeneracjê."
+
+	Sandbox_uncomfy4Fatigue = "Regeneracja Zmêczenia przy komforcie 'Bardzo Niekomfortowo'",
+	Sandbox_uncomfy4Fatigue_tooltip = "Maksymalna iloœc zmêczenia jak¹ mo¿e zregenerowaæ postaæ przy komforcie 'Bardzo Niekomfortowo'. 0 oznacza pe³ne wyspanie."
+
+
+
+
+	Sandbox_clothingReadMe = "Ubrania ReadMe!",
+	Sandbox_clothingReadMe_tooltip = "Wszystkie poni¿sze ustawienia odnosz¹ sie do ubrañ bez okreœlonego typu materia³u. Ubrania z okreœlonym typem matiera³u s¹ konfigurowane przez odpowiednie ustawienia."
+
+	Sandbox_hatComfyMod = "Wp³yw Czapki na Komfort",
+	Sandbox_hatComfyMod_tooltip = "Zmiana wartoœci komfotu przez wszystko, co postaæ nosi na g³owie."
+
+	Sandbox_maskComfyMod = "Wp³yw Maski na Komfort",
+	Sandbox_maskComfyMod_tooltip = "Zmiana wartoœci komfortu przez maski."
+
+	Sandbox_fullSuitComfyMod = "Wp³yw Kombinezonów na Komfort",
+	Sandbox_fullSuitComfyMod_tooltip = "Zmiana wartoœci komfortu przez pe³ne kombinezony. (Spiffo, Hazmat itd.)"
+
+	Sandbox_fullJohnsComfyMod = "Wp³yw 'Long Johns' na Komfort",
+	Sandbox_fullJohnsComfyMod_tooltip = "Zmiana wartoœci komfortu przez d³ugie 'Long Johns' (Nie przez bieliznê)."
+
+	Sandbox_eyesComfyMod = "Wp³yw Okularów na Komfort",
+	Sandbox_eyesComfyMod_tooltip = "Zmiana wartoœci komfortu przez okulary / opaski na oczy."
+
+	Sandbox_scarfComfyMod = "Wp³yw Szalików na Komfort",
+	Sandbox_scarfComfyMod_tooltip = "Zmiana wartoœci komfortu przez elementy garderoby na szyji."
+
+	Sandbox_shirtComfyMod = "Wp³yw Koszulek na Komfort",
+	Sandbox_shirtComfyMod_tooltip = "Zmiana wartoœci komfortu przez jakiekolwiek topy/t-shirty/krótkie rêkawki/koszule."
+
+	Sandbox_jacketComfyMod = "Wp³yw Kurtek na Komfort",
+	Sandbox_jacketComfyMod_tooltip = "Zmiana wartoœci komfortu przez wszystko co kwalifikuje siê jako kurtka."
+
+	Sandbox_ponchoComfyMod = "Wp³yw Poncho na Komfort",
+	Sandbox_ponchoComfyMod_tooltip = "Zmiana wartoœci komfortu przez wszystko co kwalifikuje siê jako poncho."
+
+	Sandbox_jacketBulkyComfyMod = "Wp³yw 'Grubych' Kurtek na Komfort",
+	Sandbox_jacketBulkyComfyMod_tooltip = "Zmiana wartoœci komfortu przez 'Grube' Kurtki. Na czas tworzenia tego t³umaczenia wliczaj¹ siê w nie kurtki typu 'shell' i kurtki wyœcielane (zimowe)."
+
+	Sandbox_boilerSuitComfyMod = "Wp³yw Ubrañ Roboczych na Komfort",
+	Sandbox_boilerSuitComfyMod_tooltip = "Zmiana wartoœci komfortu przez ubrania robocze (ogrodniczki, jumpsuit'y)."
+
+	Sandbox_dressComfyMod = "Wp³yw Sukienek na Komfort",
+	Sandbox_dressComfyMod_tooltip = "Zmiana wartoœci komfortu przez sukienki."
+
+	Sandbox_fullTopComfyMod = "Wp³yw 'Pe³nych' Górnych Ubrañ na Komfort",
+	Sandbox_fullTopComfyMod_tooltip = "Zmiana wartoœci komfortu przez 'pe³ne' ubrania na górze cia³a. Na czas tworzenia tego t³umaczenia jest to jedynie Kombinezon Ghillie."
+
+	Sandbox_torsoExtraComfyMod = "Wp³yw Dodatkowych Ubrañ na Torsie na Komfort",
+	Sandbox_torsoExtraComfyMod_tooltip = "Zmiana wartoœci komfortu przez wszystko co mo¿e byæ za³o¿one na tors ponad warstwe ubrañ (fartuchy, woreczki z aminicj¹)."
+
+	Sandbox_vestComfyMod = "Wp³yw Kamizelek na Komfort",
+	Sandbox_vestComfyMod_tooltip = "Zmiana wartoœci komfortu przez kamizelki."
+
+	Sandbox_handComfyMod = "Wp³yw Rêkawiczek na Komfort",
+	Sandbox_handComfyMod_tooltip = "Zmiana wartoœci komfortu przez wszystko, co postaæ mo¿e za³o¿yæ na rêce."
+
+	Sandbox_beltComfyMod = "Wp³yw Paska na Komfort",
+	Sandbox_beltComfyMod_tooltip = "Zmiana wartoœci komfortu przez pasek."
+
+	Sandbox_beltExtraComfyMod = "Wp³yw Kabury na Komfort",
+	Sandbox_beltExtraComfyMod_tooltip = "Zmiana wartoœci komfortu przez kabury (pojedyñcze i podwójne)."
+
+	Sandbox_ammoStrapComfyMod = "Wp³yw Pasków Amunicji na Komfort",
+	Sandbox_ammoStrapComfyMod_tooltip = "Zmiana wartoœci komfortu przez paski (bandoliery) amunicji."
+
+	Sandbox_pantsComfyMod = "Wp³yw Spodni na Komfort",
+	Sandbox_pantsComfyMod_tooltip = "Zmiana wartoœci komfortu przez wszystko, co mo¿na za³o¿yc jako spodnie."
+
+	Sandbox_halfJohnsComfyMod = "Wp³yw Spodni 'Long Johns' na Komfort",
+	Sandbox_halfJohnsComfyMod_tooltip = "Zmiana wartoœci komfortu przez d³ugie spodnie 'Long John' (nie pe³ne 'Long Johns')."
+
+	Sandbox_shoesComfyMod = "Wp³yw Butów na Komfort",
+	Sandbox_shoesComfyMod_tooltip = "Zmiana wartoœci komfortu przez wszystko, co mo¿na za³o¿yc jako buty."
+
+	Sandbox_underComfyMod = "Wp³yw Bielizny na Komfort",
+	Sandbox_underComfyMod_tooltip = "Zmiana wartoœci komfortu przez wszystko, co jest bielizn¹ (biustonosze, majtki itp.)"
+
+	Sandbox_tailComfyMod = "Wp³yw Ogonów na Komfort",
+	Sandbox_tailComfyMod_tooltip = "Zmiana wartoœci komfortu przez wszystko, co zaliczane jest jako ogon. "
+
+	Sandbox_bagComfyMod = "Wp³yw Toreb / Plecaków na Komfort",
+	Sandbox_bagComfyMod_tooltip = "Zmiana wartoœci komfortu przez torby lub plecaki."
+
+
+
+
+
+	Sandbox_noseComfyMod = "Wp³yw Bi¿uterii na Nos na Komfort",
+	Sandbox_noseComfyMod_tooltip = "Zmiana wartoœci komfortu przez bi¿uterie zak³adan¹ na nos."
+
+	Sandbox_earsComfyMod = "Wp³yw Kolczyków na Komfort",
+	Sandbox_earsComfyMod_tooltip = "Zmiana wartoœci komfortu przez kolczyki."
+
+	Sandbox_neckComfyMod = "Wp³yw Akcesorii na Szyje na Komfort",
+	Sandbox_neckComfyMod_tooltip = "Zmiana wartoœci komfortu przez krawaty/muszki/chokery."
+
+	Sandbox_necklaceComfyMod = "Wp³yw Naszyjników na Komfort",
+	Sandbox_necklaceComfyMod_tooltip = "Zmiana wartoœci komfortu przez naszyjniki i nieœmiertelniki. NIE wliczaj¹ siê do tego naszyjniki z s³owem 'D³ugi' w nazwie."
+
+	Sandbox_necklaceLongComfyMod = "Wp³yw D³ugich Naszyjników na Komfort",
+	Sandbox_necklaceLongComfyMod_tooltip = "Zmiana wartoœci komfortu przez naszyjniki z s³owem 'D³ugi' w nazwie."
+
+	Sandbox_wristComfyMod = "Wp³yw Akcesorii na Nadgarstek na Komfort",
+	Sandbox_wristComfyMod_tooltip = "Zmiana wartoœci komfortu przez wszystko, co postaæ mo¿e za³o¿yæ na nadgarstek (zegarek, bransoletka)."
+
+	Sandbox_handRingComfyMod = "Wp³yw Pierœcionków na Komfort",
+	Sandbox_handRingComfyMod_tooltip = "Zmiana wartoœci komfortu przez pierœcionki na palcach."
+
+	Sandbox_bellyRingComfyMod = "Wp³yw Bi¿uterii na Brzuch na Komfort",
+	Sandbox_bellyRingComfyMod_tooltip = "Zmiana wartoœci komfortu przez bi¿uterie noszon¹ na brzuchu / pêpku."
+
+
+
+
+
+	Sandbox_moodlesAffectComfort = "Wp³yw Nastroju / Potrzeb Postaci na Komfort",
+	Sandbox_moodlesAffectComfort_tooltip = "W³¹czenie tej opcji spowoduje, ¿e potrzeby i nastrój postaci bêdzie wp³ywa³ na jej komfort."
+
+	Sandbox_hungerComfyMod = "Wp³yw G³odu na Komfort",
+	Sandbox_hungerComfyMod_tooltip = "Zmiana wartoœci komfortu wyowa³ana g³odem."
+
+	Sandbox_thirstComfyMod = "Wp³yw Pragnienia na Komfort",
+	Sandbox_thirstComfyMod_tooltip = "Zmiana wartoœci komfortu wywo³ana pragnieniem."
+
+	Sandbox_sickComfyMod = "Wp³yw Choroby na Komfort.",
+	Sandbox_sickComfyMod_tooltip = "Zmiana wartoœci komfortu wywo³ana chorobom."
+
+	Sandbox_hasColdComfyMod = "Wp³yw Przeziêbienia na Komfort",
+	Sandbox_hasColdComfyMod_tooltip = "Zmiana wartoœci komfortu wywo³ana przeziêbeniem."
+
+	Sandbox_wetComfyMod = "Wp³yw Wilgotnoœci na Komfort",
+	Sandbox_wetComfyMod_tooltip = "Zmiana wartoœci komfortu od poziomu zmoczenia postaci."
+
+	Sandbox_stressComfyMod = "Wp³yw Stresu na Komfort",
+	Sandbox_stressComfyMod_tooltip = "Zmiana wartoœci komfortu wywo³ana stresem."
+
+	Sandbox_heavyLoadComfyMod = "Wp³yw Przeci¹¿enia na Komfort",
+	Sandbox_heavyLoadComfyMod_tooltip = "Zmiana wartoœci komfortu wywo³ana przeci¹¿eniem."
+
+	Sandbox_hyperthermiaComfyMod = "Wp³yw Hipertermii na Komfort ",
+	Sandbox_hyperthermiaComfyMod_tooltip = "Zmiana wartoœci komfortu wywo³ana hipertermi¹ (gor¹cem)."
+
+	Sandbox_hypothermiaComfyMod = "Wp³yw Hipotermii na Komfort",
+	Sandbox_hypothermiaComfyMod_tooltip = "Zmiana wartoœci komfortu wywo³ana hipotermi¹ (zimnem)."
+
+	Sandbox_foodComfyMod = "Wp³yw Najedzenia na Komfort",
+	Sandbox_foodComfyMod_tooltip = "Zmiana wartoœci komfortu wywo³ana najedzeniem postaci."
+
+
+
+
+	Sandbox_scrapArmorReadMe = "PRZECZYTAJ!",
+	Sandbox_scrapArmorReadMe_tooltip = "Poni¿sze ustawienia mo¿na zignorowaæ, chyba, ¿e mod 'Scrap Armor' od djvirus jest zainstalowany i w³¹czony. Nie mam pojêcia dlaczego to t³umaczê."
+
+	Sandbox_swordSheathComfyMod = "Wp³yw Pokrowca Miecza na Komfort",
+	Sandbox_swordSheathComfyMod_tooltip = "Zmiana wartoœci komfortu przez pokrowiec na miecz."
+
+	Sandbox_shieldSlotComfyMod = "Wp³yw Tarczy na Komfort",
+	Sandbox_shieldSlotComfyMod_tooltip = "Zmiana wartoœci komfortu przez tarczê."
+
+	Sandbox_torsoRigComfyMod = "Wp³yw Toreb T³owia na Komfort",
+	Sandbox_torsoRigComfyMod_tooltip = "Zmiana wartoœci komfortu przez torby na tu³ów w po³o¿eniu 1."
+
+	Sandbox_torsoRig2ComfyMod = "Wp³yw Toreb T³owia na Komfort (Miejsce 2)",
+	Sandbox_torsoRig2ComfyMod_tooltip = "Zmiana wartoœci komfortu przez torby na tu³ów w po³o¿eniu 2."
+
+	Sandbox_waistBagsComfyMod = "Wp³yw Toreb na Talie na Komfort",
+	Sandbox_waistBagsComfyMod_tooltip = "Zmiana wartoœci komfortu przez torby zak³adane na talie."
+
+	Sandbox_upperArmLeftComfyMod = "Wp³yw Ubrañ na Lewe Ramie na Komfort",
+	Sandbox_upperArmLeftComfyMod_tooltip = "Zmiana wartoœci komfortu przez ubrania noszone na lewym ramieniu."
+
+	Sandbox_upperArmRightComfyMod = "Wp³yw Ubrañ na Prawe Ramie na Komfort",
+	Sandbox_upperArmRightComfyMod_tooltip = "Zmiana wartoœci komfortu przez ubrania noszone na prawym ramieniu."
+
+	Sandbox_thighLeftComfyMod = "Wp³yw Ubrañ na Lewym Udzie na Komfort",
+	Sandbox_thighLeftComfyMod_tooltip = "Zmiana wartoœci komfortu przez ubrania noszone na lewym udzie."
+
+	Sandbox_thighRightComfyMod = "Wp³yw Ubrañ na Prawym Udzie na Komfort",
+	Sandbox_thighRightComfyMod_tooltip = "Zmiana wartoœci komfortu przez ubrania noszone na prawym udzie."
+
+	Sandbox_lowerBodyComfyMod = "Wp³yw Ubrañ Dolnej Czêœci Cia³a na Komfort",
+	Sandbox_lowerBodyComfyMod_tooltip = "Zmiana wartoœci komfortu przez ubrania noszone w okolicach dolnej czêœci cia³a."
+
+	Sandbox_pauldronsComfyMod = "Wp³yw Naramienników na Komfort",
+	Sandbox_pauldronsComfyMod_tooltip = "Zmiana wartoœci komfortu przez naramienniki."
+
+	Sandbox_handPlateLeftComfyMod = "Wp³yw Ubrañ na Lewej Rêce na Komfort",
+	Sandbox_handPlateLeftComfyMod_tooltip = "Zmiana wartoœci komfortu przez ubrania noszone na lewej rêce."
+
+	Sandbox_handPlateRightComfyMod = "Wp³yw Ubrañ na Prawej Rêce na Komfort",
+	Sandbox_handPlateRightComfyMod_tooltip = "Zmiana wartoœci komfortu przez ubrania noszone na prawej rêce."
+
+	Sandbox_shinPlateLeftComfyMod = "Wp³yw Ubrañ na Lewym Piszczelu na Komfort",
+	Sandbox_shinPlateLeftComfyMod_tooltip = "Zmiana wartoœci komfortu przez ubrania noszone na lewym piszczelu."
+
+	Sandbox_shinPlateRightComfyMod = "Wp³yw Ubrañ na Prawym Piszczelu na Komfort",
+	Sandbox_shinPlateRightComfyMod_tooltip = "Zmiana wartoœci komfortu przez ubrania noszone na prawym piszczelu."
+
+	Sandbox_specialMaskComfyMod = "Wp³yw Specjalnych Masek na Komfort",
+	Sandbox_specialMaskComfyMod_tooltip = "Zmiana wartoœci komfortu specjalne maski. "
+}
