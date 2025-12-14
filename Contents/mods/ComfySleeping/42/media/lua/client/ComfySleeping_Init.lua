@@ -133,7 +133,7 @@ local function initClothingList()
 
 	for i = allItemsList:size() - 1, 0, -1 do
 		local item = allItemsList:get(i)
-		local itemType = item:getTypeString() -- getType() value changed to 'usertype'
+		local itemType = item:getLootType() -- previously getTypeString(), getType() value changed to 'usertype'
 		
 		if (itemType == "Clothing") then
 			local itemLocation = item:getBodyLocation()
