@@ -45,16 +45,16 @@ local function getMoodleComfortModifier(p)
 	local modifier = 0
 	local moodles = p:getMoodles()
 	
-	 modifier = modifier + (moodles:getMoodleLevel(MoodleType.Hungry) * options.hungerComfyMod) -- Hunger
-	 modifier = modifier + (moodles:getMoodleLevel(MoodleType.Sick) * options.sickComfyMod) -- Sick
-	 modifier = modifier + (moodles:getMoodleLevel(MoodleType.HasACold) * options.hasColdComfyMod) -- HasACold
-	 modifier = modifier + (moodles:getMoodleLevel(MoodleType.Wet) * options.wetComfyMod) -- Wet
-	 modifier = modifier + (moodles:getMoodleLevel(MoodleType.Stress) * options.stressComfyMod) -- Stress
-	 modifier = modifier + (moodles:getMoodleLevel(MoodleType.Thirst) * options.thirstComfyMod) -- Thirst
-	 modifier = modifier + (moodles:getMoodleLevel(MoodleType.HeavyLoad) * options.heavyLoadComfyMod) -- HeavyLoad
-	 modifier = modifier + (moodles:getMoodleLevel(MoodleType.Hyperthermia) * options.hyperthermiaComfyMod) -- Hyperthermia
-	 modifier = modifier + (moodles:getMoodleLevel(MoodleType.Hypothermia) * options.hypothermiaComfyMod) -- Hypothermia
-	 modifier = modifier + (moodles:getMoodleLevel(MoodleType.FoodEaten) * options.foodComfyMod) -- FoodEaten
+	 modifier = modifier + (moodles:getMoodleLevel(MoodleType.HUNGRY) * options.hungerComfyMod) -- Hunger
+	 modifier = modifier + (moodles:getMoodleLevel(MoodleType.SICK) * options.sickComfyMod) -- Sick
+	 modifier = modifier + (moodles:getMoodleLevel(MoodleType.HAS_A_COLD) * options.hasColdComfyMod) -- HasACold
+	 modifier = modifier + (moodles:getMoodleLevel(MoodleType.WET) * options.wetComfyMod) -- Wet
+	 modifier = modifier + (moodles:getMoodleLevel(MoodleType.STRESS) * options.stressComfyMod) -- Stress
+	 modifier = modifier + (moodles:getMoodleLevel(MoodleType.THIRST) * options.thirstComfyMod) -- Thirst
+	 modifier = modifier + (moodles:getMoodleLevel(MoodleType.HEAVY_LOAD) * options.heavyLoadComfyMod) -- HeavyLoad
+	 modifier = modifier + (moodles:getMoodleLevel(MoodleType.HYPERTHERMIA) * options.hyperthermiaComfyMod) -- Hyperthermia
+	 modifier = modifier + (moodles:getMoodleLevel(MoodleType.HYPOTHERMIA) * options.hypothermiaComfyMod) -- Hypothermia
+	 modifier = modifier + (moodles:getMoodleLevel(MoodleType.FOOD_EATEN) * options.foodComfyMod) -- FoodEaten
 	 
 	 return modifier
 end
@@ -304,6 +304,7 @@ local function mainFunc()
 		Events.OnTick.Remove(correctStats)
 		
 	end
+	
 end
 
 
@@ -399,7 +400,40 @@ end
 function contextMenuFilled(p, context, worldObjects)
 
 	-- Is the translated name for "Sleep" present in the context options?
-	local option = context:getOptionFromName(getText("ContextMenu_Sleep"))
+	-- local option = context:getOptionFromName(getText("ContextMenu_Sleep"))
+	
+	-- Iterating through options
+	-- PZ/media/lua/client/ISUI/ISContextMenu.lua - See ISContextMenu:hideSelfAndChildren2() for traversing sub-menu's.
+	print(#context.options .. " options in context menu.")
+	print("Printing options..")
+
+	-- Iterate through options present in world context menu
+	for index, option in ipairs(context.options) do
+		-- print(string.format("%-5s| %s", index, option.name))
+
+		-- Try to grab a submenu, nil if no submenu exists
+		local subMenu = context:getSubMenu(option.subOption)
+		if subMenu and subMenu.options then -- subMenu exists and has at least one option
+		
+			-- Check for 'Sleep' option in given submenu
+			for subIndex, subOption in ipairs(subMenu.options) do
+				-- print(string.format("    %-5s| %s", index .. "." .. subIndex, subOption.name))
+				
+				-- If current subOption is the "Sleep" context option, update the tooltip
+				if (subOption.name == getText("ContextMenu_Sleep")) then
+					local oldToolTip = subOption.toolTip.description
+					
+					local newToolTip = oldToolTip .. " <BR> " .. "Tooltip modified :)"
+					
+					subOption.toolTip.description = newToolTip
+					
+				end
+				
+			end
+			
+		end
+		
+	end
 	
 	-- If it is then:
 	if option ~= nil then 
