@@ -402,12 +402,18 @@ function contextMenuFilled(p, context, worldObjects)
 	-- Is the translated name for "Sleep" present in the context options?
 	-- local option = context:getOptionFromName(getText("ContextMenu_Sleep"))
 	
-	-- Iterating through options
 	-- PZ/media/lua/client/ISUI/ISContextMenu.lua - See ISContextMenu:hideSelfAndChildren2() for traversing sub-menu's.
-	print(#context.options .. " options in context menu.")
-	print("Printing options..")
+	-- print(#context.options .. " options in context menu.")
+	-- print("Printing options..")
+	
+	-- Is a pillow nearby?
+	options.addPillowComfort = findNearbyPillow()
 
-	-- Iterate through options present in world context menu
+	-- Sets pillowNearby to a translated "Yes" or "No" string if options.addPillowComfort is true or false respectively.
+	local pillowNearby = options.addPillowComfort and getText("Sandbox_ComfySleeping_Yes") or getText("Sandbox_ComfySleeping_No")
+
+	-- Must iterate through all context options and their sub-options since B42 moves the 'Sleep' option
+	-- to a sub-menu for items that players can sleep on.
 	for index, option in ipairs(context.options) do
 		-- print(string.format("%-5s| %s", index, option.name))
 
@@ -423,7 +429,14 @@ function contextMenuFilled(p, context, worldObjects)
 				if (subOption.name == getText("ContextMenu_Sleep")) then
 					local oldToolTip = subOption.toolTip.description
 					
-					local newToolTip = oldToolTip .. " <BR> " .. "Tooltip modified :)"
+					-- Update tooltip to include comfort and pillow status
+					local comfortLevel = getComfortString(currentComfort)
+					local newToolTip = oldToolTip .. " <BR> " .. getText("Sandbox_ComfySleeping_Comfort") .. " " .. comfortLevel
+					
+					if (options.showPillowStatus) then 
+						newToolTip = newToolTip .. " <BR> " .. getText("Sandbox_ComfySleeping_PillowNearby") .. " " .. pillowNearby
+						
+					end
 					
 					subOption.toolTip.description = newToolTip
 					
@@ -436,33 +449,29 @@ function contextMenuFilled(p, context, worldObjects)
 	end
 	
 	-- If it is then:
-	if option ~= nil then 
+	--if option ~= nil then 
 		
-		-- Is a pillow nearby?
-		options.addPillowComfort = findNearbyPillow()
-	
-		-- Sets pillowNearby to a translated "Yes" or "No" string if options.addPillowComfort is true or false respectively.
-		local pillowNearby = options.addPillowComfort and getText("Sandbox_ComfySleeping_Yes") or getText("Sandbox_ComfySleeping_No")
+		
 		
 		-- Get the unmodified tooltip for the Sleep context option
-		local tooltip = option.toolTip
+		--local tooltip = option.toolTip
 		
 		-- Gets translated string for comfort level (Snug, Ok, Tolerable, etc)
-		local comfortLevel = getComfortString(currentComfort)
+		--local comfortLevel = getComfortString(currentComfort)
 		
 		-- Format the strings and include line breaks
-		local comfortString = " <BR> " .. getText("Sandbox_ComfySleeping_Comfort") .. " " .. comfortLevel
+		--local comfortString = " <BR> " .. getText("Sandbox_ComfySleeping_Comfort") .. " " .. comfortLevel
 		
-		local pillowString = ""
+		--local pillowString = ""
 		
-		if (options.showPillowStatus) then 
-			pillowString = " <BR> " .. getText("Sandbox_ComfySleeping_PillowNearby") .. " " .. pillowNearby
-		end
+		--if (options.showPillowStatus) then 
+			--pillowString = " <BR> " .. getText("Sandbox_ComfySleeping_PillowNearby") .. " " .. pillowNearby
+		--end
 		
 		-- Set the tooltip to the old tooltip concatenated with the two formatted strings above
-		tooltip["description"] = tooltip["description"] .. comfortString .. pillowString
+		--tooltip["description"] = tooltip["description"] .. comfortString .. pillowString
 		
-	end
+	--end
 end
 
 
