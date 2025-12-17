@@ -7,7 +7,7 @@ Sandbox_EN =
 	Sandbox_ComfySleepingScrapArmor = "ComfySleeping - ScrapArmor",
 	
 	
-	Sandbox_ComfySleeping_Comfort = "Comfort:",
+	Sandbox_ComfySleeping_Comfort = "Character Comfort:",
 	Sandbox_ComfySleeping_PillowNearby = "Pillow Nearby:",
 	Sandbox_ComfySleeping_Pillow = "Pillow",
 	Sandbox_ComfySleeping_Yes = "Yes",

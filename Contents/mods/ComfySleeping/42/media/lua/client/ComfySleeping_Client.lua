@@ -208,8 +208,10 @@ local function correctStats()
 	local p = getPlayer()
 	local stats = p:getStats()
 	
-	local currFatigue = stats:getFatigue()
-	local currEndurance = stats:getEndurance()
+	-- getStats no longer returns stats for the float values of each moodle.
+	-- To access, need to use Stats.get(CharacterStat.STAT_NAME) to get this now.
+	local currFatigue = stats:get(CharacterStat.FATIGUE)
+	local currEndurance = stats:get(CharacterStat.ENDURANCE)
 	
 	local penaltyGainRate = 0.005
 	
@@ -217,8 +219,8 @@ local function correctStats()
 	if currentComfort <= 20 then
 		
 		-- Increment fatigue & endurnace if outside thresholds
-		if currFatigue < options.uncomfy4Fatigue then stats:setFatigue(currFatigue + penaltyGainRate) end
-		if currEndurance > options.uncomfy4Endurance then stats:setEndurance(currEndurance - penaltyGainRate) end
+		if currFatigue < options.uncomfy4Fatigue then stats:set(CharacterStat.FATIGUE, currFatigue + penaltyGainRate) end
+		if currEndurance > options.uncomfy4Endurance then stats:set(CharacterStat.ENDURANCE, currEndurance - penaltyGainRate) end
 		
 		-- Should forcePlayerAwake be added to Events.OnTick?
 		if (wakeupWasAdded == false) and (p:isAsleep()) and (options.forceAwakeIfVeryUncomfy) then
@@ -237,8 +239,8 @@ local function correctStats()
 	elseif currentComfort < 40 then
 	
 		-- Increment fatigue & endurance if outside thresholds
-		if currFatigue < options.uncomfy3Fatigue then stats:setFatigue(currFatigue + penaltyGainRate) end
-		if currEndurance > options.uncomfy3Endurance then stats:setEndurance(currEndurance - penaltyGainRate) end
+		if currFatigue < options.uncomfy3Fatigue then stats:set(CharacterStat.FATIGUE, currFatigue + penaltyGainRate) end
+		if currEndurance > options.uncomfy3Endurance then stats:set(CharacterStat.ENDURANCE, currEndurance - penaltyGainRate) end
 		
 		-- Should forcePlayerAwake be added?
 		if (wakeupWasAdded == false) and (p:isAsleep()) and (options.forceAwakeIfVeryUncomfy) then
@@ -257,14 +259,14 @@ local function correctStats()
 	elseif currentComfort < 60 then
 	
 	-- Increment fatigue & endurance if outside thresholds
-		if currFatigue < options.uncomfy2Fatigue then stats:setFatigue(currFatigue + penaltyGainRate) end
-		if currEndurance > options.uncomfy2Endurance then stats:setEndurance(currEndurance - penaltyGainRate) end
+		if currFatigue < options.uncomfy2Fatigue then stats:set(CharacterStat.FATIGUE, currFatigue + penaltyGainRate) end
+		if currEndurance > options.uncomfy2Endurance then stats:set(CharacterStat.ENDURANCE, currEndurance - penaltyGainRate) end
 	
 	-- Comfort is "Tolerable"
 	elseif currentComfort < 80 then
 	
 		-- Increment endurance only if outside threshold
-		if currEndurance > options.uncomfy1Endurance then stats:setEndurance(currEndurance - penaltyGainRate) end
+		if currEndurance > options.uncomfy1Endurance then stats:set(CharacterStat.ENDURANCE, currEndurance - penaltyGainRate) end
 	
 	-- Comfort is "Snug as a bug" (because it's funny)
 	elseif currentComfort > 100 then
@@ -278,7 +280,7 @@ local function correctStats()
 		-- Don't increment anything, instead force player awake once their fatigue is close to 0
 		if (currFatigue <= 0.01) and (options.forceAwakeIfSnug) then 
 				p:forceAwake()
-				stats:setFatigue(0)
+				stats:set(CharacterStat.FATIGUE, 0.0f)
 				
 		end
 	end
@@ -308,42 +310,42 @@ local function mainFunc()
 end
 
 
--- Function grabs player and vehicle objects and does the following:
--- If player is OUTSIDE a vehicle (v = nil), get their coordinates (X, Y, Z) and check all tiles within a radius
--- of 1 (including diagonals), then get the worldObjects (items on ground) on each tile. If an item of type
--- 'Base.Pillow' is found, then at least one pillow has been found.
-
--- If the player is INSIDE a vehicle (v ~= nil), get the total amount of pillows from ALL equipped inventories (should include hands & backpacks)
--- and return true if at least one pillow is found.
-function findNearbyPillow()
+-- Finds a nearby pillow by checking either on the ground a player clicked on, or by checking their inventory.
+-- If standing and right clicked somewhere (v = nil, contextGridSquare exists), check the squares world items to find a pillow item.
+-- If in vehicle (v exists, contextGridSquare is nil), check player inventory to find a pillow.
+-- Either one returns true on the first pillow item found that is in ComfySleeping.comfyPillowTypes().
+function findNearbyPillow(contextGridSquare)
 	local p = getPlayer()
 	local v = p:getVehicle()
 	
-	if (v == nil) then -- If player is out of a vehicle, check the ground
-		local px, py, pz = p:getX(), p:getY(), p:getZ()
+	if (v == nil and contextGridSquare) then -- If player is out of a vehicle, check the ground they clicked on
+		local comfyPillowTypes = ComfySleeping.getComfyPillowTypes()
+		local worldObjects = contextGridSquare:getWorldObjects()
 		
-		-- Check within 1 tile of player for items on the ground.
-		-- If the found items Base.Type is in ComfySleepings 'comfyPillowType' table, a valid pillow has been found
-		for xMod=-1, 1, 1 do
-			for yMod=-1, 1, 1 do
-				worldObjects = getSquare(px - xMod, py - yMod, pz):getWorldObjects()
-				
-				for i = worldObjects:size() - 1, 0, -1 do
-					local itemType = worldObjects:get(i):getItem():getFullType()
-					local itemName = getItemNameFromFullType(itemType)
-					
-					if (ComfySleeping.getComfyPillowTypes()[itemType]) then return true end
-				end
+		for i = 0, worldObjects:size() - 1 do
+			local itemType = worldObjects:get(i):getItem():getFullType()
+			
+			-- Item in world objects matches an item we've flagged as a pillow
+			if comfyPillowTypes[itemType] then
+				return true
+			
 			end
+		
 		end
 		
-	elseif (v ~= nil) then -- If player is in vehicle, check their inventory & hand
-		-- TODO: Adjust this to check for other pillow types Comfy Sleeping is aware of
-		local pillowsInInventory = p:getInventory():getItemsFromFullType("Base.Pillow")
+	elseif (v and contextGridSquare == nil) then -- If player is in vehicle, check their inventory & hand
+		local inventoryItems = p:getInventory():getItems()
+		local comfyPillowTypes = ComfySleeping.getComfyPillowTypes()
 		
-		 -- Only items of type Base.Pillow shouldbe found, 
-		 -- so if there's more than none, a pillow was found
-		if pillowsInInventory:size() > 0 then return true end
+		for i = 0, inventoryItems:size() - 1 do
+			local itemType = inventoryItems:get(i):getFullType()
+			
+			if (comfyPillowTypes[itemType]) then
+				return true
+			
+			end
+		
+		end
 	
 	end
 	
@@ -375,7 +377,7 @@ function ISVehicleMenu.onSleep(playerObj, vehicle)
 	local playerNum = playerObj:getPlayerNum()
 	
 	-- Is a pillow nearby?
-	options.addPillowComfort = findNearbyPillow()
+	options.addPillowComfort = findNearbyPillow(nil)
 
 	-- Formatting string for pillow status
 	local pillowNearby = options.addPillowComfort and getText("Sandbox_ComfySleeping_Yes") or getText("Sandbox_ComfySleeping_No")
@@ -398,16 +400,19 @@ end
 -- Checks through all valid context options supplied by Events.OnFillWorldObjectContextMenu
 -- and updates the Sleep context options tooltip to include comfort and pillow status.
 function contextMenuFilled(p, context, worldObjects)
-
-	-- Is the translated name for "Sleep" present in the context options?
-	-- local option = context:getOptionFromName(getText("ContextMenu_Sleep"))
-	
 	-- PZ/media/lua/client/ISUI/ISContextMenu.lua - See ISContextMenu:hideSelfAndChildren2() for traversing sub-menu's.
 	-- print(#context.options .. " options in context menu.")
 	-- print("Printing options..")
 	
-	-- Is a pillow nearby?
-	options.addPillowComfort = findNearbyPillow()
+	-- Grab clicked on grid square
+	local contextGridSquare = nil
+	if (#worldObjects > 0) then
+		contextGridSquare = worldObjects[1]:getSquare()
+		
+	end
+	
+	-- and check it for pillows. Helps to avoid tooltip clutter with vanilla ', with pillow' in Sleep tooltip.
+	options.addPillowComfort = findNearbyPillow(contextGridSquare)
 
 	-- Sets pillowNearby to a translated "Yes" or "No" string if options.addPillowComfort is true or false respectively.
 	local pillowNearby = options.addPillowComfort and getText("Sandbox_ComfySleeping_Yes") or getText("Sandbox_ComfySleeping_No")
@@ -433,10 +438,11 @@ function contextMenuFilled(p, context, worldObjects)
 					local comfortLevel = getComfortString(currentComfort)
 					local newToolTip = oldToolTip .. " <BR> " .. getText("Sandbox_ComfySleeping_Comfort") .. " " .. comfortLevel
 					
-					if (options.showPillowStatus) then 
-						newToolTip = newToolTip .. " <BR> " .. getText("Sandbox_ComfySleeping_PillowNearby") .. " " .. pillowNearby
+					-- Should be redundant now Comfy Sleeping follows same detection method of pillows as Vanilla does
+					-- if (options.showPillowStatus) then 
+						-- newToolTip = newToolTip .. " <BR> " .. getText("Sandbox_ComfySleeping_PillowNearby") .. " " .. pillowNearby
 						
-					end
+					-- end
 					
 					subOption.toolTip.description = newToolTip
 					
@@ -447,31 +453,7 @@ function contextMenuFilled(p, context, worldObjects)
 		end
 		
 	end
-	
-	-- If it is then:
-	--if option ~= nil then 
-		
-		
-		
-		-- Get the unmodified tooltip for the Sleep context option
-		--local tooltip = option.toolTip
-		
-		-- Gets translated string for comfort level (Snug, Ok, Tolerable, etc)
-		--local comfortLevel = getComfortString(currentComfort)
-		
-		-- Format the strings and include line breaks
-		--local comfortString = " <BR> " .. getText("Sandbox_ComfySleeping_Comfort") .. " " .. comfortLevel
-		
-		--local pillowString = ""
-		
-		--if (options.showPillowStatus) then 
-			--pillowString = " <BR> " .. getText("Sandbox_ComfySleeping_PillowNearby") .. " " .. pillowNearby
-		--end
-		
-		-- Set the tooltip to the old tooltip concatenated with the two formatted strings above
-		--tooltip["description"] = tooltip["description"] .. comfortString .. pillowString
-		
-	--end
+
 end
 
 

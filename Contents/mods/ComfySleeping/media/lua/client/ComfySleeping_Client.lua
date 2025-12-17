@@ -337,12 +337,18 @@ function findNearbyPillow()
 		end
 		
 	elseif (v ~= nil) then -- If player is in vehicle, check their inventory & hand
-		-- TODO: Adjust this to check for other pillow types Comfy Sleeping is aware of
-		local pillowsInInventory = p:getInventory():getItemsFromFullType("Base.Pillow")
+		local inventoryItems = p:getInventory():getItems()
+		local comfyPillowTypes = ComfySleeping.getComfyPillowTypes()
 		
-		 -- Only items of type Base.Pillow shouldbe found, 
-		 -- so if there's more than none, a pillow was found
-		if pillowsInInventory:size() > 0 then return true end
+		for i = 0, inventoryItems:size() - 1 do
+			local itemType = inventoryItems:get(i):getFullType()
+			
+			if (comfyPillowTypes[itemType]) then
+				return true
+			
+			end
+		
+		end
 	
 	end
 	
