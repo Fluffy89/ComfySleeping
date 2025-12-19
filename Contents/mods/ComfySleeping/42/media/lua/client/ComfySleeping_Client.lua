@@ -134,10 +134,11 @@ function getComfortModifier(p, wornItems)
 	--Iterate through worn clothing, adding each pieces comfort modifier
 	for i = 0, wornItems:size() - 1 do
 		local item = wornItems:get(i):getItem()
-		local itemName = getItemNameFromFullType(item:getFullType())
+		-- local itemName = getItemNameFromFullType(item:getFullType())
+		local itemType = item:getFullType()
 		
-		if (keyInTable(comfyClothes, itemName)) then -- Sanity check if clothing item is somehow not caught during init
-			modifier = modifier + comfyClothes[itemName]
+		if (keyInTable(comfyClothes, itemType)) then -- Sanity check if clothing item is somehow not caught during init
+			modifier = modifier + comfyClothes[itemType]
 		
 		end
 		
@@ -293,6 +294,7 @@ end
 local function mainFunc()
 	local p = getPlayer()
 	updateCurrentComfort()
+	print(currentComfort)
 	
 	if (p == nil) or (not p:isAlive()) then return end -- Is the player real, if so, are they alive?
 	

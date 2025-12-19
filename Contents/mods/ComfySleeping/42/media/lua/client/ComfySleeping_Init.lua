@@ -32,59 +32,76 @@ end
 -- Table key/value pairs are itemLocation & comfortModifier
 local function initComfortModMap()
 	ComfySleeping.comfortModMap = {
-		["FullHat"] = ComfySleeping.options.hatComfyMod,
-		["Hat"] = ComfySleeping.options.hatComfyMod,
-		["MaskFull"] = ComfySleeping.options.maskComfyMod,
-		["MaskEyes"] = ComfySleeping.options.maskComfyMod,
-		["Mask"] = ComfySleeping.options.maskComfyMod,
-		["FullSuitHead"] = ComfySleeping.options.fullSuitComfyMod,
-		["FullSuit"] = ComfySleeping.options.fullSuitComfyMod,
-		["Torso1Legs1"] = ComfySleeping.options.fullJohnsComfyMod,
-		["Eyes"] = ComfySleeping.options.eyesComfyMod,
-		["LeftEye"] = ComfySleeping.options.eyesComfyMod,
-		["RightEye"] = ComfySleeping.options.eyesComfyMod,
-		["Nose"] = ComfySleeping.options.noseComfyMod,
-		["Ears"] = ComfySleeping.options.earsComfyMod,
-		["EarTop"] = ComfySleeping.options.earsComfyMod,
-		["Scarf"] = ComfySleeping.options.scarfComfyMod,
-		["Neck"] = ComfySleeping.options.neckComfyMod,
-		["Necklace"] = ComfySleeping.options.necklaceComfyMod,
-		["Necklace_Long"] = ComfySleeping.options.necklaceLongComfyMod,
-		["TankTop"] = ComfySleeping.options.shirtComfyMod,
-		["Tshirt"] = ComfySleeping.options.shirtComfyMod,
-		["ShortSleeveShirt"] = ComfySleeping.options.shirtComfyMod,
-		["Shirt"] = ComfySleeping.options.shirtComfyMod,
-		["Jacket"] = ComfySleeping.options.jacketComfyMod,
-		["Jacket_Down"] = ComfySleeping.options.ponchoComfyMod,
-		["JacketHat"] = ComfySleeping.options.ponchoComfyMod,
-		["Jacket_Bulky"] = ComfySleeping.options.jacketBulkyComfyMod,
-		["JacketHat_Bulky"] = ComfySleeping.options.jacketBulkyComfyMod,
-		["BoilerSuit"] = ComfySleeping.options.boilerSuitComfyMod,
-		["Dress"] = ComfySleeping.options.dressComfyMod,
-		["FullTop"] = ComfySleeping.options.fullTopComfyMod,
-		["TorsoExtra"] = ComfySleeping.options.torsoExtraComfyMod,
-		["TorsoExtraVest"] = ComfySleeping.options.vestComfyMod,
-		["Hands"] = ComfySleeping.options.handComfyMod,
-		["RightWrist"] = ComfySleeping.options.wristComfyMod,
-		["LeftWrist"] = ComfySleeping.options.wristComfyMod,
-		["Right_MiddleFinger"] = ComfySleeping.options.handRingComfyMod,
-		["Left_MiddleFinger"] = ComfySleeping.options.handRingComfyMod,
-		["Right_RingFinger"] = ComfySleeping.options.handRingComfyMod,
-		["Left_RingFinger"] = ComfySleeping.options.handRingComfyMod,
-		["Belt"] = ComfySleeping.options.beltComfyMod,
-		["BeltExtra"] = ComfySleeping.options.beltExtraComfyMod,
-		["AmmoStrap"] = ComfySleeping.options.ammoStrapComfyMod,
-		["BellyButton"] = ComfySleeping.options.bellyRingComfyMod,
-		["Pants"] = ComfySleeping.options.pantsComfyMod,
-		["UnderwearTop"] = ComfySleeping.options.underComfyMod,
-		["UnderwearBottom"] = ComfySleeping.options.underComfyMod,
-		["UnderwearExtra1"] = ComfySleeping.options.underComfyMod,
-		["UnderwearExtra2"] = ComfySleeping.options.underComfyMod,
-		["Legs1"] = ComfySleeping.options.halfJohnsComfyMod,
-		["Shoes"] = ComfySleeping.options.shoesComfyMod,
-		["Tail"] = ComfySleeping.options.tailComfyMod,
+		[ItemBodyLocation.FULL_HAT] = ComfySleeping.options.hatComfyMod, -- "FullHat"
+		[ItemBodyLocation.HAT] = ComfySleeping.options.hatComfyMod,
+		[ItemBodyLocation.MASK_FULL] = ComfySleeping.options.maskComfyMod,
+		[ItemBodyLocation.MASK_EYES] = ComfySleeping.options.maskComfyMod,
+		[ItemBodyLocation.MASK] = ComfySleeping.options.maskComfyMod,
+		[ItemBodyLocation.FULL_SUIT_HEAD] = ComfySleeping.options.fullSuitComfyMod,
+		[ItemBodyLocation.FULL_SUIT] = ComfySleeping.options.fullSuitComfyMod,
+		[ItemBodyLocation.FULL_SUIT_SCBA] = ComfySleeping.options.fullSuitComfyMod,
+		[ItemBodyLocation.SCBA] = ComfySleeping.options.fullSuitComfyMod,
+		[ItemBodyLocation.SCBANOTANK] = ComfySleeping.options.fullSuitComfyMod,
+		[ItemBodyLocation.FULL_SUIT] = ComfySleeping.options.fullSuitComfyMod,
+		[ItemBodyLocation.TORSO1LEGS1] = ComfySleeping.options.fullJohnsComfyMod,
+		[ItemBodyLocation.EYES] = ComfySleeping.options.eyesComfyMod,
+		[ItemBodyLocation.LEFT_EYE] = ComfySleeping.options.eyesComfyMod,
+		[ItemBodyLocation.RIGHT_EYE] = ComfySleeping.options.eyesComfyMod,
+		[ItemBodyLocation.NOSE] = ComfySleeping.options.noseComfyMod,
+		[ItemBodyLocation.EARS] = ComfySleeping.options.earsComfyMod,
+		[ItemBodyLocation.EAR_TOP] = ComfySleeping.options.earsComfyMod,
+		[ItemBodyLocation.SCARF] = ComfySleeping.options.scarfComfyMod,
+		[ItemBodyLocation.NECK] = ComfySleeping.options.neckComfyMod,
+		[ItemBodyLocation.NECKLACE] = ComfySleeping.options.necklaceComfyMod,
+		[ItemBodyLocation.NECKLACE_LONG] = ComfySleeping.options.necklaceLongComfyMod,
+		[ItemBodyLocation.TANK_TOP] = ComfySleeping.options.shirtComfyMod,
+		[ItemBodyLocation.TSHIRT] = ComfySleeping.options.shirtComfyMod,
+		[ItemBodyLocation.SHORT_SLEEVE_SHIRT] = ComfySleeping.options.shirtComfyMod,
+		[ItemBodyLocation.SKIRT] = ComfySleeping.options.shirtComfyMod,
+		[ItemBodyLocation.LONG_SKIRT] = ComfySleeping.options.shirtComfyMod,
+		[ItemBodyLocation.JACKET] = ComfySleeping.options.jacketComfyMod,
+		[ItemBodyLocation.JACKET_DOWN] = ComfySleeping.options.ponchoComfyMod,
+		[ItemBodyLocation.JACKET_HAT] = ComfySleeping.options.ponchoComfyMod,
+		[ItemBodyLocation.JACKET_BULKY] = ComfySleeping.options.jacketBulkyComfyMod,
+		[ItemBodyLocation.JACKET_HAT_BULKY] = ComfySleeping.options.jacketBulkyComfyMod,
+		[ItemBodyLocation.BOILERSUIT] = ComfySleeping.options.boilerSuitComfyMod,
+		[ItemBodyLocation.DRESS] = ComfySleeping.options.dressComfyMod,
+		[ItemBodyLocation.LONG_DRESS] = ComfySleeping.options.dressComfyMod,
+		[ItemBodyLocation.FULL_TOP] = ComfySleeping.options.fullTopComfyMod,
+		[ItemBodyLocation.TORSO_EXTRA] = ComfySleeping.options.torsoExtraComfyMod,
+		[ItemBodyLocation.TORSO_EXTRA_VEST] = ComfySleeping.options.vestComfyMod,
+		[ItemBodyLocation.TORSO_EXTRA_VEST_BULLET] = ComfySleeping.options.vestComfyMod,
+		[ItemBodyLocation.HANDS] = ComfySleeping.options.handComfyMod,
+		[ItemBodyLocation.HANDS_LEFT] = ComfySleeping.options.handComfyMod,
+		[ItemBodyLocation.HANDS_RIGHT] = ComfySleeping.options.handComfyMod,
+		[ItemBodyLocation.RIGHT_WRIST] = ComfySleeping.options.wristComfyMod,
+		[ItemBodyLocation.LEFT_WRIST] = ComfySleeping.options.wristComfyMod,
+		[ItemBodyLocation.RIGHT_MIDDLE_FINGER] = ComfySleeping.options.handRingComfyMod,
+		[ItemBodyLocation.LEFT_MIDDLE_FINGER] = ComfySleeping.options.handRingComfyMod,
+		[ItemBodyLocation.RIGHT_RING_FINGER] = ComfySleeping.options.handRingComfyMod,
+		[ItemBodyLocation.LEFT_RING_FINGER] = ComfySleeping.options.handRingComfyMod,
+		[ItemBodyLocation.BELT] = ComfySleeping.options.beltComfyMod,
+		[ItemBodyLocation.BELT_EXTRA] = ComfySleeping.options.beltExtraComfyMod,
+		[ItemBodyLocation.ANKLE_HOLSTER] = ComfySleeping.options.beltExtraComfyMod,
+		[ItemBodyLocation.SHOULDER_HOLSTER] = ComfySleeping.options.beltExtraComfyMod,
+		[ItemBodyLocation.AMMO_STRAP] = ComfySleeping.options.ammoStrapComfyMod,
+		[ItemBodyLocation.BELLY_BUTTON] = ComfySleeping.options.bellyRingComfyMod,
+		[ItemBodyLocation.PANTS] = ComfySleeping.options.pantsComfyMod,
+		[ItemBodyLocation.PANTS_SKINNY] = ComfySleeping.options.pantsComfyMod,
+		[ItemBodyLocation.PANTS_EXTRA] = ComfySleeping.options.pantsComfyMod,
+		[ItemBodyLocation.SHORT_PANTS] = ComfySleeping.options.pantsComfyMod,
+		[ItemBodyLocation.UNDERWEAR] = ComfySleeping.options.underComfyMod,
+		[ItemBodyLocation.UNDERWEAR_TOP] = ComfySleeping.options.underComfyMod,
+		[ItemBodyLocation.UNDERWEAR_BOTTOM] = ComfySleeping.options.underComfyMod,
+		[ItemBodyLocation.UNDERWEAR_EXTRA1] = ComfySleeping.options.underComfyMod,
+		[ItemBodyLocation.UNDERWEAR_EXTRA2] = ComfySleeping.options.underComfyMod,
+		[ItemBodyLocation.LEGS1] = ComfySleeping.options.halfJohnsComfyMod,
+		[ItemBodyLocation.SHOES] = ComfySleeping.options.shoesComfyMod, -- "Shoes"
+		[ItemBodyLocation.TAIL] = ComfySleeping.options.tailComfyMod,
 		
 		-- Scrap Armor Body Locations
+		-- Scrap Armor hasn't been updated since 2023, will leave these here for now in case it's updated, but if not
+		-- these are pointless to keep.
 		["SwordSheath"] = ComfySleeping.options.swordSheathComfyMod,
 		["Back"] = ComfySleeping.options.swordSheathComfyMod,
 		["ShieldSlot"] = ComfySleeping.options.shieldSlotComfyMod,
@@ -127,38 +144,43 @@ end
 
 -- Finds all clothing items in PZ, and matches them to their corresponding comfort modifier as specified above
 -- in comfortModMap.
+-- Item.getScriptObjectFullType() used instead of Item.getDisplayName() as fullType is defined by vanilla and mods
+-- in English afaik, so this should avoid any potential linguistic bugs when assuming English names/characters.
 local function initClothingList()
 	-- Thanks to Collide in the PZ mod-dev channel for the help getting all clothing items
 	local allItemsList = getScriptManager():getAllItems()
 
 	for i = allItemsList:size() - 1, 0, -1 do
 		local item = allItemsList:get(i)
-		local itemType = item:getLootType() -- previously getTypeString(), getType() value changed to 'usertype'
+		local itemCategory = item:getLootType() -- previously getTypeString(), getType() value changed to 'usertype'
 		
-		if (itemType == "Clothing") then
+		if (itemCategory == "Clothing") then
 			local itemLocation = item:getBodyLocation()
 			local itemName = item:getDisplayName() -- getDisplayName()
+			local itemType = item:getScriptObjectFullType() -- getFullType() doesn't exist for Item objects
 			local fabricType = item:getFabricType()
 			
 			-- Is items location in the comfort map?
 			if (ComfySleeping.comfortModMap[itemLocation] ~= nil) then
-				ComfySleeping.clothingList[itemName] = ComfySleeping.comfortModMap[itemLocation]
+				ComfySleeping.clothingList[itemType] = ComfySleeping.comfortModMap[itemLocation]
 				
 			end
 			
 			-- Fallback if location isn't recognized, fabric type is used and overrides body location (if present)
-			if fabricType == "Cotton" then ComfySleeping.clothingList[itemName] = ComfySleeping.options.cottonComfyMod
-			elseif fabricType == "Denim" then ComfySleeping.clothingList[itemName] = ComfySleeping.options.denimComfyMod
-			elseif fabricType == "Leather" then ComfySleeping.clothingList[itemName] = ComfySleeping.options.leatherComfyMod end
+			if fabricType == "Cotton" then ComfySleeping.clothingList[itemType] = ComfySleeping.options.cottonComfyMod
+			elseif fabricType == "Denim" then ComfySleeping.clothingList[itemType] = ComfySleeping.options.denimComfyMod
+			elseif fabricType == "Leather" then ComfySleeping.clothingList[itemType] = ComfySleeping.options.leatherComfyMod end
 		
 		-- Same as above but for container items, meant for various backpacks, but apparently coolers also have a comfort modifier
 		-- because of this :)
-		elseif itemType == "Container" then
-			local itemName = item:getDisplayName() -- getDisplayName()
-			ComfySleeping.clothingList[itemName] = ComfySleeping.options.bagComfyMod
+		elseif itemCategory == "Container" then
+			local itemType = item:getScriptObjectFullType() -- getFullType() doesn't exist for Item objects
+			ComfySleeping.clothingList[itemType] = ComfySleeping.options.bagComfyMod
 		
 		end
+		
 	end
+	
 end
 
 
@@ -271,6 +293,7 @@ local function initComfySleeping()
 	initClothingList()
 	
 	print("Sandbox options & clothing list initialized!")
+	
 end
 
 Events.OnGameStart.Add(initComfySleeping)
