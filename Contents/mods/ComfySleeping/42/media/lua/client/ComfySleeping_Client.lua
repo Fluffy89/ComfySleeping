@@ -294,7 +294,6 @@ end
 local function mainFunc()
 	local p = getPlayer()
 	updateCurrentComfort()
-	print(currentComfort)
 	
 	if (p == nil) or (not p:isAlive()) then return end -- Is the player real, if so, are they alive?
 	
