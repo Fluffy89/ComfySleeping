@@ -144,7 +144,7 @@ function getComfortModifier(p, wornItems)
 		
 		if (item:IsClothing()) and (options.dirtAndBloodAffectComfort) then
 			avgBloodiness = avgBloodiness + item:getBloodLevel()
-			avgDirtiness = avgDirtiness + item:getDirtiness()
+			avgDirtiness = avgDirtiness + item:getDirtyness()
 			
 		end
 	end
