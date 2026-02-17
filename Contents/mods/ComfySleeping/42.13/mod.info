@@ -1,5 +1,9 @@
 name=ComfySleeping
 id=ComfySleeping
-description=Adds a comfort mechanic to sleeping, so the sleepwear you have on while sleeping helps or hinders sleep quality!
-poster=poster.png
 author=Fluffy89
+modversion=3.0.1
+versionMin=42.0
+versionMax=42.13
+description=Adds a comfort mechanic to sleeping, so the sleepwear you have on while sleeping helps or hinders sleep quality!
+icon=poster.png
+poster=poster.png
