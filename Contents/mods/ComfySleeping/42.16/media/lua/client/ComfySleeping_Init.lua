@@ -39,7 +39,7 @@ local function initComfortModMap()
 		[ItemBodyLocation.MASK] = ComfySleeping.options.maskComfyMod,
 		[ItemBodyLocation.FULL_SUIT_HEAD] = ComfySleeping.options.fullSuitComfyMod,
 		[ItemBodyLocation.FULL_SUIT] = ComfySleeping.options.fullSuitComfyMod,
-		[ItemBodyLocation.FULL_SUIT_SCBA] = ComfySleeping.options.fullSuitComfyMod,
+		[(ItemBodyLocation.FULL_SUIT_HEAD_SCBA or ItemBodyLocation.FULL_SUIT_SCBA)] = ComfySleeping.options.fullSuitComfyMod,
 		[ItemBodyLocation.SCBA] = ComfySleeping.options.fullSuitComfyMod,
 		[ItemBodyLocation.SCBANOTANK] = ComfySleeping.options.fullSuitComfyMod,
 		[ItemBodyLocation.FULL_SUIT] = ComfySleeping.options.fullSuitComfyMod,
@@ -191,6 +191,7 @@ end
 local function initComfySleeping()
 	local sandboxOptions = getSandboxOptions()
 	ComfySleeping.options.defaultComfort = sandboxOptions:getOptionByName("ComfySleeping.defaultComfort"):getValue() --100,
+	ComfySleeping.options.showNumericComfortValue = sandboxOptions:getOptionByName("ComfySleeping.showNumericComfortValue"):getValue() -- false
 	ComfySleeping.options.pillowComfortBonus = sandboxOptions:getOptionByName("ComfySleeping.pillowComfortBonus"):getValue() --100,
 	ComfySleeping.options.showPillowStatus = sandboxOptions:getOptionByName("ComfySleeping.showPillowStatus"):getValue() -- true
 	ComfySleeping.options.forceAwakeIfVeryUncomfy = sandboxOptions:getOptionByName("ComfySleeping.forceAwakeIfVeryUncomfy"):getValue() -- true,

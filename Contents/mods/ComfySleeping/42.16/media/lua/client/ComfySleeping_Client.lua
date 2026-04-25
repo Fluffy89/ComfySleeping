@@ -1,4 +1,4 @@
-require("ComfySleeping_InitComfyClothes")
+require("ComfySleeping_Init") -- _InitComfyClothes
 
 --  +-----------------------------------------------+
 --  |				GLOBALS & OPTIONS				|
@@ -185,6 +185,21 @@ function updateCurrentComfort()
 end
 
 
+-- Returns formatted string for comfort level, and optionally the numeric value.
+local function getComfortDisplayText()
+	local comfortText = getComfortString(currentComfort)
+	
+	if (not options.showNumericComfortValue) then
+		return comfortText
+	
+	else
+		return string.format("%s (%d)", comfortText, currentComfort)
+	
+	end
+
+end
+
+
 -- This MIGHT still be broken, but after about 2 rounds of testing this by sleeping twice then waiting a few hours, it seems that it might be fixed
 -- Function handles forcing the player awake at poor & very poor comfort levels. Only runs when it's added to Events.EveryHours via correctStats() function
 local function forcePlayerAwake()
@@ -285,6 +300,16 @@ local function correctStats()
 				
 		end
 	end
+	
+	-- Checking here instead of mainFunc so mainFunc can be moved to every hour instead of every minute.
+	-- Should now remove itself the tick the player wakes up, instead of needing to wait for an additional
+	-- minute to pass before checking.
+	if (not p:isAsleep()) and (correctStatsAdded) then
+		correctStatsAdded = false
+		Events.OnTick.Remove(correctStats)
+	
+	end
+	
 end
 
 
@@ -301,10 +326,6 @@ local function mainFunc()
 	if (p:isAsleep()) and (correctStatsAdded == false) then
 		correctStatsAdded = true
 		Events.OnTick.Add(correctStats)
-	
-	elseif (p:isAsleep() ~= true) and (correctStatsAdded == true) then
-		correctStatsAdded = false
-		Events.OnTick.Remove(correctStats)
 		
 	end
 	
@@ -377,6 +398,9 @@ function ISVehicleMenu.onSleep(playerObj, vehicle)
 	
 	local playerNum = playerObj:getPlayerNum()
 	
+	-- Force recalculation of comfort to ensure it's correct
+	updateCurrentComfort()
+	
 	-- Is a pillow nearby?
 	options.addPillowComfort = findNearbyPillow(nil)
 
@@ -384,7 +408,7 @@ function ISVehicleMenu.onSleep(playerObj, vehicle)
 	local pillowNearby = options.addPillowComfort and getText("Sandbox_ComfySleeping_Yes") or getText("Sandbox_ComfySleeping_No")
 	
 	-- Formatting string to include confirmation text, comfort, and pillow status.
-	local formattedString = getText("IGUI_ConfirmSleep") .. "\n\n" .. getText("Sandbox_ComfySleeping_Comfort") .. " " .. getComfortString(currentComfort) .. "\n\n" .. getText("Sandbox_ComfySleeping_PillowNearby") .. " " .. pillowNearby
+	local formattedString = getText("IGUI_ConfirmSleep") .. "\n\n" .. getText("Sandbox_ComfySleeping_Comfort") .. " " .. getComfortDisplayText() .. "\n\n" .. getText("Sandbox_ComfySleeping_PillowNearby") .. " " .. pillowNearby
 	
 	local modal = ISModalDialog:new(0,0, 250, 150, formattedString, true, nil, ISVehicleMenu.onConfirmSleep, playerNum, playerNum, nil);
 	
@@ -416,7 +440,7 @@ function contextMenuFilled(p, context, worldObjects)
 	options.addPillowComfort = findNearbyPillow(contextGridSquare)
 
 	-- Sets pillowNearby to a translated "Yes" or "No" string if options.addPillowComfort is true or false respectively.
-	local pillowNearby = options.addPillowComfort and getText("Sandbox_ComfySleeping_Yes") or getText("Sandbox_ComfySleeping_No")
+	-- local pillowNearby = options.addPillowComfort and getText("Sandbox_ComfySleeping_Yes") or getText("Sandbox_ComfySleeping_No")
 
 	-- Must iterate through all context options and their sub-options since B42 moves the 'Sleep' option
 	-- to a sub-menu for items that players can sleep on.
@@ -433,11 +457,15 @@ function contextMenuFilled(p, context, worldObjects)
 				
 				-- If current subOption is the "Sleep" context option, update the tooltip
 				if (subOption.name == getText("ContextMenu_Sleep")) then
+					-- Recalculate comfort now to ensure the value is correct. Doing so earlier is pointless
+					-- because before now, we don't know if the Sleep context option exists or not.
+					updateCurrentComfort()
+				
 					local oldToolTip = subOption.toolTip.description
 					
 					-- Update tooltip to include comfort and pillow status
-					local comfortLevel = getComfortString(currentComfort)
-					local newToolTip = oldToolTip .. " <BR> " .. getText("Sandbox_ComfySleeping_Comfort") .. " " .. comfortLevel
+					local comfortLevel = getComfortDisplayText()
+					local newTooltip = string.format("%s \n%s %s", oldToolTip, getText("Sandbox_ComfySleeping_Comfort"), comfortLevel)
 					
 					-- Should be redundant now Comfy Sleeping follows same detection method of pillows as Vanilla does
 					-- if (options.showPillowStatus) then 
@@ -467,7 +495,7 @@ local function initComfySleepingCore()
 	
 	options.addPillowComfort = false
 	
-	Events.EveryOneMinute.Add(mainFunc)
+	Events.EveryHours.Add(mainFunc)
 	
 	print("ComfySleeping Core Initialized Successfully! ")
 end

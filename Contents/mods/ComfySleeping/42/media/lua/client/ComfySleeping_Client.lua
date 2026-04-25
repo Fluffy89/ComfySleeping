@@ -184,6 +184,7 @@ function updateCurrentComfort()
 
 end
 
+
 -- Returns formatted string for comfort level, and optionally the numeric value.
 local function getComfortDisplayText()
 	local comfortText = getComfortString(currentComfort)
@@ -397,6 +398,9 @@ function ISVehicleMenu.onSleep(playerObj, vehicle)
 	
 	local playerNum = playerObj:getPlayerNum()
 	
+	-- Force recalculation of comfort to ensure it's correct
+	updateCurrentComfort()
+	
 	-- Is a pillow nearby?
 	options.addPillowComfort = findNearbyPillow(nil)
 
@@ -461,7 +465,7 @@ function contextMenuFilled(p, context, worldObjects)
 					
 					-- Update tooltip to include comfort and pillow status
 					local comfortLevel = getComfortDisplayText()
-					local newTooltip = newToolTip = oldToolTip .. " <BR> " .. getText("Sandbox_ComfySleeping_Comfort") .. " " .. comfortLevel
+					local newTooltip = string.format("%s \n%s %s", oldToolTip, getText("Sandbox_ComfySleeping_Comfort"), comfortLevel)
 					
 					-- Should be redundant now Comfy Sleeping follows same detection method of pillows as Vanilla does
 					-- if (options.showPillowStatus) then 
