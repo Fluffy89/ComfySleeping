@@ -453,6 +453,8 @@ function contextMenuFilled(p, context, worldObjects)
 				
 				-- If current subOption is the "Sleep" context option, update the tooltip
 				if (subOption.name == getText("ContextMenu_Sleep")) then
+					-- Recalculate comfort now to ensure the value is correct. Doing so earlier is pointless
+					-- because before now, we don't know if the Sleep context option exists or not.
 					updateCurrentComfort()
 				
 					local oldToolTip = subOption.toolTip.description
