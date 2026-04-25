@@ -184,6 +184,20 @@ function updateCurrentComfort()
 
 end
 
+-- Returns formatted string for comfort level, and optionally the numeric value.
+local function getComfortDisplayText()
+	local comfortText = getComfortString(currentComfort)
+	
+	if (not options.showNumericComfortValue) then
+		return comfortText
+	
+	else
+		return string.format("%s (%d)", comfortText, currentComfort)
+	
+	end
+
+end
+
 
 -- This MIGHT still be broken, but after about 2 rounds of testing this by sleeping twice then waiting a few hours, it seems that it might be fixed
 -- Function handles forcing the player awake at poor & very poor comfort levels. Only runs when it's added to Events.EveryHours via correctStats() function
@@ -390,7 +404,7 @@ function ISVehicleMenu.onSleep(playerObj, vehicle)
 	local pillowNearby = options.addPillowComfort and getText("Sandbox_ComfySleeping_Yes") or getText("Sandbox_ComfySleeping_No")
 	
 	-- Formatting string to include confirmation text, comfort, and pillow status.
-	local formattedString = getText("IGUI_ConfirmSleep") .. "\n\n" .. getText("Sandbox_ComfySleeping_Comfort") .. " " .. getComfortString(currentComfort) .. "\n\n" .. getText("Sandbox_ComfySleeping_PillowNearby") .. " " .. pillowNearby
+	local formattedString = getText("IGUI_ConfirmSleep") .. "\n\n" .. getText("Sandbox_ComfySleeping_Comfort") .. " " .. getComfortDisplayText() .. "\n\n" .. getText("Sandbox_ComfySleeping_PillowNearby") .. " " .. pillowNearby
 	
 	local modal = ISModalDialog:new(0,0, 250, 150, formattedString, true, nil, ISVehicleMenu.onConfirmSleep, playerNum, playerNum, nil);
 	
@@ -439,20 +453,13 @@ function contextMenuFilled(p, context, worldObjects)
 				
 				-- If current subOption is the "Sleep" context option, update the tooltip
 				if (subOption.name == getText("ContextMenu_Sleep")) then
+					updateCurrentComfort()
+				
 					local oldToolTip = subOption.toolTip.description
 					
 					-- Update tooltip to include comfort and pillow status
-					local comfortLevel = getComfortString(currentComfort)
-					
-					local newTooltip = oldToolTip
-					
-					if (options.showNumericComfortValue) then
-						newToolTip = oldToolTip .. " <BR> " .. getText("Sandbox_ComfySleeping_Comfort") .. " " .. comfortLevel .. " (" .. currentComfort .. ")"
-					
-					else
-						newToolTip = oldToolTip .. " <BR> " .. getText("Sandbox_ComfySleeping_Comfort") .. " " .. comfortLevel
-					
-					end
+					local comfortLevel = getComfortDisplayText()
+					local newTooltip = newToolTip = oldToolTip .. " <BR> " .. getText("Sandbox_ComfySleeping_Comfort") .. " " .. comfortLevel
 					
 					-- Should be redundant now Comfy Sleeping follows same detection method of pillows as Vanilla does
 					-- if (options.showPillowStatus) then 
