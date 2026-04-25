@@ -191,6 +191,7 @@ end
 local function initComfySleeping()
 	local sandboxOptions = getSandboxOptions()
 	ComfySleeping.options.defaultComfort = sandboxOptions:getOptionByName("ComfySleeping.defaultComfort"):getValue() --100,
+	ComfySleeping.options.showNumericComfortValue = sandboxOptions:getOptionByName("ComfySleeping.showNumericComfortValue"):getValue() -- false
 	ComfySleeping.options.pillowComfortBonus = sandboxOptions:getOptionByName("ComfySleeping.pillowComfortBonus"):getValue() --100,
 	ComfySleeping.options.showPillowStatus = sandboxOptions:getOptionByName("ComfySleeping.showPillowStatus"):getValue() -- true
 	ComfySleeping.options.forceAwakeIfVeryUncomfy = sandboxOptions:getOptionByName("ComfySleeping.forceAwakeIfVeryUncomfy"):getValue() -- true,

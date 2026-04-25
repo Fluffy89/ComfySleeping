@@ -1,0 +1,298 @@
+Sandbox_CN =
+{
+	Sandbox_ComfySleeping = "睡眠质量 - 常规",
+	Sandbox_ComfySleepingClothing = "睡眠质量 - 衣服",
+	Sandbox_ComfySleepingMoodles = "睡眠质量 - 状态",
+	Sandbox_ComfySleepingJewelry = "睡眠质量 - 饰品",
+	Sandbox_ComfySleepingScrapArmor = "睡眠质量 - ScrapArmor模组",
+ 
+ 
+	Sandbox_ComfySleeping_Comfort = "舒适度：",
+	Sandbox_ComfySleeping_PillowNearby = "有无枕头：",
+	Sandbox_ComfySleeping_Pillow = "枕头",
+	Sandbox_ComfySleeping_Yes = "有",
+	Sandbox_ComfySleeping_No = "没有",
+	Sandbox_ComfySleeping_VeryPoor = "极度恶劣",
+	Sandbox_ComfySleeping_Poor = "恶劣",
+	Sandbox_ComfySleeping_Bad = "并不舒服",
+	Sandbox_ComfySleeping_Tolerable = "马马虎虎",
+	Sandbox_ComfySleeping_Ok = "不错",
+	Sandbox_ComfySleeping_SnugAsABug = "舒服之极",
+	
+	
+	Sandbox_weaponsAffectComfort = "装备的武器会影响睡眠质量",
+	Sandbox_weaponsAffectComfort_tooltip = "如果启用，那么背后与腰上挂着的武器将会影响睡眠质量"
+	
+	Sandbox_backWeaponComfyMod = "背挂武器舒适度倍率",
+	Sandbox_backWeaponComfyMod_tooltip = "背后挂着的武器的舒适度倍率"
+	
+	Sandbox_beltWeaponComfyMod = "腰上武器舒适度倍率",
+	Sandbox_beltWeaponComfyMod_tooltip = "腰上挂着的武器的舒适度倍率"
+	
+	Sandbox_dirtAndBloodAffectComfort = "肮脏、血污会影响睡眠质量",
+	Sandbox_dirtAndBloodAffectComfort_tooltip = "如果启用，那么角色身上的血污与肮脏程度在超过阈值后将会开始影响睡眠质量"
+	
+	Sandbox_bloodComfyMod = "血污舒适度倍率",
+	Sandbox_bloodComfyMod_tooltip = "衣物的血污程度超过阈值后的舒适度倍率"
+	
+	Sandbox_bloodThreshold = "血污判定阈值",
+	Sandbox_bloodThreshold_tooltip = "当角色身上所有衣物的平均血污度超过阈值后，血污舒适度倍率将会启用"
+	
+	Sandbox_dirtComfyMod = "肮脏舒适度倍率",
+	Sandbox_dirtComfyMod_tooltip = "衣物的肮脏程度超过阈值后的舒适度倍率"
+	
+	Sandbox_dirtThreshold = "肮脏判定阈值",
+	Sandbox_dirtThreshold_tooltip = "当角色身上所有衣物的平均肮脏度超过阈值后，肮脏舒适度倍率将会启用"
+ 
+ 
+	Sandbox_defaultComfort = "默认舒适度",
+	Sandbox_defaultComfort_tooltip = "玩家在不受外力影响下的基础舒适度"
+ 
+	Sandbox_pillowComfortBonus = "枕头舒适度加成",
+	Sandbox_pillowComfortBonus_tooltip = "一个枕头能带来的舒适度加成"
+ 
+	Sandbox_forceAwakeIfVeryUncomfy = "睡眠质量恶劣导致强制醒来",
+	Sandbox_forceAwakeIfVeryUncomfy_tooltip = "开启或关闭让玩家强制醒来的功能，取决于玩家的舒适度。该功能仅会在睡眠质量为“恶劣”或“极度恶劣”时起效"
+ 
+	Sandbox_forceAwakeIfSnug = "睡眠质量舒服之极导致强制醒来",
+	Sandbox_forceAwakeIfSnug_tooltip = "开启或关闭让玩家强制醒来的功能，该功能仅会在玩家的疲劳度降为0、且睡眠质量为舒服之极时起效"
+ 
+	Sandbox_cottonComfyMod = "棉质衣物倍率",
+	Sandbox_cottonComfyMod_tooltip = "调整用碎布条修复的服装的舒适度倍率"
+ 
+	Sandbox_denimComfyMod = "牛仔布料衣物倍率",
+	Sandbox_denimComfyMod_tooltip = "调整用牛仔布修复的服装的舒适度倍率"
+ 
+	Sandbox_leatherComfyMod = "皮革衣物倍率",
+	Sandbox_leatherComfyMod_tooltip = "调整用皮革条修复的服装的舒适度倍率"
+ 
+	Sandbox_painChance = "落枕几率",
+	Sandbox_painChance_tooltip = "强制醒来时玩家脖子疼痛的几率。如果“睡眠质量恶劣导致强制醒来”选项关闭则不起效"
+ 
+	Sandbox_painLowerBound = "落枕持续时间下限",
+	Sandbox_painLowerBound_tooltip = "强制醒来后脖子疼痛的持续时间上限"
+ 
+	Sandbox_painUpperBound = "落枕持续时间上限",
+	Sandbox_painUpperBound_tooltip = "强制醒来后脖子疼痛的持续时间下限"
+ 
+	Sandbox_uncomfy1Endurance = "马马虎虎舒适度的体力惩罚",
+	Sandbox_uncomfy1Endurance_tooltip = "当玩家的睡眠质量为“马马虎虎”时体力所能恢复的上限。数值100为完全恢复"
+ 
+	Sandbox_uncomfy2Endurance = "并不舒服舒适度的体力惩罚",
+	Sandbox_uncomfy2Endurance_tooltip = "当玩家的睡眠质量为“并不舒服”时体力所能恢复的上限。数值100为完全恢复"
+ 
+	Sandbox_uncomfy2Fatigue = "并不舒服舒适度的疲劳度惩罚",
+	Sandbox_uncomfy2Fatigue_tooltip = "当玩家的睡眠质量为“并不舒服”时疲劳度所能恢复的上限。数值0为休息充分"
+ 
+	Sandbox_uncomfy3Endurance = "恶劣舒适度的体力惩罚",
+	Sandbox_uncomfy3Endurance_tooltip = "当玩家的睡眠质量为“恶劣”时体力所能恢复到的上限。数值100为完全恢复"
+ 
+	Sandbox_uncomfy3Fatigue = "恶劣舒适度的疲劳度惩罚",
+	Sandbox_uncomfy3Fatigue_tooltip = "当玩家的睡眠质量为“恶劣”时疲劳度所能恢复的上限。数值0为休息充分"
+ 
+	Sandbox_uncomfy4Endurance = "非常恶劣舒适度的体力惩罚",
+	Sandbox_uncomfy4Endurance_tooltip = "当玩家的睡眠质量为“非常恶劣”时体力所能恢复到的上限。数值100为完全恢复"
+ 
+	Sandbox_uncomfy4Fatigue = "非常恶劣舒适度的疲劳度惩罚",
+	Sandbox_uncomfy4Fatigue_tooltip = "当玩家的睡眠质量为“非常恶劣”时疲劳度所能恢复的上限。数值0为休息充分"
+ 
+ 
+ 
+ 
+	Sandbox_clothingReadMe = "服装必读",
+	Sandbox_clothingReadMe_tooltip = "这里的所有选项只对没有设置布料类型的衣物起效。任何被设置了布料类型的衣物都会无视此处的选项效果"
+ 
+	Sandbox_hatComfyMod = "帽子舒适度倍率",
+	Sandbox_hatComfyMod_tooltip = "调整玩家戴在头上的东西的舒适度倍率"
+ 
+	Sandbox_maskComfyMod = "面具舒适度倍率",
+	Sandbox_maskComfyMod_tooltip = "调整所有面具的舒适度倍率"
+ 
+	Sandbox_fullSuitComfyMod = "全身装舒适度倍率",
+	Sandbox_fullSuitComfyMod_tooltip = "调整防化服与斯皮福玩偶服的舒适度倍率"
+ 
+	Sandbox_fullJohnsComfyMod = "秋裤舒适度倍率",
+	Sandbox_fullJohnsComfyMod_tooltip = "调整穿在外裤里头的秋裤的舒适度（不是内裤）"
+ 
+	Sandbox_eyesComfyMod = "眼镜舒适度倍率",
+	Sandbox_eyesComfyMod_tooltip = "调整所有眼镜或眼罩的舒适度倍率"
+ 
+	Sandbox_scarfComfyMod = "围巾舒适度倍率",
+	Sandbox_scarfComfyMod_tooltip = "调整围巾的舒适度倍率"
+ 
+	Sandbox_shirtComfyMod = "衬衣舒适度倍率",
+	Sandbox_shirtComfyMod_tooltip = "调整背心、T恤、衬衫与短袖上衣的舒适度倍率"
+ 
+	Sandbox_jacketComfyMod = "外套舒适度倍率",
+	Sandbox_jacketComfyMod_tooltip = "调整所有外套类衣物的舒适度倍率"
+ 
+	Sandbox_ponchoComfyMod = "斗篷舒适度倍率",
+	Sandbox_ponchoComfyMod_tooltip = "调整所有斗篷类服装的舒适度倍率"
+ 
+	Sandbox_jacketBulkyComfyMod = "厚外套舒适度倍率",
+	Sandbox_jacketBulkyComfyMod_tooltip = "调整所有厚重的外套的舒适度倍率。例如休闲夹克与羽绒服等外套"
+ 
+	Sandbox_boilerSuitComfyMod = "连体服舒适度倍率",
+	Sandbox_boilerSuitComfyMod_tooltip = "调整所有连体服与连衫裤的舒适度倍率"
+ 
+	Sandbox_dressComfyMod = "裙子舒适度倍率",
+	Sandbox_dressComfyMod_tooltip = "调整所有裙类服装的舒适度倍率"
+ 
+	Sandbox_fullTopComfyMod = "连体类大衣舒适度倍率",
+	Sandbox_fullTopComfyMod_tooltip = "调整连体类大衣的舒适度倍率。例如吉利服上衣"
+ 
+	Sandbox_torsoExtraComfyMod = "额外躯干服装舒适度倍率",
+	Sandbox_torsoExtraComfyMod_tooltip = "调整所有穿在玩家躯干之外的额外服装的舒适度倍率。例如围裙等"
+ 
+	Sandbox_vestComfyMod = "背心舒适度倍率",
+	Sandbox_vestComfyMod_tooltip = "调整背心的舒适度倍率"
+ 
+	Sandbox_handComfyMod = "手部舒适度倍率",
+	Sandbox_handComfyMod_tooltip = "调整所有戴在玩家手上的东西的舒适度倍率。例如手套"
+ 
+	Sandbox_beltComfyMod = "腰带舒适度倍率",
+	Sandbox_beltComfyMod_tooltip = "调整腰带的舒适度倍率"
+ 
+	Sandbox_beltExtraComfyMod = "枪套舒适度倍率",
+	Sandbox_beltExtraComfyMod_tooltip = "调整枪套的舒适度倍率"
+ 
+	Sandbox_ammoStrapComfyMod = "子弹背带舒适度倍率",
+	Sandbox_ammoStrapComfyMod_tooltip = "调整子弹背带与霰弹背带的舒适度倍率"
+ 
+	Sandbox_pantsComfyMod = "裤子舒适度倍率",
+	Sandbox_pantsComfyMod_tooltip = "调整所有裤类服装的舒适度倍率"
+ 
+	Sandbox_halfJohnsComfyMod = "打底裤舒适度倍率",
+	Sandbox_halfJohnsComfyMod_tooltip = "调整打底裤的舒适度倍率"
+ 
+	Sandbox_shoesComfyMod = "脚部舒适度倍率",
+	Sandbox_shoesComfyMod_tooltip = "调整所有穿在玩家脚上的服装的舒适度倍率"
+ 
+	Sandbox_underComfyMod = "内衣舒适度倍率",
+	Sandbox_underComfyMod_tooltip = "调整所有内衣类服装的舒适度倍率"
+ 
+	Sandbox_tailComfyMod = "尾巴舒适度倍率",
+	Sandbox_tailComfyMod_tooltip = "调整所有尾巴类服装的舒适度倍率"
+ 
+	Sandbox_bagComfyMod = "包包舒适度倍率",
+	Sandbox_bagComfyMod_tooltip = "调整包包的舒适度倍率"
+ 
+ 
+ 
+ 
+ 
+	Sandbox_noseComfyMod = "鼻部舒适度倍率",
+	Sandbox_noseComfyMod_tooltip = "调整鼻环与鼻钉的舒适度倍率"
+ 
+	Sandbox_earsComfyMod = "耳部舒适度倍率",
+	Sandbox_earsComfyMod_tooltip = "调整耳环与耳钉的舒适度倍率"
+ 
+	Sandbox_neckComfyMod = "脖子舒适度倍率",
+	Sandbox_neckComfyMod_tooltip = "调整领带、蝴蝶结与项圈等服装的舒适度倍率 for ties/bowties/chokers."
+ 
+	Sandbox_necklaceComfyMod = "首饰舒适度倍率",
+	Sandbox_necklaceComfyMod_tooltip = "调整项链与狗牌等首饰的舒适度倍率 。但不包括“长项链”"
+ 
+	Sandbox_necklaceLongComfyMod = "长项链舒适度倍率",
+	Sandbox_necklaceLongComfyMod_tooltip = "调整长项链的舒适度倍率"
+ 
+	Sandbox_wristComfyMod = "腕部舒适度倍率",
+	Sandbox_wristComfyMod_tooltip = "调整所有戴在腕部的物品的舒适度倍率。例如手表、手镯等"
+ 
+	Sandbox_handRingComfyMod = "指环舒适度倍率",
+	Sandbox_handRingComfyMod_tooltip = "调整指环的舒适度倍率"
+ 
+	Sandbox_bellyRingComfyMod = "肚脐舒适度倍率",
+	Sandbox_bellyRingComfyMod_tooltip = "调整所有佩戴在玩家肚脐的饰品的舒适度倍率。例如肚脐吊坠、肚脐环与肚脐钉等"
+ 
+ 
+ 
+ 
+ 
+	Sandbox_moodlesAffectComfort = "状态影响舒适度",
+	Sandbox_moodlesAffectComfort_tooltip = "启用会使玩家的状态对睡眠质量产生影响"
+ 
+	Sandbox_hungerComfyMod = "饥饿舒适度倍率",
+	Sandbox_hungerComfyMod_tooltip = "调整饥饿的舒适度倍率"
+ 
+	Sandbox_thirstComfyMod = "口渴舒适度倍率",
+	Sandbox_thirstComfyMod_tooltip = "调整口渴的舒适度倍率"
+ 
+	Sandbox_sickComfyMod = "生病舒适度倍率",
+	Sandbox_sickComfyMod_tooltip = "调整生病的舒适度倍率"
+ 
+	Sandbox_hasColdComfyMod = "感冒舒适度倍率",
+	Sandbox_hasColdComfyMod_tooltip = "调整感冒的舒适度倍率。只对恶化到吸鼻涕阶段的疾病状态起效"
+ 
+	Sandbox_wetComfyMod = "湿透舒适度倍率",
+	Sandbox_wetComfyMod_tooltip = "调整湿透状态的舒适度倍率"
+ 
+	Sandbox_stressComfyMod = "焦虑舒适度倍率",
+	Sandbox_stressComfyMod_tooltip = "调整焦虑的舒适度倍率"
+ 
+	Sandbox_heavyLoadComfyMod = "负重舒适度倍率",
+	Sandbox_heavyLoadComfyMod_tooltip = "调整负重状态的舒适度倍率"
+ 
+	Sandbox_hyperthermiaComfyMod = "中暑舒适度倍率",
+	Sandbox_hyperthermiaComfyMod_tooltip = "调整中暑状态的舒适度倍率"
+ 
+	Sandbox_hypothermiaComfyMod = "体温过低舒适度倍率",
+	Sandbox_hypothermiaComfyMod_tooltip = "调整体温过低状态的舒适度倍率"
+ 
+	Sandbox_foodComfyMod = "饱腹舒适度倍率",
+	Sandbox_foodComfyMod_tooltip = "调整饱腹状态的舒适度倍率"
+ 
+ 
+ 
+ 
+	Sandbox_scrapArmorReadMe = "必读",
+	Sandbox_scrapArmorReadMe_tooltip = "这里的选项只在Scrap Armor模组启用了的情况下才会起效"
+ 
+	Sandbox_swordSheathComfyMod = "剑鞘舒适度倍率",
+	Sandbox_swordSheathComfyMod_tooltip = "调整剑鞘的舒适度倍率"
+ 
+	Sandbox_shieldSlotComfyMod = "盾牌舒适度倍率",
+	Sandbox_shieldSlotComfyMod_tooltip = "调整盾牌的舒适度倍率"
+ 
+	Sandbox_torsoRigComfyMod = "躯干槽舒适度倍率",
+	Sandbox_torsoRigComfyMod_tooltip = "调整躯干槽的舒适度倍率"
+ 
+	Sandbox_torsoRig2ComfyMod = "躯干槽2舒适度倍率",
+	Sandbox_torsoRig2ComfyMod_tooltip = "调整躯干槽2的舒适度倍率"
+ 
+	Sandbox_waistBagsComfyMod = "腰包舒适度倍率",
+	Sandbox_waistBagsComfyMod_tooltip = "调整腰包的舒适度倍率"
+ 
+	Sandbox_upperArmLeftComfyMod = "左上臂舒适度倍率",
+	Sandbox_upperArmLeftComfyMod_tooltip = "调整左上臂的舒适度倍率"
+ 
+	Sandbox_upperArmRightComfyMod = "右上臂舒适度倍率",
+	Sandbox_upperArmRightComfyMod_tooltip = "调整右上臂的舒适度倍率"
+ 
+	Sandbox_thighLeftComfyMod = "左大腿舒适度倍率",
+	Sandbox_thighLeftComfyMod_tooltip = "调整左大腿的舒适度倍率"
+ 
+	Sandbox_thighRightComfyMod = "右大腿舒适度倍率",
+	Sandbox_thighRightComfyMod_tooltip = "调整右大腿的舒适度倍率"
+ 
+	Sandbox_lowerBodyComfyMod = "腹部舒适度倍率",
+	Sandbox_lowerBodyComfyMod_tooltip = "调整腹部护甲的舒适度倍率"
+ 
+	Sandbox_pauldronsComfyMod = "肩甲舒适度倍率",
+	Sandbox_pauldronsComfyMod_tooltip = "调整肩甲的舒适度倍率"
+ 
+	Sandbox_handPlateLeftComfyMod = "左手手甲舒适度倍率",
+	Sandbox_handPlateLeftComfyMod_tooltip = "调整左手手甲舒适度倍率"
+ 
+	Sandbox_handPlateRightComfyMod = "右手手甲舒适度倍率",
+	Sandbox_handPlateRightComfyMod_tooltip = "调整右手手甲的舒适度倍率"
+ 
+	Sandbox_shinPlateLeftComfyMod = "左小腿舒适度倍率",
+	Sandbox_shinPlateLeftComfyMod_tooltip = "调整左小腿的舒适度倍率"
+ 
+	Sandbox_shinPlateRightComfyMod = "右小腿舒适度倍率",
+	Sandbox_shinPlateRightComfyMod_tooltip = "调整右小腿的舒适度倍率"
+ 
+	Sandbox_specialMaskComfyMod = "特殊面具舒适度倍率",
+	Sandbox_specialMaskComfyMod_tooltip = "调整特殊面具的舒适度倍率 "
+}

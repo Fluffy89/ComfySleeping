@@ -285,6 +285,16 @@ local function correctStats()
 				
 		end
 	end
+	
+	-- Checking here instead of mainFunc so mainFunc can be moved to every hour instead of every minute.
+	-- Should now remove itself the tick the player wakes up, instead of needing to wait for an additional
+	-- minute to pass before checking.
+	if (not p:isAsleep()) and (correctStatsAdded) then
+		correctStatsAdded = false
+		Events.OnTick.Remove(correctStats)
+	
+	end
+	
 end
 
 
@@ -301,10 +311,6 @@ local function mainFunc()
 	if (p:isAsleep()) and (correctStatsAdded == false) then
 		correctStatsAdded = true
 		Events.OnTick.Add(correctStats)
-	
-	elseif (p:isAsleep() ~= true) and (correctStatsAdded == true) then
-		correctStatsAdded = false
-		Events.OnTick.Remove(correctStats)
 		
 	end
 	
@@ -467,7 +473,7 @@ local function initComfySleepingCore()
 	
 	options.addPillowComfort = false
 	
-	Events.EveryOneMinute.Add(mainFunc)
+	Events.EveryHours.Add(mainFunc)
 	
 	print("ComfySleeping Core Initialized Successfully! ")
 end

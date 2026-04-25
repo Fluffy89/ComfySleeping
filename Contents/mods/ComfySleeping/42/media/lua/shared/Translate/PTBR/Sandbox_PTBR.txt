@@ -1,0 +1,273 @@
+Sandbox_PTBR =
+{
+	Sandbox_ComfySleeping = "ComfySleeping - Geral",
+	Sandbox_ComfySleepingClothing = "ComfySleeping - Roupas",
+	Sandbox_ComfySleepingMoodles = "ComfySleeping - Humor",
+	Sandbox_ComfySleepingJewelry = "ComfySleeping - Joias",
+	Sandbox_ComfySleepingScrapArmor = "ComfySleeping - ScrapArmor",
+  
+  
+	Sandbox_ComfySleeping_Comfort = "Conforto:",
+	Sandbox_ComfySleeping_PillowNearby = "Dormir com travesseiro:",
+	Sandbox_ComfySleeping_Pillow = "Travesseiro",
+	Sandbox_ComfySleeping_Yes = "Sim",
+	Sandbox_ComfySleeping_No = "Não",
+	Sandbox_ComfySleeping_VeryPoor = "Muito desconfortável",
+	Sandbox_ComfySleeping_Poor = "Desconfortável",
+	Sandbox_ComfySleeping_Bad = "Ruim",
+	Sandbox_ComfySleeping_Tolerable = "Tolerável",
+	Sandbox_ComfySleeping_Ok = "Razoavelmente bom",
+	Sandbox_ComfySleeping_SnugAsABug = "Dormir como um anjo",
+  
+  
+	Sandbox_defaultComfort = "Conforto Padrão",
+	Sandbox_defaultComfort_tooltip = "Nível de conforto básico que o jogador terá, caso nenhum fator o afete."
+  
+	Sandbox_pillowComfortBonus = "Bônus de Conforto do Travesseiro",
+	Sandbox_pillowComfortBonus_tooltip = "Quantidade de conforto que o travesseiro dará durante o sono."
+  
+	Sandbox_forceAwakeIfVeryUncomfy = "Forçar Despertar se 'Muito Desconfortável'",
+	Sandbox_forceAwakeIfVeryUncomfy_tooltip = "Ativa ou desativa a insônia e os despertares noturnos do personagem, dependendo do seu nível de conforto. Isso ocorrerá apenas nos níveis 'Muito Desconfortável' e 'Desconfortável'." 
+  
+	Sandbox_forceAwakeIfSnug = "Forçar Despertar se 'Dormir como um anjo'",
+	Sandbox_forceAwakeIfSnug_tooltip = "Ativa ou desativa o despertar automático do personagem quando seu conforto é 'Dormir como um anjo' e o nível de fadiga é 0."
+  
+	Sandbox_cottonComfyMod = "Modificador de Conforto de Roupas de Algodão",
+	Sandbox_cottonComfyMod_tooltip = "Fator de mudança de conforto para todas as roupas reparadas com tecido."
+  
+	Sandbox_denimComfyMod = "Modificador de Conforto de Roupas Jeans",
+	Sandbox_denimComfyMod_tooltip = "Fator de mudança de conforto para todas as roupas reparadas com pedaço de jeans."
+  
+	Sandbox_leatherComfyMod = "Modificador de Conforto de Roupas de Couro",
+	Sandbox_leatherComfyMod_tooltip = "Fator de mudança de conforto para todas as roupas reparadas com pedaço de couro."
+  
+	Sandbox_painChance = "Chance de Dor ao Acordar",
+	Sandbox_painChance_tooltip = "Chance de dor no pescoço ao acordar o personagem abruptamente. Se 'Forçar Despertar se 'Muito Desconfortável'' estiver desativado, esta linha é ignorada."
+  
+	Sandbox_painLowerBound = "Duração Mínima da Dor",
+	Sandbox_painLowerBound_tooltip = "Tempo mínimo de duração da dor causada por um despertar abrupto."
+  
+	Sandbox_painUpperBound = "Duração Máxima da Dor",
+	Sandbox_painUpperBound_tooltip = "Tempo máximo de duração da dor causada por um despertar abrupto."
+  
+	Sandbox_uncomfy1Endurance = "Recuperação de Vigor com conforto 'Tolerável'",
+	Sandbox_uncomfy1Endurance_tooltip = "Quantidade máxima de vigor que o personagem pode regenerar com conforto 'Tolerável'. 100 significa recuperação total."
+  
+	Sandbox_uncomfy2Endurance = "Recuperação de Vigor com conforto 'Ruim'",
+	Sandbox_uncomfy2Endurance_tooltip = "Quantidade máxima de vigor que o personagem pode regenerar com conforto 'Ruim'. 100 significa recuperação total."
+  
+	Sandbox_uncomfy2Fatigue = "Recuperação de Fadiga com conforto 'Ruim'",
+	Sandbox_uncomfy2Fatigue_tooltip = "Quantidade máxima de fadiga que o personagem pode regenerar com conforto 'Ruim'. 0 significa descanso completo."
+  
+	Sandbox_uncomfy3Endurance = "Recuperação de Vigor com conforto 'Desconfortável'",
+	Sandbox_uncomfy3Endurance_tooltip = "Quantidade máxima de vigor que o personagem pode regenerar com conforto 'Desconfortável'. 100 significa recuperação total."
+  
+	Sandbox_uncomfy3Fatigue = "Recuperação de Fadiga com conforto 'Desconfortável'",
+	Sandbox_uncomfy3Fatigue_tooltip = "Quantidade máxima de fadiga que o personagem pode regenerar com conforto 'Desconfortável'. 0 significa descanso completo."
+  
+	Sandbox_uncomfy4Endurance = "Recuperação de Vigor com conforto 'Muito Desconfortável'",
+	Sandbox_uncomfy4Endurance_tooltip = "Quantidade máxima de vigor que o personagem pode regenerar com conforto 'Muito Desconfortável'. 100 significa recuperação total."
+  
+	Sandbox_uncomfy4Fatigue = "Recuperação de Fadiga com conforto 'Muito Desconfortável'",
+	Sandbox_uncomfy4Fatigue_tooltip = "Quantidade máxima de fadiga que o personagem pode regenerar com conforto 'Muito Desconfortável'. 0 significa descanso completo."
+  
+  
+  
+  
+	Sandbox_clothingReadMe = "Roupas Leia-me!",
+	Sandbox_clothingReadMe_tooltip = "Todas as configurações abaixo se referem a roupas sem um tipo de material especificado. Roupas com um tipo de material especificado são configuradas pelas configurações apropriadas."
+  
+	Sandbox_hatComfyMod = "Impacto do Chapéu no Conforto",
+	Sandbox_hatComfyMod_tooltip = "Mudança no valor de conforto de tudo que o personagem usa na cabeça."
+  
+	Sandbox_maskComfyMod = "Impacto da Máscara no Conforto",
+	Sandbox_maskComfyMod_tooltip = "Mudança no valor de conforto das máscaras."
+  
+	Sandbox_fullSuitComfyMod = "Impacto de Macacões no Conforto",
+	Sandbox_fullSuitComfyMod_tooltip = "Mudança no valor de conforto de macacões completos. (Spiffo, Hazmat etc.)"
+  
+	Sandbox_fullJohnsComfyMod = "Impacto de 'Long Johns' no Conforto",
+	Sandbox_fullJohnsComfyMod_tooltip = "Mudança no valor de conforto de 'Long Johns' longos (Não da roupa íntima)."
+  
+	Sandbox_eyesComfyMod = "Impacto de Óculos no Conforto",
+	Sandbox_eyesComfyMod_tooltip = "Mudança no valor de conforto de óculos / bandanas."
+  
+	Sandbox_scarfComfyMod = "Impacto de Cachecóis no Conforto",
+	Sandbox_scarfComfyMod_tooltip = "Mudança no valor de conforto de itens de vestuário no pescoço."
+  
+	Sandbox_shirtComfyMod = "Impacto de Camisetas no Conforto",
+	Sandbox_shirtComfyMod_tooltip = "Mudança no valor de conforto de qualquer top/camiseta/manga curta/camisa."
+  
+	Sandbox_jacketComfyMod = "Impacto de Jaquetas no Conforto",
+	Sandbox_jacketComfyMod_tooltip = "Mudança no valor de conforto de tudo que se qualifica como jaqueta."
+  
+	Sandbox_ponchoComfyMod = "Impacto de Poncho no Conforto",
+	Sandbox_ponchoComfyMod_tooltip = "Mudança no valor de conforto de tudo que se qualifica como poncho."
+  
+	Sandbox_jacketBulkyComfyMod = "Impacto de Jaquetas 'Grossas' no Conforto",
+	Sandbox_jacketBulkyComfyMod_tooltip = "Mudança no valor de conforto de Jaquetas 'Grossas'. No momento desta tradução, incluem-se jaquetas tipo 'shell' e jaquetas acolchoadas (de inverno)."
+  
+	Sandbox_boilerSuitComfyMod = "Impacto de Roupas de Trabalho no Conforto",
+	Sandbox_boilerSuitComfyMod_tooltip = "Mudança no valor de conforto de roupas de trabalho (macacões, macacões de uma peça)."
+  
+	Sandbox_dressComfyMod = "Impacto de Vestidos no Conforto",
+	Sandbox_dressComfyMod_tooltip = "Mudança no valor de conforto de vestidos."
+  
+	Sandbox_fullTopComfyMod = "Impacto de Roupas Superiores 'Completas' no Conforto",
+	Sandbox_fullTopComfyMod_tooltip = "Mudança no valor de conforto de roupas 'completas' na parte superior do corpo. No momento desta tradução, é apenas o Macacão Ghillie."
+  
+	Sandbox_torsoExtraComfyMod = "Impacto de Roupas Adicionais no Torso no Conforto",
+	Sandbox_torsoExtraComfyMod_tooltip = "Mudança no valor de conforto de tudo que pode ser usado no torso além da camada de roupas (aventais, bolsas de munição)."
+  
+	Sandbox_vestComfyMod = "Impacto de Coletes no Conforto",
+	Sandbox_vestComfyMod_tooltip = "Mudança no valor de conforto de coletes."
+  
+	Sandbox_handComfyMod = "Impacto de Luvas no Conforto",
+	Sandbox_handComfyMod_tooltip = "Mudança no valor de conforto de tudo que o personagem pode usar nas mãos."
+  
+	Sandbox_beltComfyMod = "Impacto do Cinto no Conforto",
+	Sandbox_beltComfyMod_tooltip = "Mudança no valor de conforto do cinto."
+  
+	Sandbox_beltExtraComfyMod = "Impacto do Coldre no Conforto",
+	Sandbox_beltExtraComfyMod_tooltip = "Mudança no valor de conforto de coldres (simples e duplos)."
+  
+	Sandbox_ammoStrapComfyMod = "Impacto de Tiras de Munição no Conforto",
+	Sandbox_ammoStrapComfyMod_tooltip = "Mudança no valor de conforto de tiras (bandoleiras) de munição."
+  
+	Sandbox_pantsComfyMod = "Impacto de Calças no Conforto",
+	Sandbox_pantsComfyMod_tooltip = "Mudança no valor de conforto de tudo que pode ser usado como calça."
+  
+	Sandbox_halfJohnsComfyMod = "Impacto de Calças 'Long Johns' no Conforto",
+	Sandbox_halfJohnsComfyMod_tooltip = "Mudança no valor de conforto de calças longas 'Long John' (não 'Long Johns' completos)."
+  
+	Sandbox_shoesComfyMod = "Impacto de Sapatos no Conforto",
+	Sandbox_shoesComfyMod_tooltip = "Mudança no valor de conforto de tudo que pode ser usado como sapatos."
+  
+	Sandbox_underComfyMod = "Impacto de Roupa Íntima no Conforto",
+	Sandbox_underComfyMod_tooltip = "Mudança no valor de conforto de tudo que é roupa íntima (sutiãs, calcinhas etc.)"
+  
+	Sandbox_tailComfyMod = "Impacto de Caudas no Conforto",
+	Sandbox_tailComfyMod_tooltip = "Mudança no valor de conforto de tudo que é classificado como cauda."
+  
+	Sandbox_bagComfyMod = "Impacto de Bolsas / Mochilas no Conforto",
+	Sandbox_bagComfyMod_tooltip = "Mudança no valor de conforto de bolsas ou mochilas."
+  
+  
+  
+  
+  
+	Sandbox_noseComfyMod = "Impacto de Joias de Nariz no Conforto",
+	Sandbox_noseComfyMod_tooltip = "Mudança no valor de conforto de joias usadas no nariz."
+  
+	Sandbox_earsComfyMod = "Impacto de Brincos no Conforto",
+	Sandbox_earsComfyMod_tooltip = "Mudança no valor de conforto de brincos."
+  
+	Sandbox_neckComfyMod = "Impacto de Acessórios de Pescoço no Conforto",
+	Sandbox_neckComfyMod_tooltip = "Mudança no valor de conforto de gravatas/gravatas-borboleta/chokers."
+  
+	Sandbox_necklaceComfyMod = "Impacto de Colares no Conforto",
+	Sandbox_necklaceComfyMod_tooltip = "Mudança no valor de conforto de colares e dog tags. NÃO inclui colares com a palavra 'Long' no nome."
+  
+	Sandbox_necklaceLongComfyMod = "Impacto de Colares Longos no Conforto",
+	Sandbox_necklaceLongComfyMod_tooltip = "Mudança no valor de conforto de colares com a palavra 'Long' no nome."
+  
+	Sandbox_wristComfyMod = "Impacto de Acessórios de Pulso no Conforto",
+	Sandbox_wristComfyMod_tooltip = "Mudança no valor de conforto de tudo que o personagem pode usar no pulso (relógio, pulseira)."
+  
+	Sandbox_handRingComfyMod = "Impacto de Anéis no Conforto",
+	Sandbox_handRingComfyMod_tooltip = "Mudança no valor de conforto de anéis nos dedos."
+  
+	Sandbox_bellyRingComfyMod = "Impacto de Joias de Barriga no Conforto",
+	Sandbox_bellyRingComfyMod_tooltip = "Mudança no valor de conforto de joias usadas na barriga / umbigo."
+  
+  
+  
+  
+
+	Sandbox_moodlesAffectComfort = "Impacto do Humor / Necessidades do Personagem no Conforto",
+	Sandbox_moodlesAffectComfort_tooltip = "Ativar esta opção fará com que as necessidades e o humor do personagem afetem seu conforto."
+  
+	Sandbox_hungerComfyMod = "Impacto da Fome no Conforto",
+	Sandbox_hungerComfyMod_tooltip = "Mudança no valor de conforto causada pela fome."
+  
+	Sandbox_thirstComfyMod = "Impacto da Sede no Conforto",
+	Sandbox_thirstComfyMod_tooltip = "Mudança no valor de conforto causada pela sede."
+  
+	Sandbox_sickComfyMod = "Impacto da Doença no Conforto.",
+	Sandbox_sickComfyMod_tooltip = "Mudança no valor de conforto causada por doenças."
+  
+	Sandbox_hasColdComfyMod = "Impacto do Resfriado no Conforto",
+	Sandbox_hasColdComfyMod_tooltip = "Mudança no valor de conforto causada por resfriado."
+  
+	Sandbox_wetComfyMod = "Impacto da Umidade no Conforto",
+	Sandbox_wetComfyMod_tooltip = "Mudança no valor de conforto do nível de umidade do personagem."
+  
+	Sandbox_stressComfyMod = "Impacto do Estresse no Conforto",
+	Sandbox_stressComfyMod_tooltip = "Mudança no valor de conforto causada pelo estresse."
+  
+	Sandbox_heavyLoadComfyMod = "Impacto da Sobrecarga no Conforto",
+	Sandbox_heavyLoadComfyMod_tooltip = "Mudança no valor de conforto causada pela sobrecarga."
+  
+	Sandbox_hyperthermiaComfyMod = "Impacto da Hipertermia no Conforto ",
+	Sandbox_hyperthermiaComfyMod_tooltip = "Mudança no valor de conforto causada por hipertermia (calor)."
+  
+	Sandbox_hypothermiaComfyMod = "Impacto da Hipotermia no Conforto",
+	Sandbox_hypothermiaComfyMod_tooltip = "Mudança no valor de conforto causada por hipotermia (frio)."
+  
+	Sandbox_foodComfyMod = "Impacto da Saciedade no Conforto",
+	Sandbox_foodComfyMod_tooltip = "Mudança no valor de conforto causada pela saciedade do personagem."
+	
+	
+	
+	
+	Sandbox_scrapArmorReadMe = "LEIA-ME!",
+	Sandbox_scrapArmorReadMe_tooltip = "As configurações abaixo podem ser ignoradas, a menos que o mod 'Scrap Armor' de djvirus esteja instalado e ativado. Não tenho ideia por que estou traduzindo isso."
+	
+	Sandbox_swordSheathComfyMod = "Impacto da Bainha de Espada no Conforto",
+	Sandbox_swordSheathComfyMod_tooltip = "Mudança no valor de conforto da bainha de espada."
+	
+	Sandbox_shieldSlotComfyMod = "Impacto do Slot de Escudo no Conforto",
+	Sandbox_shieldSlotComfyMod_tooltip = "Mudança no valor de conforto do escudo."
+	
+	Sandbox_torsoRigComfyMod = "Impacto de Bolsas de Torso no Conforto",
+	Sandbox_torsoRigComfyMod_tooltip = "Mudança no valor de conforto de bolsas de torso na posição 1."
+	
+	Sandbox_torsoRig2ComfyMod = "Impacto de Bolsas de Torso no Conforto (Local 2)",
+	Sandbox_torsoRig2ComfyMod_tooltip = "Mudança no valor de conforto de bolsas de torso na posição 2."
+	
+	Sandbox_waistBagsComfyMod = "Impacto de Bolsas de Cintura no Conforto",
+	Sandbox_waistBagsComfyMod_tooltip = "Mudança no valor de conforto de bolsas usadas na cintura."
+	
+	Sandbox_upperArmLeftComfyMod = "Impacto de Roupas no Braço Esquerdo no Conforto",
+	Sandbox_upperArmLeftComfyMod_tooltip = "Mudança no valor de conforto de roupas usadas no braço esquerdo."
+	
+	Sandbox_upperArmRightComfyMod = "Impacto de Roupas no Braço Direito no Conforto",
+	Sandbox_upperArmRightComfyMod_tooltip = "Mudança no valor de conforto de roupas usadas no braço direito."
+	
+	Sandbox_thighLeftComfyMod = "Impacto de Roupas na Coxa Esquerda no Conforto",
+	Sandbox_thighLeftComfyMod_tooltip = "Mudança no valor de conforto de roupas usadas na coxa esquerda."
+	
+	Sandbox_thighRightComfyMod = "Impacto de Roupas na Coxa Direita no Conforto",
+	Sandbox_thighRightComfyMod_tooltip = "Mudança no valor de conforto de roupas usadas na coxa direita."
+	
+	Sandbox_lowerBodyComfyMod = "Impacto de Roupas da Parte Inferior do Corpo no Conforto",
+	Sandbox_lowerBodyComfyMod_tooltip = "Mudança no valor de conforto de roupas usadas nas proximidades da parte inferior do corpo."
+	
+	Sandbox_pauldronsComfyMod = "Impacto de Dragonas no Conforto",
+	Sandbox_pauldronsComfyMod_tooltip = "Mudança no valor de conforto de dragonas."
+	
+	Sandbox_handPlateLeftComfyMod = "Impacto de Roupas na Mão Esquerda no Conforto",
+	Sandbox_handPlateLeftComfyMod_tooltip = "Mudança no valor de conforto de roupas usadas na mão esquerda."
+	
+	Sandbox_handPlateRightComfyMod = "Impacto de Roupas na Mão Direita no Conforto",
+	Sandbox_handPlateRightComfyMod_tooltip = "Mudança no valor de conforto de roupas usadas na mão direita."
+	
+	Sandbox_shinPlateLeftComfyMod = "Impacto de Roupas na Canela Esquerda no Conforto",
+	Sandbox_shinPlateLeftComfyMod_tooltip = "Mudança no valor de conforto de roupas usadas na canela esquerda."
+	
+	Sandbox_shinPlateRightComfyMod = "Impacto de Roupas na Canela Direita no Conforto",
+	Sandbox_shinPlateRightComfyMod_tooltip = "Mudança no valor de conforto de roupas usadas na canela direita."
+	
+	Sandbox_specialMaskComfyMod = "Impacto de Máscaras Especiais no Conforto",
+	Sandbox_specialMaskComfyMod_tooltip = "Mudança no valor de conforto de máscaras especiais."
+}

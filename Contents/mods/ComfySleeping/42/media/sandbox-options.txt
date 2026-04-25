@@ -13,6 +13,14 @@ option ComfySleeping.defaultComfort
 	translation = defaultComfort,
 }
 
+option ComfySleeping.showNumericComfortValue
+{
+	type = boolean,
+	default = false,
+	page = ComfySleeping,
+	translation = showNumericComfortValue,
+}
+
 option ComfySleeping.pillowComfortBonus
 {
 	type = integer,

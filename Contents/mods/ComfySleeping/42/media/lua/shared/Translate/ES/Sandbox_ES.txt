@@ -1,0 +1,303 @@
+Sandbox_ES =
+{
+	Sandbox_ComfySleeping = "Dormir cómodamente - General",
+	Sandbox_ComfySleepingClothing = "Dormir cómodamente - Ropa",
+	Sandbox_ComfySleepingMoodles = "Dormir cómodamente - Estados de animo",
+	Sandbox_ComfySleepingJewelry = "Dormir cómodamente - Joyería",
+	Sandbox_ComfySleepingScrapArmor = "Dormir cómodamente - Armadura de chatarra",
+	
+	
+	Sandbox_ComfySleeping_Comfort = "Comodidad del personaje:",
+	Sandbox_ComfySleeping_PillowNearby = "Almohada cercana:",
+	Sandbox_ComfySleeping_Pillow = "Almohada",
+	Sandbox_ComfySleeping_Yes = "Sí",
+	Sandbox_ComfySleeping_No = "No",
+	Sandbox_ComfySleeping_VeryPoor = "Muy pobre",
+	Sandbox_ComfySleeping_Poor = "Pobre",
+	Sandbox_ComfySleeping_Bad = "Mal",
+	Sandbox_ComfySleeping_Tolerable = "Tolerable",
+	Sandbox_ComfySleeping_Ok = "Aceptable",
+	Sandbox_ComfySleeping_SnugAsABug = "Muy Comodo",
+	
+	
+	Sandbox_showPillowStatus = "Mostrar estado del cojín",
+	Sandbox_showPillowStatus_tooltip = "Cuando está marcada, la opción Contexto de sueño muestra texto adicional sobre si hay una almohada cerca o no.."
+	
+	
+	Sandbox_weaponsAffectComfort = "Las armas equipadas afectan a la comodidad.",
+	Sandbox_weaponsAffectComfort_tooltip = "Cuando está activada, llevar armas en la espalda o en el cinturón aplicará una penalización a la comodidad."
+	
+	Sandbox_backWeaponComfyMod = "Modificador de comodidad del arma trasera",
+	Sandbox_backWeaponComfyMod_tooltip = "El modificador de comodidad para las armas equipadas en la espalda."
+	
+	Sandbox_beltWeaponComfyMod = "Modificador de comodidad del arma de cinturón",
+	Sandbox_beltWeaponComfyMod_tooltip = "El modificador de comodidad para las armas equipadas en el cinturón/las caderas."
+	
+	Sandbox_dirtAndBloodAffectComfort = "La suciedad y la sangre afectan al confort.",
+	Sandbox_dirtAndBloodAffectComfort_tooltip = "Cuando está habilitada, la cantidad media de sangre y suciedad en la ropa de los jugadores puede aplicar una penalización de comodidad, cuando supera un umbral."
+	
+	Sandbox_bloodComfyMod = "Modificador de comodidad sanguínea",
+	Sandbox_bloodComfyMod_tooltip = "El modificador de comodidad para cuando tu ropa está por encima del umbral de sangre."
+	
+	Sandbox_bloodThreshold = "Umbral sanguíneo",
+	Sandbox_bloodThreshold_tooltip = "Cuando el nivel medio de sangre en toda la ropa supere este umbral, se aplicará el modificador de comodidad con sangre."
+	
+	Sandbox_dirtComfyMod = "Modificador de comodidad en terrenos irregulares",
+	Sandbox_dirtComfyMod_tooltip = "El modificador de comodidad para cuando tu ropa está por encima del umbral de suciedad."
+	
+	Sandbox_dirtThreshold = "Umbral de suciedad",
+	Sandbox_dirtThreshold_tooltip = "Cuando el nivel medio de suciedad de toda la ropa supere este umbral, se aplicará el modificador de comodidad por suciedad."
+ 
+ 
+	Sandbox_defaultComfort = "Comodidad predeterminada",
+	Sandbox_defaultComfort_tooltip = "El nivel básico de comodidad que tendrá un jugador cuando no haya modificadores de comodidad en vigor."
+	
+	Sandbox_pillowComfortBonus = "Bonificación por comodidad de la almohada",
+	Sandbox_pillowComfortBonus_tooltip = "El grado de comodidad que proporciona una almohada al dormir."
+	
+	Sandbox_forceAwakeIfVeryUncomfy = "Despertar a la fuerza si se siente muy incómodo",
+	Sandbox_forceAwakeIfVeryUncomfy_tooltip = "Activa o desactiva que los personajes se muestren inquietos y se despierten en mitad de la noche, dependiendo de su nivel de comodidad. Esto solo ocurrirá con niveles de comodidad «Deficiente» y «Muy deficiente».."
+	
+	Sandbox_forceAwakeIfSnug = "Despierta a la fuerza si estás muy comodo",
+	Sandbox_forceAwakeIfSnug_tooltip = "Activa o desactiva la función de que los personajes se despierten automáticamente cuando su fatiga llegue a 0, siempre que su comodidad sea muy comodo."
+	
+	Sandbox_cottonComfyMod = "Modificador de ropa de algodón",
+	Sandbox_cottonComfyMod_tooltip = "El modificador de comodidad para cualquier prenda reparada con sábanas rotas."
+	
+	Sandbox_denimComfyMod = "Modificador de ropa vaquera",
+	Sandbox_denimComfyMod_tooltip = "El modificador de comodidad para cualquier prenda reparada con tiras de tela vaquera."
+	
+	Sandbox_leatherComfyMod = "Modificador de ropa de cuero",
+	Sandbox_leatherComfyMod_tooltip = "El modificador de comodidad para cualquier prenda reparada con tiras de cuero.."
+	
+	Sandbox_painChance = "Probabilidad de dolor",
+	Sandbox_painChance_tooltip = "La probabilidad de que un personaje se despierte con dolor de cuello cuando se le despierta a la fuerza. Si «forceAwakeIfVeryUncomfy» es falso, esto se ignora.."
+	
+	Sandbox_painLowerBound = "Duración mínima del dolor",
+	Sandbox_painLowerBound_tooltip = "El tiempo mínimo que durará el dolor causado por estar despierto a la fuerza.."
+	
+	Sandbox_painUpperBound = "Duración máxima del dolor",
+	Sandbox_painUpperBound_tooltip = "El tiempo máximo que durará el dolor causado por estar despierto a la fuerza."
+	
+	Sandbox_uncomfy1Endurance = "Comodidad tolerable Penalización por resistencia",
+	Sandbox_uncomfy1Endurance_tooltip = "La cantidad máxima de resistencia/energía que tu personaje puede regenerar mientras duerme con un nivel de comodidad «tolerable». 100 significa que está completamente recargado."
+	
+	Sandbox_uncomfy2Endurance = "Penalización por resistencia incómoda",
+	Sandbox_uncomfy2Endurance_tooltip = "La cantidad máxima de resistencia/energía que tu personaje puede regenerar mientras duerme con un nivel de comodidad «malo». 100 significa que está completamente recargado.."
+	
+	Sandbox_uncomfy2Fatigue = "Penalización por fatiga por incomodidad",
+	Sandbox_uncomfy2Fatigue_tooltip = "La cantidad máxima de fatiga que tu personaje puede regenerar mientras duerme con un nivel de comodidad «malo». 0 significa que está completamente descansado."
+	
+	Sandbox_uncomfy3Endurance = "Penalización por resistencia al confort deficiente",
+	Sandbox_uncomfy3Endurance_tooltip = "La cantidad máxima de resistencia/energía que tu personaje puede regenerar mientras duerme con un nivel de comodidad «Deficiente». 100 significa que está completamente recargado."
+	
+	Sandbox_uncomfy3Fatigue = "Penalizacion de Fatiga por confort pobre",
+	Sandbox_uncomfy3Fatigue_tooltip = "La cantidad máxima de fatiga que tu personaje puede regenerar mientras duerme con un nivel de comodidad «Deficiente». 0 significa que está completamente descansado."
+	
+	Sandbox_uncomfy4Endurance = "Muy mala comodidad Penalización por resistencia",
+	Sandbox_uncomfy4Endurance_tooltip = "The maximum amount of endurance/stamina your character can regenerate while sleeping with a 'Very Poor' comfort level. 100 is fully recharged."
+	
+	Sandbox_uncomfy4Fatigue = "Muy bajo nivel de comodidad. Penalización por fatiga.",
+	Sandbox_uncomfy4Fatigue_tooltip = "La cantidad máxima de fatiga que tu personaje puede regenerar mientras duerme con un nivel de comodidad «Muy malo». 0 significa que está completamente descansado."
+	
+	
+	
+	
+	Sandbox_clothingReadMe = "Ropa Léame",
+	Sandbox_clothingReadMe_tooltip = "Todas las opciones por ubicación aquí son efectivas para prendas que NO tienen un tipo de tejido. El tipo de tejido de las prendas anulará cualquier modificador de comodidad especificado aquí."
+	
+	Sandbox_hatComfyMod = "Modificador de comodidad del sombrero",
+	Sandbox_hatComfyMod_tooltip = "El modificador de comodidad para cualquier cosa que se lleve en la cabeza de un personaje."
+	
+	Sandbox_maskComfyMod = "Modificador de comodidad de la mascarilla",
+	Sandbox_maskComfyMod_tooltip = "El modificador de comodidad para cualquier máscara."
+	
+	Sandbox_fullSuitComfyMod = "Modificador de comodidad del traje completo",
+	Sandbox_fullSuitComfyMod_tooltip = "El modificador de comodidad para los trajes Hazmat y Spiffo."
+	
+	Sandbox_fullJohnsComfyMod = "Calzoncillos largos Modificador de comodidad",
+	Sandbox_fullJohnsComfyMod_tooltip = "El modificador de comodidad para los calzoncillos largos completos (no las partes inferiores).."
+	
+	Sandbox_eyesComfyMod = "Modificador de comodidad ocular",
+	Sandbox_eyesComfyMod_tooltip = "El modificador de comodidad para cualquier tipo de gafas y parches oculares.."
+	
+	Sandbox_scarfComfyMod = "Modificador de comodidad del pañuelo",
+	Sandbox_scarfComfyMod_tooltip = "El modificador de comodidad para cualquier bufanda."
+	
+	Sandbox_shirtComfyMod = "Modificador de comodidad de la camisa",
+	Sandbox_shirtComfyMod_tooltip = "El modificador de comodidad para cualquier camiseta sin mangas/camiseta/camisa de manga corta/camisa."
+	
+	Sandbox_jacketComfyMod = "Modificador de comodidad de la chaqueta",
+	Sandbox_jacketComfyMod_tooltip = "El modificador de comodidad para cualquier prenda que se lleve como chaqueta."
+	
+	Sandbox_ponchoComfyMod = "Modificador de comodidad del poncho",
+	Sandbox_ponchoComfyMod_tooltip = "El modificador de comodidad para cualquier prenda que se lleve como poncho.."
+	
+	Sandbox_jacketBulkyComfyMod = "Modificador de comodidad para chaquetas voluminosas",
+	Sandbox_jacketBulkyComfyMod_tooltip = "El modificador de comodidad para cualquier chaqueta «voluminosa». Esto incluye chaquetas tipo chándal y chaquetas acolchadas en el momento de redactar este documento."
+	
+	Sandbox_boilerSuitComfyMod = "Modificador de comodidad del mono de trabajo",
+	Sandbox_boilerSuitComfyMod_tooltip = "El modificador de comodidad para cualquier mono/traje de trabajo.."
+	
+	Sandbox_dressComfyMod = "Modificador de comodidad del vestido",
+	Sandbox_dressComfyMod_tooltip = "El modificador de comodidad para cualquier prenda considerada un vestido."
+	
+	Sandbox_fullTopComfyMod = "Modificador de comodidad superior total",
+	Sandbox_fullTopComfyMod_tooltip = "El modificador de comodidad para cualquier objeto en la ranura superior completa. En el momento de escribir este artículo, solo se trata del torso del traje de camuflaje Ghillie."
+	
+	Sandbox_torsoExtraComfyMod = "Modificador de confort extra para el torso",
+	Sandbox_torsoExtraComfyMod_tooltip = "El modificador de comodidad para cualquier prenda que se lleve en el torso de los personajes encima de otra prenda (delantales)."
+	
+	Sandbox_vestComfyMod = "Modificador de comodidad del chaleco",
+	Sandbox_vestComfyMod_tooltip = "El modificador de comodidad para chalecos."
+	
+	Sandbox_handComfyMod = "Modificador de comodidad manual",
+	Sandbox_handComfyMod_tooltip = "El modificador de comodidad para cualquier cosa que lleve puesta un personaje en las manos."
+	
+	Sandbox_beltComfyMod = "Modificador de comodidad del cinturón",
+	Sandbox_beltComfyMod_tooltip = "El modificador de comodidad para cinturones."
+	
+	Sandbox_beltExtraComfyMod = "Modificador de comodidad de la funda",
+	Sandbox_beltExtraComfyMod_tooltip = "El modificador de comodidad para fundas simples y dobles."
+	
+	Sandbox_ammoStrapComfyMod = "Modificador de comodidad de la correa para munición",
+	Sandbox_ammoStrapComfyMod_tooltip = "El modificador de comodidad para cartucheras de balas y proyectiles."
+	
+	
+	Sandbox_pantsComfyMod = "Modificador de comodidad de los pantalones",
+	Sandbox_pantsComfyMod_tooltip = "El modificador de comodidad para cualquier prenda que se lleve como pantalón.."
+	
+	Sandbox_halfJohnsComfyMod = "Modificador de comodidad para pantalones largos",
+	Sandbox_halfJohnsComfyMod_tooltip = "El modificador de comodidad para los calzoncillos largos (no los calzoncillos largos completos)."
+	
+	Sandbox_shoesComfyMod = "Modificador de comodidad del calzado",
+	Sandbox_shoesComfyMod_tooltip = "El modificador de comodidad para cualquier cosa que lleven los personajes en los pies."
+	
+	Sandbox_underComfyMod = "Modificador de comodidad de la ropa interior",
+	Sandbox_underComfyMod_tooltip = "El modificador de comodidad para cualquier prenda considerada ropa interior o accesorios de ropa interior."
+	
+	Sandbox_tailComfyMod = "Modificador de comodidad de la cola",
+	Sandbox_tailComfyMod_tooltip = "El modificador de comodidad para cualquier cosa que se considere una cola."
+	
+	Sandbox_bagComfyMod = "Modificador de comodidad de la bolsa",
+	Sandbox_bagComfyMod_tooltip = "El modificador de comodidad para llevar un bolso."
+	
+	
+	
+	
+	
+	Sandbox_noseComfyMod = "Modificador de comodidad nasal",
+	Sandbox_noseComfyMod_tooltip = "El modificador de comodidad para anillos y pendientes de nariz."
+	
+	Sandbox_earsComfyMod = "Modificador de comodidad para las orejas",
+	Sandbox_earsComfyMod_tooltip = "El modificador de comodidad para pendientes y pendientes de botón"
+	
+	Sandbox_neckComfyMod = "Modificador de comodidad del cuello",
+	Sandbox_neckComfyMod_tooltip = "El modificador de comodidad para corbatas/pajaritas/gargantillas."
+	
+	Sandbox_necklaceComfyMod = "Modificador de comodidad del collar",
+	Sandbox_necklaceComfyMod_tooltip = "El modificador de comodidad para collares y placas de identificación. NO incluye collares que incluyan «Largo» en su nombre."
+	
+	Sandbox_necklaceLongComfyMod = "Modificador de comodidad para collar largo",
+	Sandbox_necklaceLongComfyMod_tooltip = "El modificador de comodidad para collares con la palabra «largo» en su nombre."
+	
+	Sandbox_wristComfyMod = "Modificador de comodidad para la muñeca",
+	Sandbox_wristComfyMod_tooltip = "El modificador de comodidad para cualquier cosa que se lleve en la muñeca de un personaje (relojes/joyas)."
+	
+	Sandbox_handRingComfyMod = "Modificador de comodidad del anillo de mano",
+	Sandbox_handRingComfyMod_tooltip = "El modificador de comodidad para los anillos que llevan en la mano."
+	
+	Sandbox_bellyRingComfyMod = "Modificador de comodidad para joyas de ombligo",
+	Sandbox_bellyRingComfyMod_tooltip = "El modificador de comodidad para cualquier cosa que se lleve en el ombligo del personaje (anillos/pendientes/colgantes)."
+	
+	
+	
+	
+
+	Sandbox_moodlesAffectComfort = "El estado de ánimo afecta al confort",
+	Sandbox_moodlesAffectComfort_tooltip = "Activa esta opción para que algunos estados de animo afecten al nivel de comodidad del jugador.."
+	
+	Sandbox_hungerComfyMod = "Modificador de comodidad por hambre",
+	Sandbox_hungerComfyMod_tooltip = "El modificador de comodidad del estado de ánimo «hambre»."
+	
+	Sandbox_thirstComfyMod = "Modificador de comodidad por sed",
+	Sandbox_thirstComfyMod_tooltip = "El modificador de comodidad del estado de sed."
+	
+	Sandbox_sickComfyMod = "Modificador por enfermedad",
+	Sandbox_sickComfyMod_tooltip = "El modificador de comodidad del estado de ánimo de enfermedad."
+	
+	Sandbox_hasColdComfyMod = "Tiene un modificador de consuelo frío",
+	Sandbox_hasColdComfyMod_tooltip = "El modificador de comodidad del estado de ánimo «tiene un resfriado» (el que te hace moquear)."
+	
+	Sandbox_wetComfyMod = "Modificador de confort Mojado",
+	Sandbox_wetComfyMod_tooltip = "El modificador de comodidad del estado de Mojado."
+	
+	Sandbox_stressComfyMod = "Modificador de confort ante el estrés",
+	Sandbox_stressComfyMod_tooltip = "El modificador de comodidad del estado de ánimo estres."
+	
+	Sandbox_heavyLoadComfyMod = "Modificador de comodidad para cargas pesadas",
+	Sandbox_heavyLoadComfyMod_tooltip = "El modificador de comodidad del moodle de carga pesada."
+	
+	Sandbox_hyperthermiaComfyMod = "Modificador de confort para hipertermia",
+	Sandbox_hyperthermiaComfyMod_tooltip = "El modificador de confort del moodle de hipertermia."
+	
+	Sandbox_hypothermiaComfyMod = "Modificador de confort por hipotermia",
+	Sandbox_hypothermiaComfyMod_tooltip = "El modificador de confort del moodle de hipotermia."
+	
+	Sandbox_foodComfyMod = "Modificador de comodidad bien alimentado",
+	Sandbox_foodComfyMod_tooltip = "El modificador de comodidad del moodle bien alimentado."
+	
+	
+	
+	
+	Sandbox_scrapArmorReadMe = "LEEME",
+	Sandbox_scrapArmorReadMe_tooltip = "Toda esta sección es irrelevante a menos que se haya instalado y habilitado «Scrap Armor (nueva versión)» de djvirus. Esta casilla de verificación no hace nada, solo sirve para mostrarte esta nota."
+	
+	Sandbox_swordSheathComfyMod = "Modificador de comodidad de la funda de la espada",
+	Sandbox_swordSheathComfyMod_tooltip = "El modificador de comodidad para la funda de la espada Scrap Armor."
+	
+	Sandbox_shieldSlotComfyMod = "Modificador de comodidad de la ranura de escudo",
+	Sandbox_shieldSlotComfyMod_tooltip = "El modificador de comodidad para la ranura de escudo de la armadura de chatarra."
+	
+	Sandbox_torsoRigComfyMod = "Modificador de comodidad del torso",
+	Sandbox_torsoRigComfyMod_tooltip = "El modificador de comodidad para la ropa equipada en la ubicación corporal Torso Rig."
+	
+	Sandbox_torsoRig2ComfyMod = "Modificador de comodidad del torso Rig 2",
+	Sandbox_torsoRig2ComfyMod_tooltip = "El modificador de comodidad para la ropa equipada en la ubicación corporal Torso Rig 2."
+	
+	Sandbox_waistBagsComfyMod = "Modificador de comodidad para riñoneras",
+	Sandbox_waistBagsComfyMod_tooltip = "El modificador de comodidad para la ropa equipada en la ubicación corporal «Riñoneras»."
+	
+	Sandbox_upperArmLeftComfyMod = "Modificador de comodidad del brazo izquierdo superior",
+	Sandbox_upperArmLeftComfyMod_tooltip = "El modificador de comodidad para la ropa equipada en la ubicación del brazo izquierdo superior."
+	
+	Sandbox_upperArmRightComfyMod = "Modificador de comodidad del brazo derecho",
+	Sandbox_upperArmRightComfyMod_tooltip = "El modificador de comodidad para la ropa equipada en la ubicación corporal del brazo derecho superior."
+	
+	Sandbox_thighLeftComfyMod = "Modificador de comodidad del muslo izquierdo",
+	Sandbox_thighLeftComfyMod_tooltip = "El modificador de comodidad para la ropa equipada en la ubicación corporal del muslo izquierdo."
+	
+	Sandbox_thighRightComfyMod = "Modificador de comodidad del muslo derecho",
+	Sandbox_thighRightComfyMod_tooltip = "El modificador de comodidad para la ropa equipada en la ubicación corporal del muslo derecho."
+	
+	Sandbox_lowerBodyComfyMod = "Modificador de comodidad para la parte inferior del cuerpo",
+	Sandbox_lowerBodyComfyMod_tooltip = "El modificador de comodidad para la ropa equipada en la parte inferior del cuerpo."
+	
+	Sandbox_pauldronsComfyMod = "Modificador de comodidad de hombreras",
+	Sandbox_pauldronsComfyMod_tooltip = "El modificador de comodidad para la ropa equipada en la ubicación corporal de los hombros."
+	
+	Sandbox_handPlateLeftComfyMod = "Modificador de comodidad de la placa izquierda",
+	Sandbox_handPlateLeftComfyMod_tooltip = "El modificador de comodidad para la ropa equipada en la ubicación corporal de la placa de la mano izquierda."
+	
+	Sandbox_handPlateRightComfyMod = "Modificador de comodidad para la mano derecha",
+	Sandbox_handPlateRightComfyMod_tooltip = "El modificador de comodidad para la ropa equipada en la ubicación corporal «Placa derecha»."
+	
+	Sandbox_shinPlateLeftComfyMod = "Modificador de comodidad de la placa de la espinilla izquierda",
+	Sandbox_shinPlateLeftComfyMod_tooltip = "El modificador de comodidad para la ropa equipada en la ubicación corporal «Placa de espinilla izquierda»."
+	
+	Sandbox_shinPlateRightComfyMod = "Modificador de comodidad de la espinillera derecha",
+	Sandbox_shinPlateRightComfyMod_tooltip = "El modificador de comodidad para la ropa equipada en la ubicación corporal «Placa de espinilla derecha»."
+	
+	Sandbox_specialMaskComfyMod = "Modificador especial de comodidad de la mascarilla",
+	Sandbox_specialMaskComfyMod_tooltip = "El modificador de comodidad para la ropa equipada en la ubicación corporal Máscara especial."
+}
