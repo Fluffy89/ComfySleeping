@@ -422,7 +422,7 @@ function contextMenuFilled(p, context, worldObjects)
 	options.addPillowComfort = findNearbyPillow(contextGridSquare)
 
 	-- Sets pillowNearby to a translated "Yes" or "No" string if options.addPillowComfort is true or false respectively.
-	local pillowNearby = options.addPillowComfort and getText("Sandbox_ComfySleeping_Yes") or getText("Sandbox_ComfySleeping_No")
+	-- local pillowNearby = options.addPillowComfort and getText("Sandbox_ComfySleeping_Yes") or getText("Sandbox_ComfySleeping_No")
 
 	-- Must iterate through all context options and their sub-options since B42 moves the 'Sleep' option
 	-- to a sub-menu for items that players can sleep on.
@@ -443,7 +443,16 @@ function contextMenuFilled(p, context, worldObjects)
 					
 					-- Update tooltip to include comfort and pillow status
 					local comfortLevel = getComfortString(currentComfort)
-					local newToolTip = oldToolTip .. " <BR> " .. getText("Sandbox_ComfySleeping_Comfort") .. " " .. comfortLevel
+					
+					local newTooltip = oldToolTip
+					
+					if (options.showNumericComfortValue) then
+						newToolTip = oldToolTip .. " <BR> " .. getText("Sandbox_ComfySleeping_Comfort") .. " " .. comfortLevel .. " (" .. currentComfort .. ")"
+					
+					else
+						newToolTip = oldToolTip .. " <BR> " .. getText("Sandbox_ComfySleeping_Comfort") .. " " .. comfortLevel
+					
+					end
 					
 					-- Should be redundant now Comfy Sleeping follows same detection method of pillows as Vanilla does
 					-- if (options.showPillowStatus) then 
