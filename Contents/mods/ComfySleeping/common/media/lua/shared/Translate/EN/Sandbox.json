@@ -51,7 +51,7 @@
 	"Sandbox_defaultComfort_tooltip": "The baseline level of comfort a player will have when no comfort modifiers are in effect.",
 
 	"Sandbox_showNumericComfortValue": "Show Numeric Comfort Value",
-	"Sandbox_showNumericComfortValue_tooltip": "When checked, the comfort text shown while sleeping also displays the numeric comfort value in parentheses.",
+	"Sandbox_showNumericComfortValue_tooltip": "When enabled, the numeric comfort value is shown next to the player's comfort. Ex. Ok (100)",
 
 	"Sandbox_pillowComfortBonus": "Pillow Comfort Bonus",
 	"Sandbox_pillowComfortBonus_tooltip": "The amount of comfort a pillow will provide when sleeping.",
