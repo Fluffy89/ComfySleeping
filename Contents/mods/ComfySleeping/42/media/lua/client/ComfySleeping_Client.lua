@@ -465,7 +465,7 @@ function contextMenuFilled(p, context, worldObjects)
 					
 					-- Update tooltip to include comfort and pillow status
 					local comfortLevel = getComfortDisplayText()
-					local newTooltip = string.format("%s \n%s %s", oldToolTip, getText("Sandbox_ComfySleeping_Comfort"), comfortLevel)
+					-- local newTooltip = string.format("%s \n%s %s", oldToolTip, getText("Sandbox_ComfySleeping_Comfort"), comfortLevel)
 					
 					-- Should be redundant now Comfy Sleeping follows same detection method of pillows as Vanilla does
 					-- if (options.showPillowStatus) then 
@@ -473,7 +473,7 @@ function contextMenuFilled(p, context, worldObjects)
 						
 					-- end
 					
-					subOption.toolTip.description = newToolTip
+					subOption.toolTip.description = string.format("%s\n%s %s", oldToolTip, getText("Sandbox_ComfySleeping_Comfort"), comfortLevel)
 					
 				end
 				
