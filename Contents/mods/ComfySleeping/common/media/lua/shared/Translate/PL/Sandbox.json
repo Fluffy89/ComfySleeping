@@ -4,8 +4,7 @@
 	"Sandbox_ComfySleepingMoodles": "ComfySleeping - Nastroje",
 	"Sandbox_ComfySleepingJewelry": "ComfySleeping - Biżuteria",
 	"Sandbox_ComfySleepingScrapArmor": "ComfySleeping - ScrapArmor",
-
-
+	
 	"Sandbox_ComfySleeping_Comfort": "Komfort:",
 	"Sandbox_ComfySleeping_PillowNearby": "Spanie z poduszką:",
 	"Sandbox_ComfySleeping_Pillow": "Poduszka",
@@ -17,276 +16,186 @@
 	"Sandbox_ComfySleeping_Tolerable": "W granicach normy",
 	"Sandbox_ComfySleeping_Ok": "W miare dobry",
 	"Sandbox_ComfySleeping_SnugAsABug": "Jak u Pana Boga za piecem",
-
-
+	
 	"Sandbox_showPillowStatus": "Pokaz Status Poduszki",
 	"Sandbox_showPillowStatus_tooltip": "Gdy wlaczone, po kliknieciu prawym przyciskiem myszki na lózko bedzie wyswietlana dodatkowa linijka okreslajaca obecnosc poduszki.",
-
 	"Sandbox_weaponsAffectComfort": "Bronie Wpływają na Komfort",
 	"Sandbox_weaponsAffectComfort_tooltip": "Jeżeli jest włączone, to bronie na plecach lub pasku będą wpływały na komfort postaci.",
-
 	"Sandbox_backWeaponComfyMod": "Wpływ Broni na Plecach na Komfort",
 	"Sandbox_backWeaponComfyMod_tooltip": "Zmiana wartości komfortu przez bronie znajdujące się na plecach.",
-
 	"Sandbox_beltWeaponComfyMod": "Wpływ Broni na Pasku na Komfort",
 	"Sandbox_beltWeaponComfyMod_tooltip": "Zmiana wartości komfortu przez bronie obecne na pasku / biodrach.",
-
 	"Sandbox_dirtAndBloodAffectComfort": "Brud / Krew Wpływa na Komfort",
 	"Sandbox_dirtAndBloodAffectComfort_tooltip": "Jeżeli jest włączone, to krew i brud przekraczające pewien limit będą obniżały komfort postaci.",
-
 	"Sandbox_bloodComfyMod": "Wpływ Krwi na Komfort",
 	"Sandbox_bloodComfyMod_tooltip": "Zmiana wartości komfortu przez krew, jeżeli przekracza ona pewną wartość.",
-
 	"Sandbox_bloodThreshold": "Wartość Graniczna Krwi",
 	"Sandbox_bloodThreshold_tooltip": "Kiedy średnie zakrwawienie ubrań przewyższy tą wartość, zacznie wpływać na komfort postaci.",
-
 	"Sandbox_dirtComfyMod": "Wpływ Brudu na Komfort",
 	"Sandbox_dirtComfyMod_tooltip": "Zmiana wartości komfortu przez brud, jeżeli przekracza on pewną wartość.",
-
 	"Sandbox_dirtThreshold": "Wartośc Graniczna Brudu",
 	"Sandbox_dirtThreshold_tooltip": "Kiedy średnie ubrudzenie ubrań przewyższy tą wartość, zacznie wpływać na komfort postaci.",
-
-
+	
 	"Sandbox_defaultComfort": "Domyślny komfort",
 	"Sandbox_defaultComfort_tooltip": "Podstawowy poziom komfortu który będzie posiadał gracz, w przypadku gdy żadne czynniki na niego nie wpływają.",
-
-	"Sandbox_showNumericComfortValue": "Pokazuj numeryczną wartość komfortu",
-	"Sandbox_showNumericComfortValue_tooltip": "Gdy włączone, tekst komfortu wyświetlany podczas snu będzie także pokazywał numeryczną wartość komfortu w nawiasach.",
-
 	"Sandbox_pillowComfortBonus": "Bonus do Komfortu od Poduszki",
 	"Sandbox_pillowComfortBonus_tooltip": "Ilość komfortu jaką da poduszka podczas snu.",
-
 	"Sandbox_forceAwakeIfVeryUncomfy": "Wymuś Obudzenie Gdy Jest 'Bardzo Niekomfortowo'",
 	"Sandbox_forceAwakeIfVeryUncomfy_tooltip": "Włącza lub wyłącza bezsennośc postaci oraz przebudzenia w ciągu nocy, w zależności od jej poziomu komfortu. Będzie to występować jedynie przy poziomach 'Bardzo Niekomfortowo' i 'Niekomforotwo'.",
-
 	"Sandbox_forceAwakeIfSnug": "Wymuś Obudzenie Gdy Jest 'Jak u Pana Boga za piecem'",
 	"Sandbox_forceAwakeIfSnug_tooltip": "Włącza lub wyłącza automatyczne budzenie się postaci, gdy jej komfort to 'Jak u Pana Boga za piecem' oraz poziom zmęczenia jest równy 0.",
-
 	"Sandbox_cottonComfyMod": "Zmiana Komfortu Ubrań Materiałowych",
 	"Sandbox_cottonComfyMod_tooltip": "Współczynnik zmiany komfortu dla każdych ubrań naprawianych za pomocą materiału.",
-
 	"Sandbox_denimComfyMod": "Zmiana komfortu Ubrań Jeansowych",
 	"Sandbox_denimComfyMod_tooltip": "Współczynnik zmiany komfortu dla każdych ubrań naprawianych za pomocą kawałku jeansu.",
-
 	"Sandbox_leatherComfyMod": "Zmiana Komfortu Ubrań Skórzanych",
 	"Sandbox_leatherComfyMod_tooltip": "Współczynnik zmiany komfortu dla każdych ubrań naprawianych za pomocą kawałku skóry.",
-
 	"Sandbox_painChance": "Szansa na Ból po Przebudzeniu",
 	"Sandbox_painChance_tooltip": "Szansa na ból szyji po nagłym obudzeniu postaci. Jeżeli 'Wymuś Obudzenie Gdy Jest 'Bardzo Niekomfortowo'' jest wyłączone, wiersz ten jest ignorowany.",
-
 	"Sandbox_painLowerBound": "Minimalny Czas Trwania Bólu",
 	"Sandbox_painLowerBound_tooltip": "Minimalny czas trwania bólu wywołany przez nagłe obudzenie.",
-
 	"Sandbox_painUpperBound": "Maksymalny Czas Trwania Bólu",
 	"Sandbox_painUpperBound_tooltip": "Maksymalny czas trwania bólu wywołany przez nagłe obudzenie.",
-
 	"Sandbox_uncomfy1Endurance": "Regeneracja Kondycji przy komforcie 'W granicach normy'",
 	"Sandbox_uncomfy1Endurance_tooltip": "Maksymalna ilośc kondycji jaką może zregenerować postać przy komforcie 'W granicach normy'. 100 oznacza pełną regenerację.",
-
 	"Sandbox_uncomfy2Endurance": "Regenracja Kondycji przy komforcie 'Zły'",
 	"Sandbox_uncomfy2Endurance_tooltip": "Maksymalna ilośc kondycji jaką może zregenerować postać przy komforcie 'Zły'. 100 oznacza pełną regenerację.",
-
 	"Sandbox_uncomfy2Fatigue": "Regenracja Zmęczenia przy komforcie 'Zły'",
 	"Sandbox_uncomfy2Fatigue_tooltip": "Maksymalna ilośc zmęczenia jaką może zregenerować postać przy komforcie 'Zły'. 0 oznacza pełne wyspanie.",
-
 	"Sandbox_uncomfy3Endurance": "Regeneracja Kondycji przy komforcie 'Niekomfortowo'",
 	"Sandbox_uncomfy3Endurance_tooltip": "Maksymalna ilośc kondycji jaką może zregenerować postać przy komforcie 'Niekomfortowo'. 100 oznacza pełną regenerację.",
-
 	"Sandbox_uncomfy3Fatigue": "Regeneracja Zmęczenia przy komforcie 'Niekomfortowo'",
 	"Sandbox_uncomfy3Fatigue_tooltip": "Maksymalna ilośc zmęczenia jaką może zregenerować postać przy komforcie 'Niekomfortowo'. 0 oznacza pełne wyspanie.",
-
 	"Sandbox_uncomfy4Endurance": "Regeneracja Kondycji przy komforcie 'Bardzo Niekomfortowo'",
 	"Sandbox_uncomfy4Endurance_tooltip": "Maksymalna ilośc kondycji jaką może zregenerować postać przy komforcie 'Bardzo Niekomfortowo'. 100 oznacza pełną regenerację.",
-
 	"Sandbox_uncomfy4Fatigue": "Regeneracja Zmęczenia przy komforcie 'Bardzo Niekomfortowo'",
 	"Sandbox_uncomfy4Fatigue_tooltip": "Maksymalna ilośc zmęczenia jaką może zregenerować postać przy komforcie 'Bardzo Niekomfortowo'. 0 oznacza pełne wyspanie.",
-
-
+	
 	"Sandbox_clothingReadMe": "Ubrania ReadMe!",
 	"Sandbox_clothingReadMe_tooltip": "Wszystkie poniższe ustawienia odnoszą sie do ubrań bez określonego typu materiału. Ubrania z określonym typem matierału są konfigurowane przez odpowiednie ustawienia.",
-
 	"Sandbox_hatComfyMod": "Wpływ Czapki na Komfort",
 	"Sandbox_hatComfyMod_tooltip": "Zmiana wartości komfotu przez wszystko, co postać nosi na głowie.",
-
 	"Sandbox_maskComfyMod": "Wpływ Maski na Komfort",
 	"Sandbox_maskComfyMod_tooltip": "Zmiana wartości komfortu przez maski.",
-
 	"Sandbox_fullSuitComfyMod": "Wpływ Kombinezonów na Komfort",
 	"Sandbox_fullSuitComfyMod_tooltip": "Zmiana wartości komfortu przez pełne kombinezony. (Spiffo, Hazmat itd.)",
-
 	"Sandbox_fullJohnsComfyMod": "Wpływ 'Long Johns' na Komfort",
 	"Sandbox_fullJohnsComfyMod_tooltip": "Zmiana wartości komfortu przez długie 'Long Johns' (Nie przez bieliznę).",
-
 	"Sandbox_eyesComfyMod": "Wpływ Okularów na Komfort",
 	"Sandbox_eyesComfyMod_tooltip": "Zmiana wartości komfortu przez okulary / opaski na oczy.",
-
 	"Sandbox_scarfComfyMod": "Wpływ Szalików na Komfort",
 	"Sandbox_scarfComfyMod_tooltip": "Zmiana wartości komfortu przez elementy garderoby na szyji.",
-
 	"Sandbox_shirtComfyMod": "Wpływ Koszulek na Komfort",
 	"Sandbox_shirtComfyMod_tooltip": "Zmiana wartości komfortu przez jakiekolwiek topy/t-shirty/krótkie rękawki/koszule.",
-
 	"Sandbox_jacketComfyMod": "Wpływ Kurtek na Komfort",
 	"Sandbox_jacketComfyMod_tooltip": "Zmiana wartości komfortu przez wszystko co kwalifikuje się jako kurtka.",
-
 	"Sandbox_ponchoComfyMod": "Wpływ Poncho na Komfort",
 	"Sandbox_ponchoComfyMod_tooltip": "Zmiana wartości komfortu przez wszystko co kwalifikuje się jako poncho.",
-
 	"Sandbox_jacketBulkyComfyMod": "Wpływ 'Grubych' Kurtek na Komfort",
 	"Sandbox_jacketBulkyComfyMod_tooltip": "Zmiana wartości komfortu przez 'Grube' Kurtki. Na czas tworzenia tego tłumaczenia wliczają się w nie kurtki typu 'shell' i kurtki wyścielane (zimowe).",
-
 	"Sandbox_boilerSuitComfyMod": "Wpływ Ubrań Roboczych na Komfort",
 	"Sandbox_boilerSuitComfyMod_tooltip": "Zmiana wartości komfortu przez ubrania robocze (ogrodniczki, jumpsuit'y).",
-
 	"Sandbox_dressComfyMod": "Wpływ Sukienek na Komfort",
 	"Sandbox_dressComfyMod_tooltip": "Zmiana wartości komfortu przez sukienki.",
-
 	"Sandbox_fullTopComfyMod": "Wpływ 'Pełnych' Górnych Ubrań na Komfort",
 	"Sandbox_fullTopComfyMod_tooltip": "Zmiana wartości komfortu przez 'pełne' ubrania na górze ciała. Na czas tworzenia tego tłumaczenia jest to jedynie Kombinezon Ghillie.",
-
 	"Sandbox_torsoExtraComfyMod": "Wpływ Dodatkowych Ubrań na Torsie na Komfort",
 	"Sandbox_torsoExtraComfyMod_tooltip": "Zmiana wartości komfortu przez wszystko co może być założone na tors ponad warstwe ubrań (fartuchy, woreczki z aminicją).",
-
 	"Sandbox_vestComfyMod": "Wpływ Kamizelek na Komfort",
 	"Sandbox_vestComfyMod_tooltip": "Zmiana wartości komfortu przez kamizelki.",
-
 	"Sandbox_handComfyMod": "Wpływ Rękawiczek na Komfort",
 	"Sandbox_handComfyMod_tooltip": "Zmiana wartości komfortu przez wszystko, co postać może założyć na ręce.",
-
 	"Sandbox_beltComfyMod": "Wpływ Paska na Komfort",
 	"Sandbox_beltComfyMod_tooltip": "Zmiana wartości komfortu przez pasek.",
-
 	"Sandbox_beltExtraComfyMod": "Wpływ Kabury na Komfort",
 	"Sandbox_beltExtraComfyMod_tooltip": "Zmiana wartości komfortu przez kabury (pojedyńcze i podwójne).",
-
 	"Sandbox_ammoStrapComfyMod": "Wpływ Pasków Amunicji na Komfort",
 	"Sandbox_ammoStrapComfyMod_tooltip": "Zmiana wartości komfortu przez paski (bandoliery) amunicji.",
-
 	"Sandbox_pantsComfyMod": "Wpływ Spodni na Komfort",
 	"Sandbox_pantsComfyMod_tooltip": "Zmiana wartości komfortu przez wszystko, co można założyc jako spodnie.",
-
 	"Sandbox_halfJohnsComfyMod": "Wpływ Spodni 'Long Johns' na Komfort",
 	"Sandbox_halfJohnsComfyMod_tooltip": "Zmiana wartości komfortu przez długie spodnie 'Long John' (nie pełne 'Long Johns').",
-
 	"Sandbox_shoesComfyMod": "Wpływ Butów na Komfort",
 	"Sandbox_shoesComfyMod_tooltip": "Zmiana wartości komfortu przez wszystko, co można założyc jako buty.",
-
 	"Sandbox_underComfyMod": "Wpływ Bielizny na Komfort",
 	"Sandbox_underComfyMod_tooltip": "Zmiana wartości komfortu przez wszystko, co jest bielizną (biustonosze, majtki itp.)",
-
 	"Sandbox_tailComfyMod": "Wpływ Ogonów na Komfort",
 	"Sandbox_tailComfyMod_tooltip": "Zmiana wartości komfortu przez wszystko, co zaliczane jest jako ogon. ",
-
 	"Sandbox_bagComfyMod": "Wpływ Toreb / Plecaków na Komfort",
 	"Sandbox_bagComfyMod_tooltip": "Zmiana wartości komfortu przez torby lub plecaki.",
-
 	"Sandbox_noseComfyMod": "Wpływ Biżuterii na Nos na Komfort",
 	"Sandbox_noseComfyMod_tooltip": "Zmiana wartości komfortu przez biżuterie zakładaną na nos.",
-
 	"Sandbox_earsComfyMod": "Wpływ Kolczyków na Komfort",
 	"Sandbox_earsComfyMod_tooltip": "Zmiana wartości komfortu przez kolczyki.",
-
 	"Sandbox_neckComfyMod": "Wpływ Akcesorii na Szyje na Komfort",
 	"Sandbox_neckComfyMod_tooltip": "Zmiana wartości komfortu przez krawaty/muszki/chokery.",
-
+	
 	"Sandbox_necklaceComfyMod": "Wpływ Naszyjników na Komfort",
 	"Sandbox_necklaceComfyMod_tooltip": "Zmiana wartości komfortu przez naszyjniki i nieśmiertelniki. NIE wliczają się do tego naszyjniki z słowem 'Długi' w nazwie.",
-
 	"Sandbox_necklaceLongComfyMod": "Wpływ Długich Naszyjników na Komfort",
 	"Sandbox_necklaceLongComfyMod_tooltip": "Zmiana wartości komfortu przez naszyjniki z słowem 'Długi' w nazwie.",
-
 	"Sandbox_wristComfyMod": "Wpływ Akcesorii na Nadgarstek na Komfort",
 	"Sandbox_wristComfyMod_tooltip": "Zmiana wartości komfortu przez wszystko, co postać może założyć na nadgarstek (zegarek, bransoletka).",
-
 	"Sandbox_handRingComfyMod": "Wpływ Pierścionków na Komfort",
 	"Sandbox_handRingComfyMod_tooltip": "Zmiana wartości komfortu przez pierścionki na palcach.",
-
 	"Sandbox_bellyRingComfyMod": "Wpływ Biżuterii na Brzuch na Komfort",
 	"Sandbox_bellyRingComfyMod_tooltip": "Zmiana wartości komfortu przez biżuterie noszoną na brzuchu / pępku.",
-
-
+	
 	"Sandbox_moodlesAffectComfort": "Wpływ Nastroju / Potrzeb Postaci na Komfort",
 	"Sandbox_moodlesAffectComfort_tooltip": "Włączenie tej opcji spowoduje, że potrzeby i nastrój postaci będzie wpływał na jej komfort.",
-
 	"Sandbox_hungerComfyMod": "Wpływ Głodu na Komfort",
 	"Sandbox_hungerComfyMod_tooltip": "Zmiana wartości komfortu wyowałana głodem.",
-
 	"Sandbox_thirstComfyMod": "Wpływ Pragnienia na Komfort",
 	"Sandbox_thirstComfyMod_tooltip": "Zmiana wartości komfortu wywołana pragnieniem.",
-
 	"Sandbox_sickComfyMod": "Wpływ Choroby na Komfort.",
 	"Sandbox_sickComfyMod_tooltip": "Zmiana wartości komfortu wywołana chorobom.",
-
 	"Sandbox_hasColdComfyMod": "Wpływ Przeziębienia na Komfort",
 	"Sandbox_hasColdComfyMod_tooltip": "Zmiana wartości komfortu wywołana przeziębeniem.",
-
 	"Sandbox_wetComfyMod": "Wpływ Wilgotności na Komfort",
 	"Sandbox_wetComfyMod_tooltip": "Zmiana wartości komfortu od poziomu zmoczenia postaci.",
-
 	"Sandbox_stressComfyMod": "Wpływ Stresu na Komfort",
 	"Sandbox_stressComfyMod_tooltip": "Zmiana wartości komfortu wywołana stresem.",
-
 	"Sandbox_heavyLoadComfyMod": "Wpływ Przeciążenia na Komfort",
 	"Sandbox_heavyLoadComfyMod_tooltip": "Zmiana wartości komfortu wywołana przeciążeniem.",
-
 	"Sandbox_hyperthermiaComfyMod": "Wpływ Hipertermii na Komfort ",
 	"Sandbox_hyperthermiaComfyMod_tooltip": "Zmiana wartości komfortu wywołana hipertermią (gorącem).",
-
 	"Sandbox_hypothermiaComfyMod": "Wpływ Hipotermii na Komfort",
 	"Sandbox_hypothermiaComfyMod_tooltip": "Zmiana wartości komfortu wywołana hipotermią (zimnem).",
-
 	"Sandbox_foodComfyMod": "Wpływ Najedzenia na Komfort",
 	"Sandbox_foodComfyMod_tooltip": "Zmiana wartości komfortu wywołana najedzeniem postaci.",
-
-
+	
 	"Sandbox_scrapArmorReadMe": "PRZECZYTAJ!",
 	"Sandbox_scrapArmorReadMe_tooltip": "Poniższe ustawienia można zignorować, chyba, że mod 'Scrap Armor' od djvirus jest zainstalowany i włączony. Nie mam pojęcia dlaczego to tłumaczę.",
-
 	"Sandbox_swordSheathComfyMod": "Wpływ Pokrowca Miecza na Komfort",
 	"Sandbox_swordSheathComfyMod_tooltip": "Zmiana wartości komfortu przez pokrowiec na miecz.",
-
 	"Sandbox_shieldSlotComfyMod": "Wpływ Tarczy na Komfort",
 	"Sandbox_shieldSlotComfyMod_tooltip": "Zmiana wartości komfortu przez tarczę.",
-
 	"Sandbox_torsoRigComfyMod": "Wpływ Toreb Tłowia na Komfort",
 	"Sandbox_torsoRigComfyMod_tooltip": "Zmiana wartości komfortu przez torby na tułów w położeniu 1.",
-
 	"Sandbox_torsoRig2ComfyMod": "Wpływ Toreb Tłowia na Komfort (Miejsce 2)",
 	"Sandbox_torsoRig2ComfyMod_tooltip": "Zmiana wartości komfortu przez torby na tułów w położeniu 2.",
-
 	"Sandbox_waistBagsComfyMod": "Wpływ Toreb na Talie na Komfort",
 	"Sandbox_waistBagsComfyMod_tooltip": "Zmiana wartości komfortu przez torby zakładane na talie.",
-
 	"Sandbox_upperArmLeftComfyMod": "Wpływ Ubrań na Lewe Ramie na Komfort",
 	"Sandbox_upperArmLeftComfyMod_tooltip": "Zmiana wartości komfortu przez ubrania noszone na lewym ramieniu.",
-
 	"Sandbox_upperArmRightComfyMod": "Wpływ Ubrań na Prawe Ramie na Komfort",
 	"Sandbox_upperArmRightComfyMod_tooltip": "Zmiana wartości komfortu przez ubrania noszone na prawym ramieniu.",
-
 	"Sandbox_thighLeftComfyMod": "Wpływ Ubrań na Lewym Udzie na Komfort",
 	"Sandbox_thighLeftComfyMod_tooltip": "Zmiana wartości komfortu przez ubrania noszone na lewym udzie.",
-
 	"Sandbox_thighRightComfyMod": "Wpływ Ubrań na Prawym Udzie na Komfort",
 	"Sandbox_thighRightComfyMod_tooltip": "Zmiana wartości komfortu przez ubrania noszone na prawym udzie.",
-
 	"Sandbox_lowerBodyComfyMod": "Wpływ Ubrań Dolnej Części Ciała na Komfort",
 	"Sandbox_lowerBodyComfyMod_tooltip": "Zmiana wartości komfortu przez ubrania noszone w okolicach dolnej części ciała.",
-
 	"Sandbox_pauldronsComfyMod": "Wpływ Naramienników na Komfort",
 	"Sandbox_pauldronsComfyMod_tooltip": "Zmiana wartości komfortu przez naramienniki.",
-
 	"Sandbox_handPlateLeftComfyMod": "Wpływ Ubrań na Lewej Ręce na Komfort",
 	"Sandbox_handPlateLeftComfyMod_tooltip": "Zmiana wartości komfortu przez ubrania noszone na lewej ręce.",
-
 	"Sandbox_handPlateRightComfyMod": "Wpływ Ubrań na Prawej Ręce na Komfort",
 	"Sandbox_handPlateRightComfyMod_tooltip": "Zmiana wartości komfortu przez ubrania noszone na prawej ręce.",
-
 	"Sandbox_shinPlateLeftComfyMod": "Wpływ Ubrań na Lewym Piszczelu na Komfort",
 	"Sandbox_shinPlateLeftComfyMod_tooltip": "Zmiana wartości komfortu przez ubrania noszone na lewym piszczelu.",
-
 	"Sandbox_shinPlateRightComfyMod": "Wpływ Ubrań na Prawym Piszczelu na Komfort",
 	"Sandbox_shinPlateRightComfyMod_tooltip": "Zmiana wartości komfortu przez ubrania noszone na prawym piszczelu.",
-
 	"Sandbox_specialMaskComfyMod": "Wpływ Specjalnych Masek na Komfort",
-	"Sandbox_specialMaskComfyMod_tooltip": "Zmiana wartości komfortu specjalne maski."
+	"Sandbox_specialMaskComfyMod_tooltip": "Zmiana wartości komfortu specjalne maski. "
 }

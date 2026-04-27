@@ -1,10 +1,10 @@
 Sandbox_ES =
 {
-	Sandbox_ComfySleeping = "Dormir cómodamente - General",
-	Sandbox_ComfySleepingClothing = "Dormir cómodamente - Ropa",
-	Sandbox_ComfySleepingMoodles = "Dormir cómodamente - Estados de animo",
-	Sandbox_ComfySleepingJewelry = "Dormir cómodamente - Joyería",
-	Sandbox_ComfySleepingScrapArmor = "Dormir cómodamente - Armadura de chatarra",
+	Sandbox_ComfySleeping = "Comfy Sleeping - General",
+	Sandbox_ComfySleepingClothing = "Comfy Sleeping - Ropa",
+	Sandbox_ComfySleepingMoodles = "Comfy Sleeping - Estados de animo",
+	Sandbox_ComfySleepingJewelry = "Comfy Sleeping - Joyería",
+	Sandbox_ComfySleepingScrapArmor = "Comfy Sleeping - Armadura de Chatarra",
 	
 	
 	Sandbox_ComfySleeping_Comfort = "Comodidad del personaje:",
@@ -22,7 +22,7 @@ Sandbox_ES =
 	
 	Sandbox_showPillowStatus = "Mostrar estado del cojín",
 	Sandbox_showPillowStatus_tooltip = "Cuando está marcada, la opción Contexto de sueño muestra texto adicional sobre si hay una almohada cerca o no.."
-	
+
 	
 	Sandbox_weaponsAffectComfort = "Las armas equipadas afectan a la comodidad.",
 	Sandbox_weaponsAffectComfort_tooltip = "Cuando está activada, llevar armas en la espalda o en el cinturón aplicará una penalización a la comodidad."

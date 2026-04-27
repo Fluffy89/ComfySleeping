@@ -20,7 +20,7 @@
 
 
 	"Sandbox_showPillowStatus": "Show Pillow Status",
-	"Sandbox_showPillowStatus_tooltip": "When checked, the Sleep context option shows additional text on whether a pillow is nearby or not.",
+	"Sandbox_showPillowStatus_tooltip": "When checked, the Sleep context option shows additional whether a pillow is nearby or not.",
 
 	"Sandbox_weaponsAffectComfort": "Equipped Weapons Affect Comfort",
 	"Sandbox_weaponsAffectComfort_tooltip": "When enabled, having weapons on your back or belt will apply a penalty to comfort.",
@@ -51,7 +51,7 @@
 	"Sandbox_defaultComfort_tooltip": "The baseline level of comfort a player will have when no comfort modifiers are in effect.",
 
 	"Sandbox_showNumericComfortValue": "Show Numeric Comfort Value",
-	"Sandbox_showNumericComfortValue_tooltip": "When enabled, the numeric comfort value is shown next to the player's comfort. Ex. Ok (100)",
+	"Sandbox_showNumericComfortValue_tooltip": "When enabled, the Sleep context option shows the player's numeric comfort value next to the player's comfort. Ex. Ok (100)",
 
 	"Sandbox_pillowComfortBonus": "Pillow Comfort Bonus",
 	"Sandbox_pillowComfortBonus_tooltip": "The amount of comfort a pillow will provide when sleeping.",
