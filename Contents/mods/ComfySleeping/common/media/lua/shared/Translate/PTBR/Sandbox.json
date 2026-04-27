@@ -10,283 +10,283 @@
 	"Sandbox_ComfySleeping_PillowNearby": "Dormir com travesseiro:",
 	"Sandbox_ComfySleeping_Pillow": "Travesseiro",
 	"Sandbox_ComfySleeping_Yes": "Sim",
-	"Sandbox_ComfySleeping_No": "N„o",
-	"Sandbox_ComfySleeping_VeryPoor": "Muito desconfort·vel",
-	"Sandbox_ComfySleeping_Poor": "Desconfort·vel",
+	"Sandbox_ComfySleeping_No": "N√£o",
+	"Sandbox_ComfySleeping_VeryPoor": "Muito desconfort√°vel",
+	"Sandbox_ComfySleeping_Poor": "Desconfort√°vel",
 	"Sandbox_ComfySleeping_Bad": "Ruim",
-	"Sandbox_ComfySleeping_Tolerable": "Toler·vel",
+	"Sandbox_ComfySleeping_Tolerable": "Toler√°vel",
 	"Sandbox_ComfySleeping_Ok": "Razoavelmente bom",
 	"Sandbox_ComfySleeping_SnugAsABug": "Dormir como um anjo",
 
 
 	"Sandbox_showPillowStatus": "Mostrar status do travesseiro",
-	"Sandbox_showPillowStatus_tooltip": "Quando ativado, a opÁ„o contextual de dormir mostra um texto adicional indicando se h· um travesseiro por perto.",
+	"Sandbox_showPillowStatus_tooltip": "Quando ativado, a op√ß√£o contextual de dormir mostra um texto adicional indicando se h√° um travesseiro por perto.",
 
 	"Sandbox_weaponsAffectComfort": "Armas equipadas afetam o conforto",
 	"Sandbox_weaponsAffectComfort_tooltip": "Quando ativado, ter armas equipadas nas costas ou no cinto aplica uma penalidade ao conforto.",
 
 	"Sandbox_backWeaponComfyMod": "Modificador de conforto da arma nas costas",
-	"Sandbox_backWeaponComfyMod_tooltip": "MudanÁa no valor de conforto de armas equipadas nas costas.",
+	"Sandbox_backWeaponComfyMod_tooltip": "Mudan√ßa no valor de conforto de armas equipadas nas costas.",
 
 	"Sandbox_beltWeaponComfyMod": "Modificador de conforto da arma no cinto",
-	"Sandbox_beltWeaponComfyMod_tooltip": "MudanÁa no valor de conforto de armas equipadas no cinto ou nos quadris.",
+	"Sandbox_beltWeaponComfyMod_tooltip": "Mudan√ßa no valor de conforto de armas equipadas no cinto ou nos quadris.",
 
 	"Sandbox_dirtAndBloodAffectComfort": "Sujeira/sangue afetam o conforto",
-	"Sandbox_dirtAndBloodAffectComfort_tooltip": "Quando ativado, a quantidade mÈdia de sangue e sujeira nas roupas do personagem pode aplicar uma penalidade ao conforto quando ultrapassar o limite.",
+	"Sandbox_dirtAndBloodAffectComfort_tooltip": "Quando ativado, a quantidade m√©dia de sangue e sujeira nas roupas do personagem pode aplicar uma penalidade ao conforto quando ultrapassar o limite.",
 
 	"Sandbox_bloodComfyMod": "Modificador de conforto do sangue",
-	"Sandbox_bloodComfyMod_tooltip": "MudanÁa no valor de conforto quando as roupas ultrapassam o limite de sangue.",
+	"Sandbox_bloodComfyMod_tooltip": "Mudan√ßa no valor de conforto quando as roupas ultrapassam o limite de sangue.",
 
 	"Sandbox_bloodThreshold": "Limite de sangue",
-	"Sandbox_bloodThreshold_tooltip": "Quando o nÌvel mÈdio de sangue em todas as roupas ultrapassa este limite, o modificador de conforto do sangue È aplicado.",
+	"Sandbox_bloodThreshold_tooltip": "Quando o n√≠vel m√©dio de sangue em todas as roupas ultrapassa este limite, o modificador de conforto do sangue √© aplicado.",
 
 	"Sandbox_dirtComfyMod": "Modificador de conforto da sujeira",
-	"Sandbox_dirtComfyMod_tooltip": "MudanÁa no valor de conforto quando as roupas ultrapassam o limite de sujeira.",
+	"Sandbox_dirtComfyMod_tooltip": "Mudan√ßa no valor de conforto quando as roupas ultrapassam o limite de sujeira.",
 
 	"Sandbox_dirtThreshold": "Limite de sujeira",
-	"Sandbox_dirtThreshold_tooltip": "Quando o nÌvel mÈdio de sujeira em todas as roupas ultrapassa este limite, o modificador de conforto da sujeira È aplicado.",
+	"Sandbox_dirtThreshold_tooltip": "Quando o n√≠vel m√©dio de sujeira em todas as roupas ultrapassa este limite, o modificador de conforto da sujeira √© aplicado.",
 
 
-	"Sandbox_defaultComfort": "Conforto Padr„o",
-	"Sandbox_defaultComfort_tooltip": "NÌvel de conforto b·sico que o jogador ter·, caso nenhum fator o afete.",
+	"Sandbox_defaultComfort": "Conforto Padr√£o",
+	"Sandbox_defaultComfort_tooltip": "N√≠vel de conforto b√°sico que o jogador ter√°, caso nenhum fator o afete.",
 
-	"Sandbox_showNumericComfortValue": "Mostrar valor numÈrico de conforto",
-	"Sandbox_showNumericComfortValue_tooltip": "Quando ativado, o texto de conforto exibido ao dormir tambÈm mostrar· o valor numÈrico de conforto entre parÍnteses.",
+	"Sandbox_showNumericComfortValue": "Mostrar valor num√©rico de conforto",
+	"Sandbox_showNumericComfortValue_tooltip": "Quando ativado, o texto de conforto exibido ao dormir tamb√©m mostrar√° o valor num√©rico de conforto entre par√™nteses.",
 
-	"Sandbox_pillowComfortBonus": "BÙnus de Conforto do Travesseiro",
-	"Sandbox_pillowComfortBonus_tooltip": "Quantidade de conforto que o travesseiro dar· durante o sono.",
+	"Sandbox_pillowComfortBonus": "B√¥nus de Conforto do Travesseiro",
+	"Sandbox_pillowComfortBonus_tooltip": "Quantidade de conforto que o travesseiro dar√° durante o sono.",
 
-	"Sandbox_forceAwakeIfVeryUncomfy": "ForÁar Despertar se 'Muito Desconfort·vel'",
-	"Sandbox_forceAwakeIfVeryUncomfy_tooltip": "Ativa ou desativa a insÙnia e os despertares noturnos do personagem, dependendo do seu nÌvel de conforto. Isso ocorrer· apenas nos nÌveis 'Muito Desconfort·vel' e 'Desconfort·vel'.",
+	"Sandbox_forceAwakeIfVeryUncomfy": "For√ßar Despertar se 'Muito Desconfort√°vel'",
+	"Sandbox_forceAwakeIfVeryUncomfy_tooltip": "Ativa ou desativa a ins√¥nia e os despertares noturnos do personagem, dependendo do seu n√≠vel de conforto. Isso ocorrer√° apenas nos n√≠veis 'Muito Desconfort√°vel' e 'Desconfort√°vel'.",
 
-	"Sandbox_forceAwakeIfSnug": "ForÁar Despertar se 'Dormir como um anjo'",
-	"Sandbox_forceAwakeIfSnug_tooltip": "Ativa ou desativa o despertar autom·tico do personagem quando seu conforto È 'Dormir como um anjo' e o nÌvel de fadiga È 0.",
+	"Sandbox_forceAwakeIfSnug": "For√ßar Despertar se 'Dormir como um anjo'",
+	"Sandbox_forceAwakeIfSnug_tooltip": "Ativa ou desativa o despertar autom√°tico do personagem quando seu conforto √© 'Dormir como um anjo' e o n√≠vel de fadiga √© 0.",
 
-	"Sandbox_cottonComfyMod": "Modificador de Conforto de Roupas de Algod„o",
-	"Sandbox_cottonComfyMod_tooltip": "Fator de mudanÁa de conforto para roupas reparadas com Pano Rasgado.",
+	"Sandbox_cottonComfyMod": "Modificador de Conforto de Roupas de Algod√£o",
+	"Sandbox_cottonComfyMod_tooltip": "Fator de mudan√ßa de conforto para roupas reparadas com Pano Rasgado.",
 
 	"Sandbox_denimComfyMod": "Modificador de Conforto de Roupas Jeans",
-	"Sandbox_denimComfyMod_tooltip": "Fator de mudanÁa de conforto para roupas reparadas com Tiras de Jeans.",
+	"Sandbox_denimComfyMod_tooltip": "Fator de mudan√ßa de conforto para roupas reparadas com Tiras de Jeans.",
 
 	"Sandbox_leatherComfyMod": "Modificador de Conforto de Roupas de Couro",
-	"Sandbox_leatherComfyMod_tooltip": "Fator de mudanÁa de conforto para roupas reparadas com Tiras de Couro.",
+	"Sandbox_leatherComfyMod_tooltip": "Fator de mudan√ßa de conforto para roupas reparadas com Tiras de Couro.",
 
 	"Sandbox_painChance": "Chance de Dor ao Acordar",
-	"Sandbox_painChance_tooltip": "Chance de dor no pescoÁo ao acordar o personagem abruptamente. Se ìForÁar Despertar se Muito Desconfort·velî estiver desativado, esta opÁ„o È ignorada.",
+	"Sandbox_painChance_tooltip": "Chance de dor no pesco√ßo ao acordar o personagem abruptamente. Se ‚ÄúFor√ßar Despertar se Muito Desconfort√°vel‚Äù estiver desativado, esta op√ß√£o √© ignorada.",
 
-	"Sandbox_painLowerBound": "DuraÁ„o MÌnima da Dor",
-	"Sandbox_painLowerBound_tooltip": "Tempo mÌnimo de duraÁ„o da dor causada por um despertar abrupto.",
+	"Sandbox_painLowerBound": "Dura√ß√£o M√≠nima da Dor",
+	"Sandbox_painLowerBound_tooltip": "Tempo m√≠nimo de dura√ß√£o da dor causada por um despertar abrupto.",
 
-	"Sandbox_painUpperBound": "DuraÁ„o M·xima da Dor",
-	"Sandbox_painUpperBound_tooltip": "Tempo m·ximo de duraÁ„o da dor causada por um despertar abrupto.",
+	"Sandbox_painUpperBound": "Dura√ß√£o M√°xima da Dor",
+	"Sandbox_painUpperBound_tooltip": "Tempo m√°ximo de dura√ß√£o da dor causada por um despertar abrupto.",
 
-	"Sandbox_uncomfy1Endurance": "RecuperaÁ„o de Vigor com conforto 'Toler·vel'",
-	"Sandbox_uncomfy1Endurance_tooltip": "Quantidade m·xima de vigor que o personagem pode regenerar com conforto 'Toler·vel'. 100 significa recuperaÁ„o total.",
+	"Sandbox_uncomfy1Endurance": "Recupera√ß√£o de Vigor com conforto 'Toler√°vel'",
+	"Sandbox_uncomfy1Endurance_tooltip": "Quantidade m√°xima de vigor que o personagem pode regenerar com conforto 'Toler√°vel'. 100 significa recupera√ß√£o total.",
 
-	"Sandbox_uncomfy2Endurance": "RecuperaÁ„o de Vigor com conforto 'Ruim'",
-	"Sandbox_uncomfy2Endurance_tooltip": "Quantidade m·xima de vigor que o personagem pode regenerar com conforto 'Ruim'. 100 significa recuperaÁ„o total.",
+	"Sandbox_uncomfy2Endurance": "Recupera√ß√£o de Vigor com conforto 'Ruim'",
+	"Sandbox_uncomfy2Endurance_tooltip": "Quantidade m√°xima de vigor que o personagem pode regenerar com conforto 'Ruim'. 100 significa recupera√ß√£o total.",
 
-	"Sandbox_uncomfy2Fatigue": "RecuperaÁ„o de Fadiga com conforto 'Ruim'",
-	"Sandbox_uncomfy2Fatigue_tooltip": "Quantidade m·xima de fadiga que o personagem pode regenerar com conforto 'Ruim'. 0 significa descanso completo.",
+	"Sandbox_uncomfy2Fatigue": "Recupera√ß√£o de Fadiga com conforto 'Ruim'",
+	"Sandbox_uncomfy2Fatigue_tooltip": "Quantidade m√°xima de fadiga que o personagem pode regenerar com conforto 'Ruim'. 0 significa descanso completo.",
 
-	"Sandbox_uncomfy3Endurance": "RecuperaÁ„o de Vigor com conforto 'Desconfort·vel'",
-	"Sandbox_uncomfy3Endurance_tooltip": "Quantidade m·xima de vigor que o personagem pode regenerar com conforto 'Desconfort·vel'. 100 significa recuperaÁ„o total.",
+	"Sandbox_uncomfy3Endurance": "Recupera√ß√£o de Vigor com conforto 'Desconfort√°vel'",
+	"Sandbox_uncomfy3Endurance_tooltip": "Quantidade m√°xima de vigor que o personagem pode regenerar com conforto 'Desconfort√°vel'. 100 significa recupera√ß√£o total.",
 
-	"Sandbox_uncomfy3Fatigue": "RecuperaÁ„o de Fadiga com conforto 'Desconfort·vel'",
-	"Sandbox_uncomfy3Fatigue_tooltip": "Quantidade m·xima de fadiga que o personagem pode regenerar com conforto 'Desconfort·vel'. 0 significa descanso completo.",
+	"Sandbox_uncomfy3Fatigue": "Recupera√ß√£o de Fadiga com conforto 'Desconfort√°vel'",
+	"Sandbox_uncomfy3Fatigue_tooltip": "Quantidade m√°xima de fadiga que o personagem pode regenerar com conforto 'Desconfort√°vel'. 0 significa descanso completo.",
 
-	"Sandbox_uncomfy4Endurance": "RecuperaÁ„o de Vigor com conforto 'Muito Desconfort·vel'",
-	"Sandbox_uncomfy4Endurance_tooltip": "Quantidade m·xima de vigor que o personagem pode regenerar com conforto 'Muito Desconfort·vel'. 100 significa recuperaÁ„o total.",
+	"Sandbox_uncomfy4Endurance": "Recupera√ß√£o de Vigor com conforto 'Muito Desconfort√°vel'",
+	"Sandbox_uncomfy4Endurance_tooltip": "Quantidade m√°xima de vigor que o personagem pode regenerar com conforto 'Muito Desconfort√°vel'. 100 significa recupera√ß√£o total.",
 
-	"Sandbox_uncomfy4Fatigue": "RecuperaÁ„o de Fadiga com conforto 'Muito Desconfort·vel'",
-	"Sandbox_uncomfy4Fatigue_tooltip": "Quantidade m·xima de fadiga que o personagem pode regenerar com conforto 'Muito Desconfort·vel'. 0 significa descanso completo.",
+	"Sandbox_uncomfy4Fatigue": "Recupera√ß√£o de Fadiga com conforto 'Muito Desconfort√°vel'",
+	"Sandbox_uncomfy4Fatigue_tooltip": "Quantidade m√°xima de fadiga que o personagem pode regenerar com conforto 'Muito Desconfort√°vel'. 0 significa descanso completo.",
 
 
 	"Sandbox_clothingReadMe": "Roupas Leia-me!",
-	"Sandbox_clothingReadMe_tooltip": "Todas as configuraÁıes abaixo se referem a roupas sem um tipo de material especificado. Roupas com um tipo de material especificado s„o configuradas pelas configuraÁıes apropriadas.",
+	"Sandbox_clothingReadMe_tooltip": "Todas as configura√ß√µes abaixo se referem a roupas sem um tipo de material especificado. Roupas com um tipo de material especificado s√£o configuradas pelas configura√ß√µes apropriadas.",
 
-	"Sandbox_hatComfyMod": "Impacto do ChapÈu no Conforto",
-	"Sandbox_hatComfyMod_tooltip": "MudanÁa no valor de conforto de tudo que o personagem usa na cabeÁa.",
+	"Sandbox_hatComfyMod": "Impacto do Chap√©u no Conforto",
+	"Sandbox_hatComfyMod_tooltip": "Mudan√ßa no valor de conforto de tudo que o personagem usa na cabe√ßa.",
 
-	"Sandbox_maskComfyMod": "Impacto da M·scara no Conforto",
-	"Sandbox_maskComfyMod_tooltip": "MudanÁa no valor de conforto das m·scaras.",
+	"Sandbox_maskComfyMod": "Impacto da M√°scara no Conforto",
+	"Sandbox_maskComfyMod_tooltip": "Mudan√ßa no valor de conforto das m√°scaras.",
 
-	"Sandbox_fullSuitComfyMod": "Impacto de Macacıes no Conforto",
-	"Sandbox_fullSuitComfyMod_tooltip": "MudanÁa no valor de conforto de trajes completos, como o Traje de Isolamento e o Traje Spiffo.",
+	"Sandbox_fullSuitComfyMod": "Impacto de Macac√µes no Conforto",
+	"Sandbox_fullSuitComfyMod_tooltip": "Mudan√ßa no valor de conforto de trajes completos, como o Traje de Isolamento e o Traje Spiffo.",
 
 	"Sandbox_fullJohnsComfyMod": "Impacto de Ceroulas no Conforto",
-	"Sandbox_fullJohnsComfyMod_tooltip": "MudanÁa no valor de conforto de Ceroulas completas (n„o da roupa Ìntima inferior).",
+	"Sandbox_fullJohnsComfyMod_tooltip": "Mudan√ßa no valor de conforto de Ceroulas completas (n√£o da roupa √≠ntima inferior).",
 
-	"Sandbox_eyesComfyMod": "Impacto de ”culos no Conforto",
-	"Sandbox_eyesComfyMod_tooltip": "MudanÁa no valor de conforto de Ûculos / bandanas.",
+	"Sandbox_eyesComfyMod": "Impacto de √ìculos no Conforto",
+	"Sandbox_eyesComfyMod_tooltip": "Mudan√ßa no valor de conforto de √≥culos / bandanas.",
 
-	"Sandbox_scarfComfyMod": "Impacto de CachecÛis no Conforto",
-	"Sandbox_scarfComfyMod_tooltip": "MudanÁa no valor de conforto de itens de vestu·rio no pescoÁo.",
+	"Sandbox_scarfComfyMod": "Impacto de Cachec√≥is no Conforto",
+	"Sandbox_scarfComfyMod_tooltip": "Mudan√ßa no valor de conforto de itens de vestu√°rio no pesco√ßo.",
 
 	"Sandbox_shirtComfyMod": "Impacto de Camisetas no Conforto",
-	"Sandbox_shirtComfyMod_tooltip": "MudanÁa no valor de conforto de qualquer top/camiseta/manga curta/camisa.",
+	"Sandbox_shirtComfyMod_tooltip": "Mudan√ßa no valor de conforto de qualquer top/camiseta/manga curta/camisa.",
 
 	"Sandbox_jacketComfyMod": "Impacto de Jaquetas no Conforto",
-	"Sandbox_jacketComfyMod_tooltip": "MudanÁa no valor de conforto de tudo que se qualifica como jaqueta.",
+	"Sandbox_jacketComfyMod_tooltip": "Mudan√ßa no valor de conforto de tudo que se qualifica como jaqueta.",
 
 	"Sandbox_ponchoComfyMod": "Impacto de Poncho no Conforto",
-	"Sandbox_ponchoComfyMod_tooltip": "MudanÁa no valor de conforto de tudo que se qualifica como poncho.",
+	"Sandbox_ponchoComfyMod_tooltip": "Mudan√ßa no valor de conforto de tudo que se qualifica como poncho.",
 
 	"Sandbox_jacketBulkyComfyMod": "Impacto de Jaquetas 'Grossas' no Conforto",
-	"Sandbox_jacketBulkyComfyMod_tooltip": "MudanÁa no valor de conforto de Jaquetas 'Grossas'. No momento desta traduÁ„o, incluem-se jaquetas tipo 'shell' e jaquetas acolchoadas (de inverno).",
+	"Sandbox_jacketBulkyComfyMod_tooltip": "Mudan√ßa no valor de conforto de Jaquetas 'Grossas'. No momento desta tradu√ß√£o, incluem-se jaquetas tipo 'shell' e jaquetas acolchoadas (de inverno).",
 
 	"Sandbox_boilerSuitComfyMod": "Impacto de Roupas de Trabalho no Conforto",
-	"Sandbox_boilerSuitComfyMod_tooltip": "MudanÁa no valor de conforto de roupas de trabalho (macacıes, macacıes de uma peÁa).",
+	"Sandbox_boilerSuitComfyMod_tooltip": "Mudan√ßa no valor de conforto de roupas de trabalho (macac√µes, macac√µes de uma pe√ßa).",
 
 	"Sandbox_dressComfyMod": "Impacto de Vestidos no Conforto",
-	"Sandbox_dressComfyMod_tooltip": "MudanÁa no valor de conforto de vestidos.",
+	"Sandbox_dressComfyMod_tooltip": "Mudan√ßa no valor de conforto de vestidos.",
 
 	"Sandbox_fullTopComfyMod": "Impacto de Roupas Superiores 'Completas' no Conforto",
-	"Sandbox_fullTopComfyMod_tooltip": "MudanÁa no valor de conforto de roupas 'completas' na parte superior do corpo. No momento desta traduÁ„o, È apenas o Macac„o Ghillie.",
+	"Sandbox_fullTopComfyMod_tooltip": "Mudan√ßa no valor de conforto de roupas 'completas' na parte superior do corpo. No momento desta tradu√ß√£o, √© apenas o Macac√£o Ghillie.",
 
 	"Sandbox_torsoExtraComfyMod": "Impacto de Roupas Adicionais no Torso no Conforto",
-	"Sandbox_torsoExtraComfyMod_tooltip": "MudanÁa no valor de conforto de tudo que pode ser usado no torso alÈm da camada de roupas (aventais, bolsas de muniÁ„o).",
+	"Sandbox_torsoExtraComfyMod_tooltip": "Mudan√ßa no valor de conforto de tudo que pode ser usado no torso al√©m da camada de roupas (aventais, bolsas de muni√ß√£o).",
 
 	"Sandbox_vestComfyMod": "Impacto de Coletes no Conforto",
-	"Sandbox_vestComfyMod_tooltip": "MudanÁa no valor de conforto de coletes.",
+	"Sandbox_vestComfyMod_tooltip": "Mudan√ßa no valor de conforto de coletes.",
 
 	"Sandbox_handComfyMod": "Impacto de Luvas no Conforto",
-	"Sandbox_handComfyMod_tooltip": "MudanÁa no valor de conforto de tudo que o personagem pode usar nas m„os.",
+	"Sandbox_handComfyMod_tooltip": "Mudan√ßa no valor de conforto de tudo que o personagem pode usar nas m√£os.",
 
 	"Sandbox_beltComfyMod": "Impacto do Cinto no Conforto",
-	"Sandbox_beltComfyMod_tooltip": "MudanÁa no valor de conforto do cinto.",
+	"Sandbox_beltComfyMod_tooltip": "Mudan√ßa no valor de conforto do cinto.",
 
 	"Sandbox_beltExtraComfyMod": "Impacto do Coldre no Conforto",
-	"Sandbox_beltExtraComfyMod_tooltip": "MudanÁa no valor de conforto de coldres (simples e duplos).",
+	"Sandbox_beltExtraComfyMod_tooltip": "Mudan√ßa no valor de conforto de coldres (simples e duplos).",
 
-	"Sandbox_ammoStrapComfyMod": "Impacto de Tiras de MuniÁ„o no Conforto",
-	"Sandbox_ammoStrapComfyMod_tooltip": "MudanÁa no valor de conforto de bandoleiras de muniÁ„o.",
+	"Sandbox_ammoStrapComfyMod": "Impacto de Tiras de Muni√ß√£o no Conforto",
+	"Sandbox_ammoStrapComfyMod_tooltip": "Mudan√ßa no valor de conforto de bandoleiras de muni√ß√£o.",
 
-	"Sandbox_pantsComfyMod": "Impacto de CalÁas no Conforto",
-	"Sandbox_pantsComfyMod_tooltip": "MudanÁa no valor de conforto de tudo que pode ser usado como calÁa.",
+	"Sandbox_pantsComfyMod": "Impacto de Cal√ßas no Conforto",
+	"Sandbox_pantsComfyMod_tooltip": "Mudan√ßa no valor de conforto de tudo que pode ser usado como cal√ßa.",
 
-	"Sandbox_halfJohnsComfyMod": "Impacto de CalÁas de Ceroulas no Conforto",
-	"Sandbox_halfJohnsComfyMod_tooltip": "MudanÁa no valor de conforto de CalÁas de Ceroulas (n„o de Ceroulas completas).",
+	"Sandbox_halfJohnsComfyMod": "Impacto de Cal√ßas de Ceroulas no Conforto",
+	"Sandbox_halfJohnsComfyMod_tooltip": "Mudan√ßa no valor de conforto de Cal√ßas de Ceroulas (n√£o de Ceroulas completas).",
 
 	"Sandbox_shoesComfyMod": "Impacto de Sapatos no Conforto",
-	"Sandbox_shoesComfyMod_tooltip": "MudanÁa no valor de conforto de tudo que pode ser usado como sapatos.",
+	"Sandbox_shoesComfyMod_tooltip": "Mudan√ßa no valor de conforto de tudo que pode ser usado como sapatos.",
 
-	"Sandbox_underComfyMod": "Impacto de Roupa Õntima no Conforto",
-	"Sandbox_underComfyMod_tooltip": "MudanÁa no valor de conforto de tudo que È roupa Ìntima (suti„s, calcinhas etc.)",
+	"Sandbox_underComfyMod": "Impacto de Roupa √çntima no Conforto",
+	"Sandbox_underComfyMod_tooltip": "Mudan√ßa no valor de conforto de tudo que √© roupa √≠ntima (suti√£s, calcinhas etc.)",
 
 	"Sandbox_tailComfyMod": "Impacto de Caudas no Conforto",
-	"Sandbox_tailComfyMod_tooltip": "MudanÁa no valor de conforto de tudo que È classificado como cauda.",
+	"Sandbox_tailComfyMod_tooltip": "Mudan√ßa no valor de conforto de tudo que √© classificado como cauda.",
 
 	"Sandbox_bagComfyMod": "Impacto de Bolsas / Mochilas no Conforto",
-	"Sandbox_bagComfyMod_tooltip": "MudanÁa no valor de conforto de bolsas ou mochilas.",
+	"Sandbox_bagComfyMod_tooltip": "Mudan√ßa no valor de conforto de bolsas ou mochilas.",
 
 	"Sandbox_noseComfyMod": "Impacto de Joias de Nariz no Conforto",
-	"Sandbox_noseComfyMod_tooltip": "MudanÁa no valor de conforto de joias usadas no nariz.",
+	"Sandbox_noseComfyMod_tooltip": "Mudan√ßa no valor de conforto de joias usadas no nariz.",
 
 	"Sandbox_earsComfyMod": "Impacto de Brincos no Conforto",
-	"Sandbox_earsComfyMod_tooltip": "MudanÁa no valor de conforto de brincos.",
+	"Sandbox_earsComfyMod_tooltip": "Mudan√ßa no valor de conforto de brincos.",
 
-	"Sandbox_neckComfyMod": "Impacto de AcessÛrios de PescoÁo no Conforto",
-	"Sandbox_neckComfyMod_tooltip": "MudanÁa no valor de conforto de gravatas/gravatas-borboleta/chokers.",
+	"Sandbox_neckComfyMod": "Impacto de Acess√≥rios de Pesco√ßo no Conforto",
+	"Sandbox_neckComfyMod_tooltip": "Mudan√ßa no valor de conforto de gravatas/gravatas-borboleta/chokers.",
 
 	"Sandbox_necklaceComfyMod": "Impacto de Colares no Conforto",
-	"Sandbox_necklaceComfyMod_tooltip": "MudanÁa no valor de conforto de colares e Dog Tags. N√O inclui colares com a palavra ìLongî no nome.",
+	"Sandbox_necklaceComfyMod_tooltip": "Mudan√ßa no valor de conforto de colares e Dog Tags. N√ÉO inclui colares com a palavra ‚ÄúLong‚Äù no nome.",
 
 	"Sandbox_necklaceLongComfyMod": "Impacto de Colares Longos no Conforto",
-	"Sandbox_necklaceLongComfyMod_tooltip": "MudanÁa no valor de conforto de colares com a palavra 'Long' no nome.",
+	"Sandbox_necklaceLongComfyMod_tooltip": "Mudan√ßa no valor de conforto de colares com a palavra 'Long' no nome.",
 
-	"Sandbox_wristComfyMod": "Impacto de AcessÛrios de Pulso no Conforto",
-	"Sandbox_wristComfyMod_tooltip": "MudanÁa no valor de conforto de tudo que o personagem pode usar no pulso (relÛgio, pulseira).",
+	"Sandbox_wristComfyMod": "Impacto de Acess√≥rios de Pulso no Conforto",
+	"Sandbox_wristComfyMod_tooltip": "Mudan√ßa no valor de conforto de tudo que o personagem pode usar no pulso (rel√≥gio, pulseira).",
 
-	"Sandbox_handRingComfyMod": "Impacto de AnÈis no Conforto",
-	"Sandbox_handRingComfyMod_tooltip": "MudanÁa no valor de conforto de anÈis nos dedos.",
+	"Sandbox_handRingComfyMod": "Impacto de An√©is no Conforto",
+	"Sandbox_handRingComfyMod_tooltip": "Mudan√ßa no valor de conforto de an√©is nos dedos.",
 
 	"Sandbox_bellyRingComfyMod": "Impacto de Joias de Barriga no Conforto",
-	"Sandbox_bellyRingComfyMod_tooltip": "MudanÁa no valor de conforto de joias usadas na barriga / umbigo.",
+	"Sandbox_bellyRingComfyMod_tooltip": "Mudan√ßa no valor de conforto de joias usadas na barriga / umbigo.",
 
 
 	"Sandbox_moodlesAffectComfort": "Impacto do Humor / Necessidades do Personagem no Conforto",
-	"Sandbox_moodlesAffectComfort_tooltip": "Ativar esta opÁ„o far· com que as necessidades e o humor do personagem afetem seu conforto.",
+	"Sandbox_moodlesAffectComfort_tooltip": "Ativar esta op√ß√£o far√° com que as necessidades e o humor do personagem afetem seu conforto.",
 
 	"Sandbox_hungerComfyMod": "Impacto da Fome no Conforto",
-	"Sandbox_hungerComfyMod_tooltip": "MudanÁa no valor de conforto causada pela fome.",
+	"Sandbox_hungerComfyMod_tooltip": "Mudan√ßa no valor de conforto causada pela fome.",
 
 	"Sandbox_thirstComfyMod": "Impacto da Sede no Conforto",
-	"Sandbox_thirstComfyMod_tooltip": "MudanÁa no valor de conforto causada pela sede.",
+	"Sandbox_thirstComfyMod_tooltip": "Mudan√ßa no valor de conforto causada pela sede.",
 
-	"Sandbox_sickComfyMod": "Impacto da DoenÁa no Conforto.",
-	"Sandbox_sickComfyMod_tooltip": "MudanÁa no valor de conforto causada por doenÁas.",
+	"Sandbox_sickComfyMod": "Impacto da Doen√ßa no Conforto.",
+	"Sandbox_sickComfyMod_tooltip": "Mudan√ßa no valor de conforto causada por doen√ßas.",
 
 	"Sandbox_hasColdComfyMod": "Impacto do Resfriado no Conforto",
-	"Sandbox_hasColdComfyMod_tooltip": "MudanÁa no valor de conforto causada por resfriado.",
+	"Sandbox_hasColdComfyMod_tooltip": "Mudan√ßa no valor de conforto causada por resfriado.",
 
 	"Sandbox_wetComfyMod": "Impacto da Umidade no Conforto",
-	"Sandbox_wetComfyMod_tooltip": "MudanÁa no valor de conforto do nÌvel de umidade do personagem.",
+	"Sandbox_wetComfyMod_tooltip": "Mudan√ßa no valor de conforto do n√≠vel de umidade do personagem.",
 
 	"Sandbox_stressComfyMod": "Impacto do Estresse no Conforto",
-	"Sandbox_stressComfyMod_tooltip": "MudanÁa no valor de conforto causada pelo estresse.",
+	"Sandbox_stressComfyMod_tooltip": "Mudan√ßa no valor de conforto causada pelo estresse.",
 
 	"Sandbox_heavyLoadComfyMod": "Impacto da Sobrecarga no Conforto",
-	"Sandbox_heavyLoadComfyMod_tooltip": "MudanÁa no valor de conforto causada pela sobrecarga.",
+	"Sandbox_heavyLoadComfyMod_tooltip": "Mudan√ßa no valor de conforto causada pela sobrecarga.",
 
 	"Sandbox_hyperthermiaComfyMod": "Impacto da Hipertermia no Conforto ",
-	"Sandbox_hyperthermiaComfyMod_tooltip": "MudanÁa no valor de conforto causada por hipertermia (calor).",
+	"Sandbox_hyperthermiaComfyMod_tooltip": "Mudan√ßa no valor de conforto causada por hipertermia (calor).",
 
 	"Sandbox_hypothermiaComfyMod": "Impacto da Hipotermia no Conforto",
-	"Sandbox_hypothermiaComfyMod_tooltip": "MudanÁa no valor de conforto causada por hipotermia (frio).",
+	"Sandbox_hypothermiaComfyMod_tooltip": "Mudan√ßa no valor de conforto causada por hipotermia (frio).",
 
 	"Sandbox_foodComfyMod": "Impacto da Saciedade no Conforto",
-	"Sandbox_foodComfyMod_tooltip": "MudanÁa no valor de conforto causada pela saciedade do personagem.",
+	"Sandbox_foodComfyMod_tooltip": "Mudan√ßa no valor de conforto causada pela saciedade do personagem.",
 
 
 	"Sandbox_scrapArmorReadMe": "LEIA-ME!",
-	"Sandbox_scrapArmorReadMe_tooltip": "As opÁıes abaixo sÛ s„o relevantes se o mod ìScrap Armorî de djvirus estiver instalado e ativado.",
+	"Sandbox_scrapArmorReadMe_tooltip": "As op√ß√µes abaixo s√≥ s√£o relevantes se o mod ‚ÄúScrap Armor‚Äù de djvirus estiver instalado e ativado.",
 
 	"Sandbox_swordSheathComfyMod": "Impacto da Bainha de Espada no Conforto",
-	"Sandbox_swordSheathComfyMod_tooltip": "MudanÁa no valor de conforto da bainha de espada.",
+	"Sandbox_swordSheathComfyMod_tooltip": "Mudan√ßa no valor de conforto da bainha de espada.",
 
 	"Sandbox_shieldSlotComfyMod": "Impacto do Slot de Escudo no Conforto",
-	"Sandbox_shieldSlotComfyMod_tooltip": "MudanÁa no valor de conforto do escudo.",
+	"Sandbox_shieldSlotComfyMod_tooltip": "Mudan√ßa no valor de conforto do escudo.",
 
 	"Sandbox_torsoRigComfyMod": "Impacto de Bolsas de Torso no Conforto",
-	"Sandbox_torsoRigComfyMod_tooltip": "MudanÁa no valor de conforto de bolsas de torso na posiÁ„o 1.",
+	"Sandbox_torsoRigComfyMod_tooltip": "Mudan√ßa no valor de conforto de bolsas de torso na posi√ß√£o 1.",
 
 	"Sandbox_torsoRig2ComfyMod": "Impacto de Bolsas de Torso no Conforto (Local 2)",
-	"Sandbox_torsoRig2ComfyMod_tooltip": "MudanÁa no valor de conforto de bolsas de torso na posiÁ„o 2.",
+	"Sandbox_torsoRig2ComfyMod_tooltip": "Mudan√ßa no valor de conforto de bolsas de torso na posi√ß√£o 2.",
 
 	"Sandbox_waistBagsComfyMod": "Impacto de Bolsas de Cintura no Conforto",
-	"Sandbox_waistBagsComfyMod_tooltip": "MudanÁa no valor de conforto de bolsas usadas na cintura.",
+	"Sandbox_waistBagsComfyMod_tooltip": "Mudan√ßa no valor de conforto de bolsas usadas na cintura.",
 
-	"Sandbox_upperArmLeftComfyMod": "Impacto de Roupas no BraÁo Esquerdo no Conforto",
-	"Sandbox_upperArmLeftComfyMod_tooltip": "MudanÁa no valor de conforto de roupas usadas no braÁo esquerdo.",
+	"Sandbox_upperArmLeftComfyMod": "Impacto de Roupas no Bra√ßo Esquerdo no Conforto",
+	"Sandbox_upperArmLeftComfyMod_tooltip": "Mudan√ßa no valor de conforto de roupas usadas no bra√ßo esquerdo.",
 
-	"Sandbox_upperArmRightComfyMod": "Impacto de Roupas no BraÁo Direito no Conforto",
-	"Sandbox_upperArmRightComfyMod_tooltip": "MudanÁa no valor de conforto de roupas usadas no braÁo direito.",
+	"Sandbox_upperArmRightComfyMod": "Impacto de Roupas no Bra√ßo Direito no Conforto",
+	"Sandbox_upperArmRightComfyMod_tooltip": "Mudan√ßa no valor de conforto de roupas usadas no bra√ßo direito.",
 
 	"Sandbox_thighLeftComfyMod": "Impacto de Roupas na Coxa Esquerda no Conforto",
-	"Sandbox_thighLeftComfyMod_tooltip": "MudanÁa no valor de conforto de roupas usadas na coxa esquerda.",
+	"Sandbox_thighLeftComfyMod_tooltip": "Mudan√ßa no valor de conforto de roupas usadas na coxa esquerda.",
 
 	"Sandbox_thighRightComfyMod": "Impacto de Roupas na Coxa Direita no Conforto",
-	"Sandbox_thighRightComfyMod_tooltip": "MudanÁa no valor de conforto de roupas usadas na coxa direita.",
+	"Sandbox_thighRightComfyMod_tooltip": "Mudan√ßa no valor de conforto de roupas usadas na coxa direita.",
 
 	"Sandbox_lowerBodyComfyMod": "Impacto de Roupas da Parte Inferior do Corpo no Conforto",
-	"Sandbox_lowerBodyComfyMod_tooltip": "MudanÁa no valor de conforto de roupas usadas nas proximidades da parte inferior do corpo.",
+	"Sandbox_lowerBodyComfyMod_tooltip": "Mudan√ßa no valor de conforto de roupas usadas nas proximidades da parte inferior do corpo.",
 
 	"Sandbox_pauldronsComfyMod": "Impacto de Dragonas no Conforto",
-	"Sandbox_pauldronsComfyMod_tooltip": "MudanÁa no valor de conforto de dragonas.",
+	"Sandbox_pauldronsComfyMod_tooltip": "Mudan√ßa no valor de conforto de dragonas.",
 
-	"Sandbox_handPlateLeftComfyMod": "Impacto de Roupas na M„o Esquerda no Conforto",
-	"Sandbox_handPlateLeftComfyMod_tooltip": "MudanÁa no valor de conforto de roupas usadas na m„o esquerda.",
+	"Sandbox_handPlateLeftComfyMod": "Impacto de Roupas na M√£o Esquerda no Conforto",
+	"Sandbox_handPlateLeftComfyMod_tooltip": "Mudan√ßa no valor de conforto de roupas usadas na m√£o esquerda.",
 
-	"Sandbox_handPlateRightComfyMod": "Impacto de Roupas na M„o Direita no Conforto",
-	"Sandbox_handPlateRightComfyMod_tooltip": "MudanÁa no valor de conforto de roupas usadas na m„o direita.",
+	"Sandbox_handPlateRightComfyMod": "Impacto de Roupas na M√£o Direita no Conforto",
+	"Sandbox_handPlateRightComfyMod_tooltip": "Mudan√ßa no valor de conforto de roupas usadas na m√£o direita.",
 
 	"Sandbox_shinPlateLeftComfyMod": "Impacto de Roupas na Canela Esquerda no Conforto",
-	"Sandbox_shinPlateLeftComfyMod_tooltip": "MudanÁa no valor de conforto de roupas usadas na canela esquerda.",
+	"Sandbox_shinPlateLeftComfyMod_tooltip": "Mudan√ßa no valor de conforto de roupas usadas na canela esquerda.",
 
 	"Sandbox_shinPlateRightComfyMod": "Impacto de Roupas na Canela Direita no Conforto",
-	"Sandbox_shinPlateRightComfyMod_tooltip": "MudanÁa no valor de conforto de roupas usadas na canela direita.",
+	"Sandbox_shinPlateRightComfyMod_tooltip": "Mudan√ßa no valor de conforto de roupas usadas na canela direita.",
 
-	"Sandbox_specialMaskComfyMod": "Impacto de M·scaras Especiais no Conforto",
-	"Sandbox_specialMaskComfyMod_tooltip": "MudanÁa no valor de conforto de m·scaras especiais."
+	"Sandbox_specialMaskComfyMod": "Impacto de M√°scaras Especiais no Conforto",
+	"Sandbox_specialMaskComfyMod_tooltip": "Mudan√ßa no valor de conforto de m√°scaras especiais."
 }
