@@ -39,7 +39,7 @@ local function initComfortModMap()
 		[ItemBodyLocation.MASK] = ComfySleeping.options.maskComfyMod,
 		[ItemBodyLocation.FULL_SUIT_HEAD] = ComfySleeping.options.fullSuitComfyMod,
 		[ItemBodyLocation.FULL_SUIT] = ComfySleeping.options.fullSuitComfyMod,
-		[ItemBodyLocation.FULL_SUIT_SCBA] = ComfySleeping.options.fullSuitComfyMod,
+		[(ItemBodyLocation.FULL_SUIT_HEAD_SCBA or ItemBodyLocation.FULL_SUIT_SCBA)] = ComfySleeping.options.fullSuitComfyMod,
 		[ItemBodyLocation.SCBA] = ComfySleeping.options.fullSuitComfyMod,
 		[ItemBodyLocation.SCBANOTANK] = ComfySleeping.options.fullSuitComfyMod,
 		[ItemBodyLocation.FULL_SUIT] = ComfySleeping.options.fullSuitComfyMod,

@@ -1,4 +1,4 @@
-require("ComfySleeping_InitComfyClothes")
+require("ComfySleeping_Init") -- _InitComfyClothes
 
 --  +-----------------------------------------------+
 --  |				GLOBALS & OPTIONS				|
@@ -144,7 +144,7 @@ function getComfortModifier(p, wornItems)
 		
 		if (item:IsClothing()) and (options.dirtAndBloodAffectComfort) then
 			avgBloodiness = avgBloodiness + item:getBloodLevel()
-			avgDirtiness = avgDirtiness + item:getDirtyness()
+			avgDirtiness = avgDirtiness + item:getDirtiness()
 			
 		end
 	end
